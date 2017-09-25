@@ -1,0 +1,30 @@
+/*
+Theme Name: LeonisPartners
+Author: James Allington-Kay & Moad Zardab
+Author URI: https://jamz.io/
+Description: A super awesome theme, built by idiots and for awesome people
+Version: 0.0
+License: Private
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: leonisWPTheme
+
+This theme is private, and if you have a copy, you shouldn't!
+*/
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 100;
+    text-align: center;
+    padding-top: 400px;
+}
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 60;
+    text-align: center;
+}
