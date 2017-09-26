@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <title>Leonis Partners</title>
-</head>
+<?php get_header(); ?>
 
 <body>
-  <img style="height: 50px;position: relative;top: 50px;display: block;margin: 0 auto;width: auto;" src="<?php echo get_bloginfo('template_url') ?>/images/white_logo_text_small-1.png"/>
   <div class="parallax">
     <div class="parallax__layer parallax__layer__0">
         <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-back.svg"/>
@@ -24,6 +18,20 @@
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+    <div id="primary" class="site-content">
+        <div id="content" role="main">
+            <?php
+                $args = array("post_type" => "page", "order" => "ASC", "orderby" => "menu_order");
+                $the_query = new WP_Query($args);
+            ?>
+            <?php if(have_posts()):while($the_query->have_posts()):$the_query->the_post(); ?>
+            <?php get_template_part("content", "page"); ?>
+            <?php endwhile; endif; ?>
+        </div><!-- #content -->
+    </div><!-- #primary -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
   
 </body>
 </html>
