@@ -35,20 +35,20 @@ h2 {
   
 html,
 body {
-background-color: steelblue;
+background-color: #263318;
+}
+#footer {
+position: relative;
+}
+#content {
+position: relative;
 }
 
 .parallax {
 -webkit-perspective: 100px;
         perspective: 100px;
 height: 100vh;
-overflow-x: hidden;
-overflow-y: auto;
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
+position: relative;
 }
 
 img{

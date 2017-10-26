@@ -1,13 +1,17 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-    <title>Leonis Partners</title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-</head>
-<body>
-<div id="wrapper">
-<div id="header">
-<img style="height: 50px;position: relative;top: 50px;display: block;margin: 0 auto;width: auto;" src="<?php echo get_bloginfo('template_url') ?>/images/white_logo_text_small-1.png"/>
-<h1>This is the header..</h1>
-</div>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Leonis Partners</title>
+        <!-- TODO fill that out -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    </head>
+	 
+    <body>
+		
