@@ -77,6 +77,12 @@ header a {
         background: transparent;
         text-shadow: none !important;
 }
+header > img {
+        height: 100%;
+        width: auto;
+        position: relative;
+        padding: 15px;
+}
 
 header nav {
         display: block;
@@ -259,7 +265,7 @@ border-radius: 6px;
 margin: auto -4px;
 left: calc(50% + 1px);
 top: calc(50% - 3px);
-background: #333E48;
+background: white;
 transform-origin: 50% 50%;
 transition: all 0.25s ease 0ms; }
 .hamburger .icon-bar::after, .hamburger .icon-bar::before,
@@ -316,6 +322,12 @@ transform: scale(0, 0) rotate(0) translate(0, -8px); }
 .cheeseburger {
 position: absolute; }
 
+@media(max-width: 1099px) {
+        header nav a {
+                font-size: 1.5rem!important;
+        }
+}
+
 /*	-------------------------------------
 	:: Nav
 	:: TODO: clean this up (maybe)
@@ -330,6 +342,7 @@ header {
         font-family: "Pathway Gothic One", sans-serif;
         text-transform: uppercase;
         transition: all 150ms ease 0ms; 
+        background: rgba(38, 52, 24, 0.67);
 }
 .zoom-overlay-open header {
         transform: translateY(-100px); }
@@ -384,7 +397,7 @@ header .logo {
         width: 200px; } }
 header .hamburger {
         position: absolute;
-        right: -4vw;
+        /*right: -4vw;*/
         z-index: 9; }
 header nav {
         display: block;
@@ -488,7 +501,7 @@ header.nav-up:not(.article_complete) {
         display: block;
         position: absolute;
         top: 0;
-        right: 5px;
+        right: 25px;
         width: auto;
         background: transparent;
         height: 100%;
@@ -519,7 +532,7 @@ header.nav-up:not(.article_complete) {
         header nav a {
         height: 100%;
         padding: 20px 8px;
-        color: #333E48;
+        color: white;
         opacity: 1;
         padding: 1em 0.6em;
         font-size: 2.1rem;

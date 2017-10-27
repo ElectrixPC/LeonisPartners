@@ -9,5 +9,15 @@ function leonis_setup() {
 
     // Register Custom Navigation Walker
     require_once 'wp-bootstrap-navwalker.php';
+
+    
 }
 add_action( 'after_setup_theme', 'leonis_setup' );
+
+function leonis_all_scriptsandstyles() {
+    //Load JS and CSS files in here
+      wp_register_script ('navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ),'1',true);
+      wp_enqueue_script('navigation');
+    
+    }
+    add_action( 'wp_enqueue_scripts', 'leonis_all_scriptsandstyles' );

@@ -11,8 +11,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+        <?php wp_head(); ?>
     </head>
     <header>
+    <img src="<?php echo get_bloginfo('template_url') ?>/images/white_logo_text_small-1.png"/>
+    <button type="button" class="hamburger caf" onclick="open_nav(this)">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
         <?php wp_nav_menu( 
             array(
                 'theme_location' => 'top',
