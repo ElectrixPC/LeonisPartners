@@ -24,9 +24,12 @@
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <?php the_title(); ?>
-            <?php the_content(); ?>
-
+            <div class="inline_page">
+                <div id="page_title">
+                    <h1><?php the_title(); ?><h1>
+                </div>
+                <?php the_content(); ?>
+            </div>
             <?php endwhile; endif; ?>
         </div><!-- #content -->
     </div><!-- #primary -->

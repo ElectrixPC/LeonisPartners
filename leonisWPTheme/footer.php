@@ -1,5 +1,5 @@
 <div id="footer">
-<h1>FOOTER</h1>
+    <h3>2017 © Copyright Leonis Partners. Securities offered through Leonis Securities, LLC.</h3>
 </div>
 </div>
 </body>

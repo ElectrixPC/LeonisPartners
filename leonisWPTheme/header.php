@@ -11,6 +11,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+
+        <?php wp_nav_menu( 
+            array(
+		        'theme_location' => 'top',
+                'container_class'=> 'top-menu',
+                ) ); ?>
+
     </head>
 	 
     <body>
