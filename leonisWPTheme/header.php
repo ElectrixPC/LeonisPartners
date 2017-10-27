@@ -11,14 +11,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-
+    </head>
+    <header>
         <?php wp_nav_menu( 
             array(
-		        'theme_location' => 'top',
-                'container_class'=> 'top-menu',
+                'theme_location' => 'top',
+                'container' => 'nav',
+                'container_class'=> 'collapse navbar-collapse',
+                'menu_class' => 'nav navbar-nav',
+                'menu_id' => 'menu-primary-navigation',
                 ) ); ?>
 
-    </head>
+    </header>
 	 
     <body>
 		
