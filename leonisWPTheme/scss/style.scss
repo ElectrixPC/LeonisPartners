@@ -6,7 +6,7 @@
 
 html,
 body{
-  background-color: #FEDCC8;
+  background-color: white;
 }
 
 .parallax {
@@ -16,9 +16,10 @@ body{
   overflow-y: auto;
   position: absolute;
   top: 0;
+  left: 50%;
   right: 0;
   bottom: 0;
-  left: 0;
+  margin-left: -1500px;
 }
 
 .parallax__layer{
@@ -29,7 +30,6 @@ body{
   left: 0;
   
   img{
-    width: 100%;
     display: block;
     position: absolute;
     bottom: 0;
@@ -37,17 +37,17 @@ body{
 }
 
 .parallax__cover{
-  background:#faa436;
+  background: #2D112B;
   display: block;
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   height: 2000px;
-  z-index: 10;
+  z-index: 2;
 }
 
-$parallax__layers: 2;
+$parallax__layers: 5;
 
 @for $i from 0 through $parallax__layers {
   $x: ($parallax__layers - $i) / 2;

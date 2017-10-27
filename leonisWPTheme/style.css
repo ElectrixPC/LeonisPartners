@@ -185,9 +185,16 @@ background-color: #263318;
 
 .parallax {
 -webkit-perspective: 100px;
-        perspective: 100px;
+perspective: 100px;
 height: 100vh;
-position: relative;
+overflow-x: hidden;
+overflow-y: auto;
+position: absolute;
+top: 0;
+left: 50%;
+right: 0;
+bottom: 0;
+margin-left: -1500px;
 }
 
 img{
@@ -200,8 +207,7 @@ top: 0;
 right: 0;
 bottom: 0;
 left: 0;
-width: 70%;
-margin: 0 auto;
+
 }
 .parallax__layer img {
 display: block;
@@ -213,7 +219,7 @@ bottom: 0;
 background: #cecece;
 display: block;
 position: absolute;
-top: 85%;
+top: 100%;
 left: 0;
 right: 0;
 height: 100%;
@@ -535,7 +541,7 @@ header.nav-up:not(.article_complete) {
         color: white;
         opacity: 1;
         padding: 1em 0.6em;
-        font-size: 2.1rem;
+        font-size: 1.1rem;
         font-weight: 500;
         display: inline-flex;
         align-items: center;

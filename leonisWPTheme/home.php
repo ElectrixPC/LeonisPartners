@@ -5,14 +5,24 @@
 <body>
   <div class="parallax">
     <div class="parallax__layer parallax__layer__0">
-        <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-back.svg"/>
+        <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-5.svg"/>
     </div>
     <div class="parallax__layer parallax__layer__1">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-middle.svg"/>
+            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-4.svg"/>
     </div>
     <div class="parallax__layer parallax__layer__2">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-front.svg"/>
+            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-3.svg"/>
     </div>
+    <div class="parallax__layer parallax__layer__3">
+        <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-2.svg"/>
+    </div>
+    <div class="parallax__layer parallax__layer__4">
+            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-1.svg"/>
+    </div>
+    <div class="parallax__layer parallax__layer__5">
+            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-0.svg"/>
+    </div>
+
 
     <div class="parallax__cover"></div>
 </div>
