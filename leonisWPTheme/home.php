@@ -24,10 +24,7 @@
     </div>
 
 
-    <div class="parallax__cover"></div>
-</div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+    <div class="parallax__cover">
     <div id="primary" class="site-content">
         <div id="content" role="main">
             <?php query_posts('post_type=page'); ?>
@@ -43,9 +40,15 @@
             <?php endwhile; endif; ?>
         </div><!-- #content -->
     </div><!-- #primary -->
+        <?php get_sidebar(); ?>
+        <?php get_footer(); ?>
+    </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+    
+
+
 
 </body>
 </html>

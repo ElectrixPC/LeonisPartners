@@ -16,10 +16,10 @@ body{
   overflow-y: auto;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   right: 0;
   bottom: 0;
-  margin-left: -1500px;
+  width: 100%;
 }
 
 .parallax__layer{
@@ -37,7 +37,7 @@ body{
 }
 
 .parallax__cover{
-  background: #2D112B;
+  background: white;
   display: block;
   position: absolute;
   top: 100%;
