@@ -254,7 +254,19 @@ z-index: 10;
 -webkit-transform: translateZ(0px) scale(1);
         transform: translateZ(0px) scale(1);
 }
-      
+.mobile_img {
+        display: none!important;
+}
+
+@media screen and (orientation: portrait) {
+        .parallax__layer > img {
+                display: none;
+        }
+        .parallax__layer > .mobile_img {
+                display: block!important;
+        }
+
+}
 
 /*	-------------------------------------
 	:: Hamburger Menu
