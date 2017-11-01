@@ -41,7 +41,9 @@
                 <div id="page_title">
                     <h1><?php the_title(); ?><h1>
                 </div>
-                <?php the_content(); ?>
+                <div id="page_content">
+                        <?php the_content(); ?>
+                </div>
             </div>
             <?php endwhile; endif; ?>
         </div><!-- #content -->

@@ -268,10 +268,23 @@ z-index: 10!important;
 
 /* ---------- STANDARD PAGES (Main Screen) ------------ */ 
 
+#primary {
+        position: relative;
+        top: -22px;
+}
+
 .inline_page {
         position: relative;
         z-index: 10;
         text-align: center;
+}
+
+#page_title {
+        padding-top: 50px;
+}
+
+#page_content {
+        padding: 30px;
 }
 
 #content {
