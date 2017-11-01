@@ -37,7 +37,7 @@
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <div class="inline_page" id=<?php the_ID(); ?>>
+            <div class="inline_page" id="page_<?php the_ID(); ?>">
                 <div id="page_title">
                     <h1><?php the_title(); ?><h1>
                 </div>
