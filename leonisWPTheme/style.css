@@ -11,10 +11,8 @@ Text Domain: leonisWPTheme
 This theme is private, and if you have a copy, you shouldn't!
 */
 
-body {
-        background-color: antiquewhite;
-        margin: 0;
-}
+
+/* ------------ FONTS ---------------- */
 
 h1 {
         font-family: 'Open Sans Condensed', sans-serif;
@@ -38,7 +36,7 @@ p {
         font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* Links */
+/* ------------ LINKS --------------- */
 a {
         position: relative;
         text-decoration: none;
@@ -60,9 +58,8 @@ a {
           border: none; }
       
 
-.inline_page {
-        text-align: center;
-}
+
+/* ------------ HEADER & FOOTER ------------ */
 
 header {
         width: 100%;
@@ -179,9 +176,8 @@ background-color: white;
 #footer > h3 { 
         margin-bottom: 0px;
 }
-#content {
-        position: relative;
-}
+
+/* ------------- PARALLAX -------------- */
 
 .parallax {
 -webkit-perspective: 100px;
@@ -196,7 +192,7 @@ right: 0;
 bottom: 0;
 }
 
-img{
+.parallax > img {
 width: 100%;
 }
 
@@ -270,9 +266,22 @@ z-index: 10!important;
 
 }
 
-/*	-------------------------------------
-	:: Hamburger Menu
-	---------------------------------- */
+/* ---------- STANDARD PAGES (Main Screen) ------------ */ 
+
+.inline_page {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+}
+
+#content {
+        position: relative;
+        z-index: 9;
+}
+
+
+/* -------- NAV - Hamburger Menu ------------------- */
+
 .hamburger,
 .cheeseburger {
 height: 100%;
@@ -362,10 +371,7 @@ position: absolute; }
         }
 }
 
-/*	-------------------------------------
-	:: Nav
-	:: TODO: clean this up (maybe)
-	---------------------------------- */
+/* ----------- NAV ---------------- */
 header {
         width: 100%;
         position: fixed;
@@ -433,6 +439,10 @@ header .hamburger {
         position: absolute;
         /*right: -4vw;*/
         z-index: 9; }
+
+nav.navbar-nav.shrink {
+        min-height: 35px;
+              }
 header nav {
         display: block;
         position: fixed;

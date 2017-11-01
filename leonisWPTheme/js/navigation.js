@@ -1,3 +1,5 @@
+//var j = jQuery.noConflict();
+
 open_nav = function(el) {
     if (!$(el).hasClass('active')) {
         $('body, html').addClass('nav-open');
@@ -7,3 +9,9 @@ open_nav = function(el) {
         $(el).removeClass('active');
     }
 };
+
+//jQuery(document).ready(function(j) {
+//    j('div#page').scroll(function() {
+//        j('header').addClass('shrink');
+//    });     
+//    });
