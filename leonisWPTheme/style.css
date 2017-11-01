@@ -172,6 +172,7 @@ background-color: white;
         text-align: center;
         position: relative;
         padding: 50px;
+        background-color: #263318;
 }
 #footer > h3 { 
         margin-bottom: 0px;
@@ -292,6 +293,11 @@ z-index: 10!important;
         z-index: 9;
 }
 
+/* ------------ SPECIFIC PAGES (Main screen) ------------ */
+
+#page_38 {
+        background-color: #263318;
+}
 
 /* -------- NAV - Hamburger Menu ------------------- */
 
