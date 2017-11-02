@@ -170,10 +170,13 @@ background-color: white;
 }
 #footer {
         text-align: center;
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
         padding: 50px;
         background-color: #263318;
         color: white;
+    }
 }
 #footer > h3 { 
         margin-bottom: 0px;
