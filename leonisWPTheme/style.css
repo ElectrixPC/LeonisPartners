@@ -278,6 +278,7 @@ z-index: 10!important;
         position: relative;
         z-index: 10;
         text-align: center;
+        overflow: auto;
 }
 
 #page_title {
@@ -299,6 +300,9 @@ z-index: 10!important;
         background-color: #263318;
         color: white;
 }
+
+#map {float: left;height: 400px;width: 40%;}
+#map_nyc {float: right;height: 400px;width: 40%;}
 
 /* -------- NAV - Hamburger Menu ------------------- */
 
