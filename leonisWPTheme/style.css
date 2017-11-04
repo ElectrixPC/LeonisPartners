@@ -300,9 +300,31 @@ z-index: 10!important;
         background-color: #263318;
         color: white;
 }
+#map_overlay {
+        position: absolute;
+        width: 49%;
+        float: left;
+        height: 400px;
+}
 
-#map {float: left;height: 400px;width: 40%;}
-#map_nyc {float: right;height: 400px;width: 40%;}
+#map_overlay > h2, h1 {
+        z-index: 99;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(38, 51, 24, 0.8) !important;
+        padding: 25px;
+        margin: 0;
+        color: white;
+}
+
+#map {
+        height: 100%;
+        width: 100%;
+}
+#map_nyc {
+        height: 100%;
+        width: 100%;
+}
 
 /* -------- NAV - Hamburger Menu ------------------- */
 

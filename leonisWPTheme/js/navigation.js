@@ -105,7 +105,7 @@ var my_style = [
                 "lightness": 100
             },
             {
-                "visibility": "off"
+                "visibility": "on"
             }
         ]
     },
@@ -236,6 +236,8 @@ var my_style = [
         ]
     }
 ]
+
+
 //jQuery(document).ready(function(j) {
 //    j('div#page').scroll(function() {
 //        j('header').addClass('shrink');
