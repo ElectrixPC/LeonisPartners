@@ -300,6 +300,10 @@ z-index: 10!important;
         background-color: #263318;
         color: white;
 }
+#page_35 {
+        background-color: #263318;
+        color: white;
+}
 #map_overlay {
         width: 49%;
         height: 400px;
@@ -328,7 +332,7 @@ z-index: 10!important;
 .transaction {
         height: 300px;
         width: 200px;
-        background: lightgray;
+        background: darkgray;
         overflow: hidden;
         transition: width 0.5s ease-in-out;
         display: inline-block;
@@ -344,8 +348,8 @@ z-index: 10!important;
 
 }
 .trans-img1 {
-        position: absolute;
-        padding: 25px;
+        position: relative;
+        padding: 25px 25px 0px 25px;
 }
 .trans-img1 > img {
         height: auto;
@@ -356,8 +360,8 @@ z-index: 10!important;
         transition: filter 0.3s ease-in-out;
 }
 .trans-img2 {
-        position: absolute;
-        padding: 25px;
+        position: relative;
+        padding: 0px 25px 25px 25px;
 }
 .trans-img2 > img {
         height: auto;
@@ -369,7 +373,9 @@ z-index: 10!important;
 }
 
 .trans-type { 
-        padding-top: 140px;
+        position: relative;
+        top: 0%;
+        color: #263318;
 }
 .trans-expand {
         background: lightgray;
