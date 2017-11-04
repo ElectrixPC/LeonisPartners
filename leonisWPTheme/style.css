@@ -323,6 +323,54 @@ z-index: 10!important;
         height: 100%;
         width: 100%;
 }
+/* ------------- TRANSACTIONS UI -------------- */
+
+.transaction {
+        height: 300px;
+        width: 200px;
+        background: lightgray;
+        overflow: hidden;
+        transition: width 0.5s ease-in-out;
+        border-radius: 5px;
+}
+.trans-title {
+        display: none;
+}
+.trans-firm1 {
+        display: none;
+}
+.trans-firm2 {
+        display: none;
+}
+.trans-img1 {
+        padding: 10px;
+}
+.trans-img1 > img {
+        height: 100px;
+        width: auto;
+        max-width: 150px;
+        filter: grayscale(100%);
+}
+.trans-img2 {
+        padding: 10px;
+}
+.trans-img2 > img {
+        height: 100px;
+        width: auto;
+        max-width: 150px;
+        filter: grayscale(100%);
+}
+
+.transaction:hover {
+        width: 800px;
+}
+
+.transaction:hover .trans-img2 > img {
+        filter: none;
+}
+.transaction:hover .trans-img1 > img {
+        filter: none;
+}
 
 /* -------- NAV - Hamburger Menu ------------------- */
 

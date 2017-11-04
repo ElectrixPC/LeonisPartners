@@ -34,14 +34,12 @@ function transactions_init() {
         'menu_icon' => 'dashicons-chart-line',
         'supports' => array(
             'title',
-            'thumbnail',
             'page-attributes',)
         );
     register_post_type( 'transactions', $args );
 }
 add_action( 'init', 'transactions_init' );
 
-add_theme_support( 'post-thumbnails' );
 
 // [transactions] - main function for the transactions UI, points to the shortcode [transactions]
 function transactions_output($atts) {
@@ -60,8 +58,8 @@ function transactions_output($atts) {
           $press     = '<div class="trans-press"><p>'      . get_post_meta(get_the_ID(), "wpcf-transaction-press-release", true) . '</p></div>';
           $firm1_img = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
           $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
-          
-          $output = '<div class="transaction">' . $title . $firm1_img . $firm2_img . $firm1 . $type . $firm2 . $size . $press . '</div>';
+
+          $output = '<div class="transaction">' . $title . $firm1_img . $type . $firm2_img . $firm1 . $firm2 . $size . $press . '</div>';
     endwhile;
     
     return $output; 
