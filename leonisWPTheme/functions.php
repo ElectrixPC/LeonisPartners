@@ -6,11 +6,6 @@ function leonis_setup() {
 		'top'    => __( 'Top Menu', 'Leonis Partners' ),
 		'social' => __( 'Social Links Menu', 'Leonis Partners' ),
     ) );
-
-    // Register Custom Navigation Walker
-    require_once 'wp-bootstrap-navwalker.php';
-
-    
 }
 add_action( 'after_setup_theme', 'leonis_setup' );
 
@@ -25,3 +20,27 @@ function leonis_all_scriptsandstyles() {
     
     }
     add_action( 'wp_enqueue_scripts', 'leonis_all_scriptsandstyles' );
+
+// Creates Movie Reviews Custom Post Type
+function transactions_init() {
+    $args = array(
+      'label' => 'Transactions',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'transactions'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-chart-line',
+        'supports' => array(
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes',)
+        );
+    register_post_type( 'transactions', $args );
+}
+add_action( 'init', 'transactions_init' );
+
+add_theme_support( 'post-thumbnails' );
