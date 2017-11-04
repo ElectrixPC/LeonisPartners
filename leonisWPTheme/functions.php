@@ -59,7 +59,7 @@ function transactions_output($atts) {
           $firm1_img = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
           $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
 
-          $output = '<div class="transaction">' . $title . $firm1_img . $type . $firm2_img . $firm1 . $firm2 . $size . $press . '</div>';
+          $output .= '<div class="transaction">' . '<div class="trans-expand">' . $title . $firm1 . $firm2 . $size . $press . '</div>' . $firm1_img . $type . $firm2_img . '</div>';
     endwhile;
     
     return $output; 

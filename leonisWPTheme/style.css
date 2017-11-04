@@ -331,38 +331,65 @@ z-index: 10!important;
         background: lightgray;
         overflow: hidden;
         transition: width 0.5s ease-in-out;
-        border-radius: 5px;
+        display: inline-block;
+        margin: 5px;
 }
 .trans-title {
-        display: none;
+
 }
 .trans-firm1 {
-        display: none;
+
 }
 .trans-firm2 {
-        display: none;
+
 }
 .trans-img1 {
-        padding: 10px;
+        position: absolute;
+        padding: 25px;
 }
 .trans-img1 > img {
-        height: 100px;
+        height: auto;
         width: auto;
         max-width: 150px;
+        max-height: 100px;
         filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
 }
 .trans-img2 {
-        padding: 10px;
+        position: absolute;
+        padding: 25px;
 }
 .trans-img2 > img {
-        height: 100px;
+        height: auto;
         width: auto;
         max-width: 150px;
+        max-height: 100px;
         filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
 }
 
-.transaction:hover {
-        width: 800px;
+.trans-type { 
+        padding-top: 140px;
+}
+.trans-expand {
+        background: lightgray;
+        position: absolute;
+        width: 600px;
+        height: 300px;
+        visibility: hidden;
+        margin-left: 200px;
+        z-index: 99;
+        transition: visibility 0.3s ease-in-out;
+}
+.trans-size {
+        
+}
+.trans-press {
+        
+}
+
+.transaction:hover > .trans-expand {
+        visibility: visible;
 }
 
 .transaction:hover .trans-img2 > img {
