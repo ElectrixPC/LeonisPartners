@@ -33,7 +33,7 @@ function transactions_init() {
         'query_var' => true,
         'menu_icon' => 'dashicons-chart-line',
         'supports' => array(
-            'comments',
+            'title',
             'revisions',
             'thumbnail',
             'author',
