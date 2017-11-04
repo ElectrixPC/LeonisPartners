@@ -21,7 +21,7 @@ function leonis_all_scriptsandstyles() {
     }
     add_action( 'wp_enqueue_scripts', 'leonis_all_scriptsandstyles' );
 
-// Creates Movie Reviews Custom Post Type
+// Creates the transactions section in the wp editor
 function transactions_init() {
     $args = array(
       'label' => 'Transactions',
@@ -43,15 +43,25 @@ add_action( 'init', 'transactions_init' );
 
 add_theme_support( 'post-thumbnails' );
 
-// [transactions]
+// [transactions] - main function for the transactions UI, points to the shortcode [transactions]
 function transactions_output($atts) {
     $args = array('post_type' => 'transactions'); // these arguments are telling WP_Query to only look for the post types called transactions
     $query = new WP_Query( $args );
     $output = "";
-    // TODO - Expand this function to have divs ect for css to latch on to 
+    // loop through each transaction
     while ( $query->have_posts() ) : $query->the_post();
-        $output .= '<h2>' . get_the_title() . '</h2>';
-        //<img src="<?php the_post_thumbnail(); ">
+          // pull all of the data out of the meta in each transaction 
+          // format it
+          $title     = '<div class="trans-title"><h2>'     . get_post_meta(get_the_ID(), "wpcf-transaction-title",         true) . '</h2></div>';
+          $firm1     = '<div class="trans-firm1"><h2>'     . get_post_meta(get_the_ID(), "wpcf-company-1-name",            true) . '</h2></div>';
+          $firm2     = '<div class="trans-firm2"><h2>'     . get_post_meta(get_the_ID(), "wpcf-company-2-name",            true) . '</h2></div>';
+          $type      = '<div class="trans-type"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-type",          true) . '</p></div>';
+          $size      = '<div class="trans-size"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-size",          true) . '</p></div>'; 
+          $press     = '<div class="trans-press"><p>'      . get_post_meta(get_the_ID(), "wpcf-transaction-press-release", true) . '</p></div>';
+          $firm1_img = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
+          $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
+          
+          $output = '<div class="transaction">' . $title . $firm1_img . $firm2_img . $firm1 . $type . $firm2 . $size . $press . '</div>';
     endwhile;
     
     return $output; 
