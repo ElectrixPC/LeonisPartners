@@ -301,16 +301,14 @@ z-index: 10!important;
         color: white;
 }
 #map_overlay {
-        position: absolute;
         width: 49%;
-        float: left;
         height: 400px;
 }
 
-#map_overlay > h2, h1 {
+#map_overlay > h2{
         z-index: 99;
         position: absolute;
-        width: 100%;
+        width: 47%;
         background-color: rgba(38, 51, 24, 0.8) !important;
         padding: 25px;
         margin: 0;
