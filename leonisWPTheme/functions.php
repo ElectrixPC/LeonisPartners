@@ -44,15 +44,16 @@ add_action( 'init', 'transactions_init' );
 add_theme_support( 'post-thumbnails' );
 
 // [transactions]
-function transactions_output() {
-    $args = array(
-        'post_type' => 'transactions'
-    ); // these arguments are telling WP_Query to only look for the post types called transactions
+function transactions_output($atts) {
+    $args = array('post_type' => 'transactions'); // these arguments are telling WP_Query to only look for the post types called transactions
     $query = new WP_Query( $args );
-
-    while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-        <h2><?php the_title(); ?></h2>
-        the_post_thumbnail();
+    $output = "";
+    // TODO - Expand this function to have divs ect for css to latch on to 
+    while ( $query->have_posts() ) : $query->the_post();
+        $output .= '<h2>' . get_the_title() . '</h2>';
+        //<img src="<?php the_post_thumbnail(); ">
     endwhile;
+    
+    return $output; 
 }
-add_shortcode( 'transactions', 'transactions_output()');
+add_shortcode( 'transactions', 'transactions_output');
