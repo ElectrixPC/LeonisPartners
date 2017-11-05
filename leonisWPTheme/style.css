@@ -399,9 +399,13 @@ z-index: 10!important;
 .trans-size {
         display: none;   
 }
+.trans-date {
+        display: none;
+}
 .trans-press {
         display: none;
 }
+
 /* ---------- TRANSACTION ON HOVER ----------------- */
 .transaction:hover > .trans-expand {
         z-index: 999;
@@ -417,6 +421,9 @@ z-index: 10!important;
         display: block;
 }
 .transaction:hover .trans-size {
+        display: block;
+}
+.transaction:hover .trans-date {
         display: block;
 }
 .transaction:hover .trans-press {

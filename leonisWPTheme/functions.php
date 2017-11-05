@@ -56,10 +56,11 @@ function transactions_output($atts) {
           $type      = '<div class="trans-type"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-type",          true) . '</p></div>';
           $size      = '<div class="trans-size"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-size",          true) . '</p></div>'; 
           $press     = '<div class="trans-press"><p>'      . get_post_meta(get_the_ID(), "wpcf-transaction-press-release", true) . '</p></div>';
+          $date      = '<div class="trans-date"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-date",          true) . '</p></div>';
           $firm1_img = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
           $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
 
-          $output .= '<div class="transaction">' . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $press . '</div></div>';
+          $output .= '<div class="transaction">' . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $press . '</div></div>';
     endwhile;
     
     return $output; 
