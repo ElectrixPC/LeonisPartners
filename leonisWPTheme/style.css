@@ -300,9 +300,15 @@ z-index: 10!important;
         background-color: #263318;
         color: white;
 }
+#page_35 {
+        background-color: #263318;
+        color: white;
+        min-height: 800px;
+}
 #page_47 {
         background-color: #263318;
         color: white;
+        min-height: 800px;
 }
 #map_overlay {
         width: 49%;
@@ -382,11 +388,13 @@ z-index: 10!important;
 .trans-expand {
         background: lightgray;
         position: absolute;
-        z-index: 99;
-        height: 0px;
-        width: 0px;
-        transition: width 0.3s ease-in-out;
-        transition: height 0.3s ease-in-out;
+        z-index: 0;
+        height: 300px;
+        width: 200px;
+        border-radius: 5px;
+        border: 1px solid black;
+        transition: width 0.2s ease-in-out;
+        transition: height 0.2s ease-in-out;
 }
 .trans-size {
         display: none;   
@@ -394,15 +402,26 @@ z-index: 10!important;
 .trans-press {
         display: none;
 }
-
+/* ---------- TRANSACTION ON HOVER ----------------- */
 .transaction:hover > .trans-expand {
+        z-index: 999;
         width: 410px;
         height: 610px;
-        transition: width 0.3s ease-in-out;
-        transition: height 0.3s ease-in-out;
+        transition: width 0.2s ease-in-out;
+        transition: height 0.2s ease-in-out;
 }
-/* TODO - display: none for the secondary images, and then display: block on hover */
-
+.transaction:hover .trans-title {
+        display: block;
+}
+.transaction:hover .trans-type {
+        display: block;
+}
+.transaction:hover .trans-size {
+        display: block;
+}
+.transaction:hover .trans-press {
+        display: block;
+}
 .transaction:hover .trans-img2 > img {
         filter: none;
 }
