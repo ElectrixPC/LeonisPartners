@@ -43,7 +43,8 @@ add_action( 'init', 'transactions_init' );
 
 // [transactions] - main function for the transactions UI, points to the shortcode [transactions]
 function transactions_output($atts) {
-    $args = array('post_type' => 'transactions'); // these arguments are telling WP_Query to only look for the post types called transactions
+    $args = array('post_type' => 'transactions',
+                  'posts_per_page' => $atts['posts']); // these arguments are telling WP_Query to only look for the post types called transactions
     $query = new WP_Query( $args );
     $output = "";
     // loop through each transaction
