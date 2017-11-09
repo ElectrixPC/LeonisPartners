@@ -345,6 +345,7 @@ z-index: 10!important;
         margin: 5px;
         border-radius: 3px;
         border: 1px solid black;
+        color: black;
 }
 .trans-title {
         display: none;
@@ -413,6 +414,7 @@ z-index: 10!important;
         height: 610px;
         transition: width 0.2s ease-in-out;
         transition: height 0.2s ease-in-out;
+        padding: 25px;
 }
 .transaction:hover .trans-title {
         display: block;
@@ -422,17 +424,26 @@ z-index: 10!important;
 }
 .transaction:hover .trans-size {
         display: block;
+        text-align: left;
 }
 .transaction:hover .trans-date {
         display: block;
+        text-align: left;
 }
 .transaction:hover .trans-press {
         display: block;
+        text-align: left;
 }
 .transaction:hover .trans-img2 > img {
+        transition: max-width 0.3s ease-in-out;
+        max-height: 150px;
+        max-width: 300px;
         filter: none;
 }
 .transaction:hover .trans-img1 > img {
+        transition: max-width 0.3s ease-in-out;
+        max-height: 150px;
+        max-width: 300px;
         filter: none;
 }
 

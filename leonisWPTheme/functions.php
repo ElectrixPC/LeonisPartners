@@ -54,9 +54,9 @@ function transactions_output($atts) {
           $firm1     = '<div class="trans-firm1"><h2>'     . get_post_meta(get_the_ID(), "wpcf-company-1-name",            true) . '</h2></div>';
           $firm2     = '<div class="trans-firm2"><h2>'     . get_post_meta(get_the_ID(), "wpcf-company-2-name",            true) . '</h2></div>';
           $type      = '<div class="trans-type"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-type",          true) . '</p></div>';
-          $size      = '<div class="trans-size"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-size",          true) . '</p></div>'; 
-          $press     = '<div class="trans-press"><p>'      . get_post_meta(get_the_ID(), "wpcf-transaction-press-release", true) . '</p></div>';
-          $date      = '<div class="trans-date"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-date",          true) . '</p></div>';
+          $size      = '<div class="trans-size"><p><b>Transaction Size:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-size",          true) . '</p></div>'; 
+          $press     = '<div class="trans-press"><p><b>Press Release:</b> '   . get_post_meta(get_the_ID(), "wpcf-transaction-press-release", true) . '</p></div>';
+          $date      = '<div class="trans-date"><p><b>Date:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-date",          true) . '</p></div>';
           $firm1_img = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
           $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
 
