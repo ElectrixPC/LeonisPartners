@@ -349,6 +349,7 @@ z-index: 10!important;
                 width: 100%;
                 height: 400px;
         }
+}
 
 /* ------------- TRANSACTIONS UI -------------- */
 
@@ -793,4 +794,5 @@ header.nav-up:not(.article_complete) {
         fill: #DAA25A; } }
 @media (min-width: 1401px) {
         header nav a {
-        padding: 1em 0.8em; } }
+        padding: 1em 0.8em; } 
+}
