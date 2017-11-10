@@ -419,6 +419,7 @@ z-index: 10!important;
         transition: width 0.2s ease-in-out;
         transition: height 0.2s ease-in-out;
         padding: 25px;
+        background: #f7f7f7;
 }
 .transaction:hover .trans-title {
         display: block;
