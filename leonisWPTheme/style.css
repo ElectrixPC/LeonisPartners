@@ -65,6 +65,7 @@ header {
         width: 100%;
         position: fixed;
         top: 0;
+        left: 0;
         height: 50px;
         z-index: 10;
         min-width: 320px;
@@ -561,8 +562,7 @@ header {
         height: 50px;
         z-index: 10;
         min-width: 320px;
-        font-family: "Pathway Gothic One", sans-serif;
-        text-transform: uppercase;
+        font-family: 'Open Sans Condensed', sans-serif;
         transition: all 150ms ease 0ms; 
         background: rgba(38, 51, 24, 0.8)  !important;
 }
@@ -716,7 +716,7 @@ header.nav-up:not(.article_complete) {
         transform: translateY(-78px); } }
 @media (min-width: 1100px) {
         header {
-        height: 95px;
+        height: 60px;
         transition: all 200ms ease 0ms; }
         header .hamburger {
         display: none; }
