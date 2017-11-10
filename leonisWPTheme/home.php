@@ -30,7 +30,7 @@
     </div>
 
 
-    <div class="parallax__cover">
+    <div id="home" class="parallax__cover">
     <div id="primary" class="site-content">
         <div id="content" role="main">
             <?php query_posts('post_type=page'); ?>
