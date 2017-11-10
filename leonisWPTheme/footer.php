@@ -3,5 +3,8 @@
 </div>
 </div>
 <?php wp_footer(); ?>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <body>
-  <div class="parallax">
+  <div id="home" class="parallax">
     <div class="parallax__layer parallax__layer__0">
             <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-5.svg"/>
             <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-5-large.svg"/>
@@ -30,7 +30,7 @@
     </div>
 
 
-    <div id="home" class="parallax__cover">
+    <div class="parallax__cover">
     <div id="primary" class="site-content">
         <div id="content" role="main">
             <?php query_posts('post_type=page'); ?>
