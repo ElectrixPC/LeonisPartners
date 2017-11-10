@@ -431,7 +431,7 @@ z-index: 10!important;
         transition: width 0.2s ease-in-out;
         transition: height 0.2s ease-in-out;
         padding: 25px;
-        background: #f7f7f7;
+        background: white;
 }
 .transaction:hover .trans-title {
         display: block;
@@ -478,6 +478,12 @@ z-index: 10!important;
                 left: 5%;
                 height: 50%;
                 width: 90%;
+        }
+        .transaction:hover .trans-img2 > img {
+                max-width: 200px;
+        }
+        .transaction:hover .trans-img1 > img {
+                max-width: 200px;
         }
 }
         
