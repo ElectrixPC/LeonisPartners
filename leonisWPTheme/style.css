@@ -301,12 +301,12 @@ z-index: 10!important;
         color: white;
 }
 /* Contact us */
-#page_11 {
+        background-color: white;
         height: fit-content;
         width: 100%;
 }
 /* Transactions Page */
-#page_35 {
+#page_35, #page_47 {
         background-color: #263318;
         color: white;
         min-height: 800px;
@@ -314,15 +314,6 @@ z-index: 10!important;
         padding-right: 200px;
         padding-bottom: 300px;
 }
-#page_47 {
-        background-color: #263318;
-        color: white;
-        min-height: 800px;
-        padding-left: 200px;
-        padding-right: 200px;
-        padding-bottom: 300px;
-}
-
 .map_container {
         position: relative;
         width: 50%;
@@ -341,9 +332,6 @@ z-index: 10!important;
         height: 600px;
         width: 100%;
 }
-
-
-
 #map_overlay {
         position: absolute;
         bottom: 0;
