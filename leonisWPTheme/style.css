@@ -300,6 +300,11 @@ z-index: 10!important;
         background-color: #263318;
         color: white;
 }
+/* Contact us */
+#page_11 {
+        height: fit-content;
+        width: 100%;
+}
 /* Transactions Page */
 #page_35 {
         background-color: #263318;
@@ -317,29 +322,38 @@ z-index: 10!important;
         padding-right: 200px;
         padding-bottom: 300px;
 }
+
+.map_container {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+        padding: 20px;
+}
+#map_container_1 {
+        float: left;
+}
+#map_container_2 {
+        float: right;
+}
+#map_atl, #map_nyc {
+        height: 600px;
+        width: 100%;
+}
+
+
+
 #map_overlay {
-        width: 49%;
-        height: 400px;
-}
-
-#map_overlay > h2{
-        z-index: 99;
         position: absolute;
-        width: 47%;
-        background-color: rgba(38, 51, 24, 0.8) !important;
-        padding: 25px;
-        margin: 0;
-        color: white;
+        bottom: 0;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(255,255,255,0.6);
+        right: 0;
+        left: 0;
 }
 
-#map {
-        height: 100%;
-        width: 100%;
-}
-#map_nyc {
-        height: 100%;
-        width: 100%;
-}
 /* ------------- TRANSACTIONS UI -------------- */
 
 .transaction {
@@ -388,6 +402,7 @@ z-index: 10!important;
 .trans-type { 
         position: relative;
         top: 0%;
+        padding: 10px;
         color: #263318;
 }
 .trans-expand {

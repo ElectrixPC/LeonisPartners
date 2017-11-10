@@ -14,24 +14,32 @@ function initMap() {
     var uluru = {lat: 33.774983, lng: -84.297189};
     var pos_nyc = {lat: 40.75437209999999, lng: -73.97618260000002};
     var map_nyc = new google.maps.Map(document.getElementById('map_nyc'), {
-      zoom: 17,
+      zoom: 12,
       center: pos_nyc,
       disableDefaultUI: true,
       styles: my_style
     });
     var marker_nyc = new google.maps.Marker({
       position: pos_nyc,
-      map: map_nyc
+      map: map_nyc,
+      icon: {
+        url: "wp-content/themes/leonisWPTheme/images/icons/marker-stroked-15.png",
+        scaledSize : new google.maps.Size(40, 40)
+      }
     });
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 18,
+    var map = new google.maps.Map(document.getElementById('map_atl'), {
+      zoom: 12,
       center: uluru,
       disableDefaultUI: true,
       styles: my_style
     });
     var marker = new google.maps.Marker({
       position: uluru,
-      map: map
+      map: map,
+      icon: {
+          url: "wp-content/themes/leonisWPTheme/images/icons/marker-stroked-15.png",
+          scaledSize : new google.maps.Size(40, 40)
+      }
     });
   }
 
