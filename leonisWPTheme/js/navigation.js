@@ -243,6 +243,12 @@ var my_style = [
     }
 ]
 
+$(document).ready(function(){
+    $(".button").click(function(){
+        $(".trans_hide").toggle();
+   });
+});
+
 
 //jQuery(document).ready(function(j) {
 //    j('div#page').scroll(function() {
