@@ -61,7 +61,7 @@ function transactions_output($atts) {
           $date      = '<div class="trans-date"><p><b>Date:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-date",          true) . '</p></div>';
           $firm1_img = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
           $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
-          if ($count>10) {
+          if ($count>$atts["posts"]) {
             // if there are more than 10 posts hide them
             $trans = '<div class="transaction trans_hide">';
           }
