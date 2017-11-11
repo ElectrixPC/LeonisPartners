@@ -245,7 +245,7 @@ var my_style = [
 
 $(document).ready(function(){
     $(".button").click(function(){
-        $(".trans_hide").toggle();
+        $(".trans_hide").css({"display":"inline-block"});
    });
 });
 
