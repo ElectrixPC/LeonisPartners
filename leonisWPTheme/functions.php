@@ -63,11 +63,11 @@ function transactions_output($atts) {
           $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
           if ($count>10) {
             // if there are more than 10 posts hide them
-            $trans = '<div class="transaction"  id="trans_hidden>';
+            $trans = '<div class="transaction"  id="trans_hide">';
           }
           else
           {
-            $trans = '<div class="transaction"';
+            $trans = '<div class="transaction">';
           }
           $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $press . '</div></div>';
           $count++;
