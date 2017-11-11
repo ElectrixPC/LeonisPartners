@@ -1,6 +1,7 @@
-<?php get_header(); ?>
+
 <body>
     <div id="primary" class="site-content">
+    <?php get_header(); ?>
         <div id="content" role="main">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="inline_page" id="page_<?php the_ID(); ?>">
@@ -16,8 +17,10 @@
         </div>
     </div>
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlrukNsqNpEe7hn_H0k9CF3uU9svq4UIs&callback=initMap" async defer></script>
 
 <body>
+
+<?php get_footer(); ?>

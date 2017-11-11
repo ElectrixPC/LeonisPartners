@@ -17,19 +17,19 @@ This theme is private, and if you have a copy, you shouldn't!
 h1 {
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 700;
-        font-size: 80;
+        font-size: 2em;
         text-align: center;
 }
 h2 {
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 300;
-        font-size: 60;
+        font-size: 1.5em;
         text-align: center;
 }
 h3 {
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 300;
-        font-size: 30;
+        font-size: 1.17em;
         text-align: center;
 }
 p {
@@ -168,6 +168,7 @@ header nav a {
 html,
 body {
 background-color: white;
+margin: 0;
 }
 #footer {
         text-align: center;
@@ -272,7 +273,6 @@ z-index: 10!important;
 
 #primary {
         position: relative;
-        top: -22px;
 }
 
 .inline_page {
