@@ -44,9 +44,10 @@ add_action( 'init', 'transactions_init' );
 // [transactions] - main function for the transactions UI, points to the shortcode [transactions]
 function transactions_output($atts) {
     $args = array('post_type' => 'transactions',
-                  'posts_per_page' => $atts['posts']); // these arguments are telling WP_Query to only look for the post types called transactions
+                  'posts_per_page' => 1000); // these arguments are telling WP_Query to only look for the post types called transactions
     $query = new WP_Query( $args );
     $output = "";
+    $count = 0; //set up counter variable
     // loop through each transaction
     while ( $query->have_posts() ) : $query->the_post();
           // pull all of the data out of the meta in each transaction 
@@ -60,8 +61,16 @@ function transactions_output($atts) {
           $date      = '<div class="trans-date"><p><b>Date:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-date",          true) . '</p></div>';
           $firm1_img = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
           $firm2_img = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
-
-          $output .= '<div class="transaction">' . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $press . '</div></div>';
+          if ($count>10) {
+            // if there are more than 10 posts hide them
+            $trans = '<div class="transaction"  id="trans_hidden>';
+          }
+          else
+          {
+            $trans = '<div class="transaction"';
+          }
+          $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $press . '</div></div>';
+          $count++;
     endwhile;
     
     return $output; 
