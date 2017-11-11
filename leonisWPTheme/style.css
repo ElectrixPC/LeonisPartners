@@ -447,7 +447,7 @@ z-index: 10!important;
         transition: width 0.2s ease-in-out;
         transition: height 0.2s ease-in-out;
 }
-.trans_hide {
+#trans_hide {
         display: none;
 }
 .trans-size {
