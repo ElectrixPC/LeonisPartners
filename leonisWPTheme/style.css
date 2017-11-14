@@ -253,7 +253,7 @@ z-index: 0;
 background: white;
 display: block;
 position: absolute;
-top: 100%;
+top: 99%; /* To fix the gap between the parallax and the background */
 left: 0;
 right: 0;
 height: 100%;
