@@ -464,7 +464,7 @@ z-index: 10!important;
 /* ---------- TRANSACTION ON HOVER ----------------- */
 .transaction:hover > .trans-expand {
         z-index: 999;
-        width: 410px;
+        width: 412px;
         height: 615px;
         transition: width 0.2s ease-in-out;
         transition: height 0.2s ease-in-out;
