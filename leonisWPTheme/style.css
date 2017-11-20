@@ -331,9 +331,17 @@ z-index: 10!important;
 
 /* ------------ SPECIFIC PAGES (Main screen) ------------ */
 
-#page_32, #page_188 {
+#page_188 {
         background-color: #263318;
         color: white;
+}
+#page_32 > h2 {
+        color: white;
+}
+#page_32 {
+        background-color: #263318;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: black;
 }
 /* Contact us */
 #page_2, #page_11, #page_24{
