@@ -57,13 +57,13 @@ $parallax__layers: 5;
 }
 
 
-
+/* The version of Bourbon used in this Pen was 4.* */
 @import "bourbon";
 
 
 //Edit these
-$farColor: beige;
-$nearColor: #263318;
+$farColor: #ffe4c7;
+$nearColor: darken(cyan,30%);
 $layer: 7; //make sure it is +1 the ammount of layer divs in the html
 $perspective: 1;
 
@@ -88,7 +88,7 @@ $perspective: 1;
   background-repeat: no-repeat;
 }
 
-.parallax_1 {
+.parallax {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -133,3 +133,35 @@ $perspective: 1;
   }
 
 } //loop over
+
+
+
+
+
+
+
+///Demo specific styling
+
+
+
+.content {
+  position:relative;
+  background-color:transparent;
+  font-family:"Arial";
+  letter-spacing:10px;
+  text-transform:uppercase;
+  line-height:40px;
+  z-index:10;
+  width:100%;
+  font-size:15px;
+  text-align:center;
+  color:white;
+  margin-top:1000px;
+  $zDepth: (1)/0.5;
+  transform: translateZ(#{-($zDepth) + px}) scale(#{1 + (-($zDepth) * -1) / $perspective});
+}
+ 
+.fill {
+  height:80%; //?
+}
+
