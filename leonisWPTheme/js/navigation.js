@@ -276,10 +276,13 @@ $('.transaction').on('mouseover', function(e) {
     // calculate how far it is to the end of this row, 
     // and select that element
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
+    var gapToOuter = ($('body').width() - windowWidth) /2;
+    var gapToContainer = (windowWidth - (boxesPerRow * 210)) /2;
+    var gap = gapToOuter + gapToContainer + 1; 
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
     // Set the style at the end of the row to go to the left
     if ((size > boxesPerRow) && (boxesPerRow > 3)) {
-        $endOfRow[0].children[0].style.right = "262px";
+        $endOfRow[0].children[0].style.right = String(gap + "px");
     }
     // get the minimum index for the tombstone to go up 
     var minUp = size - boxesPerRow;
