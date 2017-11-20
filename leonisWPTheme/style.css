@@ -331,12 +331,12 @@ z-index: 10!important;
 
 /* ------------ SPECIFIC PAGES (Main screen) ------------ */
 
-#page_38 {
+#page_32 {
         background-color: #263318;
         color: white;
 }
 /* Contact us */
-#page_188, #page_11, #page_24, #page_32 {
+#page_2, #page_11, #page_24, #page_32 {
         background-color: white;
         height: fit-content;
         width: 100%;
