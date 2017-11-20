@@ -278,7 +278,7 @@ $('.transaction').on('mouseover', function(e) {
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
     // Set the style at the end of the row to go to the left
-    if (size > boxesPerRow) {
+    if ((size > boxesPerRow) && (boxesPerRow > 3)) {
         $endOfRow[0].children[0].style.right = "262px";
     }
     // get the minimum index for the tombstone to go up 
