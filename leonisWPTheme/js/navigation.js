@@ -249,9 +249,24 @@ $(document).ready(function(){
    });
 });
 
+// Function for getting the last element in the row/last row
+$('.transaction').on('mouseover', function(e) {
+    // calculate how many boxes will be in a "row" 
+    var windowWidth = $('.trans_container').width();
+    var boxWidth = $('.transaction').outerWidth();
+    var boxesPerRow = ~~(windowWidth / boxWidth);
+  
+    console.log(windowWidth, boxWidth, boxesPerRow);
 
-//jQuery(document).ready(function(j) {
-//    j('div#page').scroll(function() {
-//        j('header').addClass('shrink');
-//    });     
-//    });
+    // get the index of the clicked element
+    var index = $(e.currentTarget).index();
+    console.log("current row index", index);
+    // get the column of the clicked element
+    var col = (index % boxesPerRow) + 1;
+    // calculate how far it is to the end of this row, 
+    console.log("current col index", col);
+    // and select that element
+    var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
+    if (!$endOfRow.length) $endOfRow = $('.transaction').last();
+    console.log($endOfRow);
+});

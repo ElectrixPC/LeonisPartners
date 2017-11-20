@@ -46,7 +46,7 @@ function transactions_output($atts) {
     $args = array('post_type' => 'transactions',
                   'posts_per_page' => 1000); // these arguments are telling WP_Query to only look for the post types called transactions
     $query = new WP_Query( $args );
-    $output = "";
+    $output = '<div class="trans_contianer">';
     $count = 0; //set up counter variable
     // loop through each transaction
     while ( $query->have_posts() ) : $query->the_post();
@@ -72,6 +72,8 @@ function transactions_output($atts) {
           $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $press . '</div></div>';
           $count++;
     endwhile;
+
+    $output .= '</div>';
     
     return $output; 
 }

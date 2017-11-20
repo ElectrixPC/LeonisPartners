@@ -506,6 +506,9 @@ z-index: 10!important;
         max-width: 300px;
         filter: none;
 }
+
+
+
 @media screen and (orientation: portrait) {
         #page_35, #page_47 {
                 padding-left: 0px;
