@@ -246,6 +246,7 @@ var my_style = [
 $(document).ready(function(){
     $(".button").click(function(){
         $(".trans_hide").css({"display":"inline-block"});
+
    });
 });
 
@@ -271,9 +272,12 @@ $('.transaction').on('mouseover', function(e) {
     }
     // get the minimum index for the tombstone to go up 
     var minUp = size - boxesPerRow;
+    // if the bottom doesnt have a full row, this get it
+    var modBottom = size - (size % boxesPerRow);
     // find the guy
+    if (modBottom > 0) minUp = modBottom;
     var $bottomGuy = $('.transaction').eq(index);
-    if ((index > minUp) && (minUp > 1)) {
+    if ((index > minUp -1) && (minUp > 1)) {
         $bottomGuy[0].children[0].style.bottom = "420px";
     }
 
