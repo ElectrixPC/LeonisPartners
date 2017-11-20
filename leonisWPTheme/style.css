@@ -443,6 +443,7 @@ z-index: 10!important;
         height: 300px;
         width: 200px;
         border-radius: 5px;
+        color: white;
         border: 1px solid black;
         transition: width 0.2s ease-in-out;
         transition: height 0.2s ease-in-out;
@@ -469,6 +470,9 @@ z-index: 10!important;
         transition: height 0.2s ease-in-out;
         padding: 25px;
         background: white;
+        transition: color 0.2s ease-in-out;
+        color: black;
+
 }
 .transaction:hover .trans-title {
         display: block;

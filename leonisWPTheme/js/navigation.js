@@ -242,11 +242,17 @@ var my_style = [
         ]
     }
 ]
-
+// button for showing the hidden tombstones
 $(document).ready(function(){
     $(".button").click(function(){
+        window.focus();
+        // display the hidden tombstones
         $(".trans_hide").css({"display":"inline-block"});
-
+        // reset the existing css for the hover stuff
+        for(var i=0; i<$('.transaction').length; i++) {
+            var $thisGuy = $('.transaction').eq(i);
+            $thisGuy[0].children[0].style.bottom = "auto";
+        }
    });
 });
 
@@ -257,7 +263,12 @@ $('.transaction').on('mouseover', function(e) {
     var boxWidth = $('.transaction').outerWidth();
     var boxesPerRow = ~~(windowWidth / boxWidth);
     // Get the total length of the transactions
-    var size  = $('.transaction').not(".trans_hide").length;
+    if ($(".trans_hide")[0].style.display == "inline-block") {
+        var size  = $('.transaction').length;
+    }
+    else {
+        var size  = $('.transaction').not('.trans_hide').length;
+    }
     // get the index of the clicked element
     var index = $(e.currentTarget).index();
     // get the column of the clicked element
@@ -268,17 +279,21 @@ $('.transaction').on('mouseover', function(e) {
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
     // Set the style at the end of the row to go to the left
     if (size > boxesPerRow) {
-        $endOfRow[0].children[0].style.right = "247px";
+        $endOfRow[0].children[0].style.right = "262px";
     }
     // get the minimum index for the tombstone to go up 
     var minUp = size - boxesPerRow;
     // if the bottom doesnt have a full row, this get it
-    var modBottom = size - (size % boxesPerRow);
+    var modBottom =  size % boxesPerRow;
     // find the guy
-    if (modBottom > 0) minUp = modBottom;
+    if (modBottom > 0) minUp = size - modBottom;
     var $bottomGuy = $('.transaction').eq(index);
     if ((index > minUp -1) && (minUp > 1)) {
-        $bottomGuy[0].children[0].style.bottom = "420px";
+        $bottomGuy[0].children[0].style.bottom = "417px";
+        // disable the going right-> left for the bottom row
+        if (modBottom > 0) {
+            $endOfRow[0].children[0].style.right = "auto";
+        }
     }
 
 });
