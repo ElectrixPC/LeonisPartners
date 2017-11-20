@@ -513,14 +513,14 @@ z-index: 10!important;
 
 
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 600px) {
         #page_35, #page_47 {
                 padding-left: 0px;
                 padding-right: 0px;
         }
         .transaction:hover > .trans-expand {
                 left: 5%;
-                height: 50%;
+                height: 600px;
                 width: 90%;
         }
         .transaction:hover .trans-img2 > img {
