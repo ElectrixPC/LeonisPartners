@@ -33,7 +33,7 @@
     <div class="parallax__cover">
     <div id="primary" class="site-content">
         <div id="content" role="main">
-            <?php query_posts(array('post_type=page', 'orderby=menu_order')); ?>
+            <?php query_posts(array('post_type'=>'page', 'order'=>'DESC')); ?>
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
