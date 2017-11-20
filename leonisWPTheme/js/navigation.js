@@ -278,8 +278,8 @@ $('.transaction').on('mouseover', function(e) {
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
     // Set the style at the end of the row to go to the left
-    if ((size > boxesPerRow) && (boxesPerRow > 4)) {
-        $endOfRow[0].children[0].style.right = "267px";
+    if ((size > boxesPerRow) && (boxesPerRow > 3)) {
+        $endOfRow[0].children[0].style.right = "262px";
     }
     // get the minimum index for the tombstone to go up 
     var minUp = size - boxesPerRow;
@@ -289,7 +289,7 @@ $('.transaction').on('mouseover', function(e) {
     if (modBottom > 0) minUp = size - modBottom;
     var $bottomGuy = $('.transaction').eq(index);
     if ((index > minUp -1) && (minUp > 1)) {
-        $bottomGuy[0].children[0].style.bottom = "417px";
+        $bottomGuy[0].children[0].style.bottom = "420px";
         // disable the going right-> left for the bottom row
         if (modBottom > 0) {
             $endOfRow[0].children[0].style.right = "auto";
