@@ -352,30 +352,26 @@ z-index: 10!important;
 }
 .map_container {
         position: relative;
-        width: 50%;
+        width: 100%;
         height: 100%;
         text-align: center;
         overflow: hidden;
         padding: 20px;
 }
-#map_container_1 {
-        float: left;
-}
-#map_container_2 {
-        float: right;
-}
-#map_atl, #map_nyc {
+#map_nyc {
         height: 600px;
         width: 100%;
 }
 #map_overlay {
         position: absolute;
         bottom: 0;
-        width: 100%;
-        height: 40%;
+        width: 50%;
+        height: 100%;
         background-color: rgba(255,255,255,0.6);
         right: 0;
-        left: 0;
+}
+#inner_map {
+        padding-top: 50px;
 }
 
 @media screen and (orientation: portrait) {
@@ -472,6 +468,7 @@ z-index: 10!important;
         background: white;
         transition: color 0.2s ease-in-out;
         color: black;
+        border: none;
 
 }
 .transaction:hover .trans-title {
