@@ -256,17 +256,15 @@ $('.transaction').on('mouseover', function(e) {
     var boxWidth = $('.transaction').outerWidth();
     var boxesPerRow = ~~(windowWidth / boxWidth);
   
-    console.log(windowWidth, boxWidth, boxesPerRow);
 
     // get the index of the clicked element
     var index = $(e.currentTarget).index();
-    console.log("current row index", index);
     // get the column of the clicked element
     var col = (index % boxesPerRow) + 1;
     // calculate how far it is to the end of this row, 
-    console.log("current col index", col);
     // and select that element
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
-    console.log($endOfRow);
+    // Set the style at the end of the row to go to the left
+    $endOfRow[0].children[0].style.right = "247px";
 });
