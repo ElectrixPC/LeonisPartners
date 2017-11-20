@@ -335,13 +335,14 @@ z-index: 10!important;
         background-color: #263318;
         color: white;
 }
-#page_32 > h1 {
-        color: white;
-}
+
 #page_32 {
         background-color: #263318;
         font-family: 'Open Sans Condensed', sans-serif;
         color: black;
+}
+#page_32 > h1 {
+        color: white;
 }
 /* Contact us */
 #page_2, #page_11, #page_24{
