@@ -67,7 +67,7 @@ $parallax__layers: 5;
   &:hover {
     box-shadow: 0 5px 20px rgba(0,0,0,.8);
     transform: translateY(-10px) scale(1.02);
-  	.entry-title{
+  	#post-grid-197 .title{
 			background-position: -100% 0;
 		} 
   }
@@ -94,7 +94,7 @@ $parallax__layers: 5;
   color: white;
   text-transform: uppercase;
   
-  a{
+  #post-grid-197 a{
     font-weight: 700;
     color: white;
     text-decoration: none;
@@ -108,5 +108,5 @@ $parallax__layers: 5;
   font-weight: 700;
   color: #16a085;
 	
-	a{color: white}
+	#post-grid-197 a{color: white}
 }

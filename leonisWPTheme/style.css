@@ -563,7 +563,7 @@ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
 transform: translateY(-10px) scale(1.02);
 }
-#post-grid-197 .item:hover .entry-title {
+#post-grid-197 .item:hover .title {
 background-position: -100% 0;
 }
 
