@@ -7,11 +7,9 @@
         <img class="title_img" src="<?php echo get_bloginfo('template_url') ?>/images/fulllogowhite.svg"/>
     <div class="parallax__layer parallax__layer__0">
             <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc.png"/>
-            <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-1-large.svg"/>
     </div>
     <div class="parallax__layer parallax__layer__5">
             <img src="<?php echo get_bloginfo('template_url') ?>/images/empire.png"/>
-            <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-0-large.svg"/>
     </div>
 
 

@@ -300,17 +300,13 @@ transform: transalteX(100%);
 -webkit-transform: translateZ(0px) scale(1);
         transform: translateZ(0px) scale(1);
 }
-.mobile_img {
-        display: none!important;
-}
 
 @media screen and (orientation: portrait) {
-        .parallax__layer > img {
-                display: none;
-        }
-        .parallax__layer > .mobile_img {
-                display: block!important;
-        }
+        .parallax__layer img {
+                
+                height: 100%;
+                width: auto;
+                }
 
 }
 
