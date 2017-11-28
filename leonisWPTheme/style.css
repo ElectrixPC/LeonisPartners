@@ -607,8 +607,8 @@ color: white;
 }
 
 #post-grid-197 .element_0 {
-        display: unset;
-        padding: unset;
+        display: unset!important;
+        padding: unset!important;
 }
       
 

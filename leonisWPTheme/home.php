@@ -34,8 +34,9 @@
     <div class="parallax__cover">
     <div id="primary" class="site-content">
         <div id="content" role="main">
+                
             <?php query_posts(array('post_type'=>'page', 'orderby'=>'menu_order')); ?>
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <?php while ( have_posts() ) : the_post(); ?>
                         <div class="inline_page" id="page_<?php the_ID(); ?>">
                                 <div id="page_title">
                                         <h1><?php the_title(); ?><h1>
@@ -44,7 +45,7 @@
                                         <?php the_content(); ?>
                                 </div>
                         </div>
-            <?php endwhile; endif; ?>
+                <?php wp_reset_query(); ?>
         </div><!-- #content -->
     </div><!-- #primary -->
         <?php get_sidebar(); ?>
