@@ -236,10 +236,10 @@ width: 100%;
 
 .parallax__layer {
 position: absolute;
-top: 0;
 right: 0;
 bottom: 0;
 left: 0;
+height: 50%;
 z-index: -1;
 
 }
@@ -248,6 +248,7 @@ display: block;
 position: absolute;
 bottom: 0;
 z-index: 0;
+left: -10px;
 width: 100%;
 }
 
@@ -255,7 +256,7 @@ width: 100%;
 background: white;
 display: block;
 position: absolute;
-top: 99%; /* To fix the gap between the parallax and the background */
+top: 60%; /* To fix the gap between the parallax and the background */
 left: 0;
 right: 0;
 height: 100%;
@@ -295,6 +296,7 @@ transform: transalteX(100%);
 }
 
 .parallax__layer__5 {
+        left: -3px;
 -webkit-transform: translateZ(0px) scale(1);
         transform: translateZ(0px) scale(1);
 }
