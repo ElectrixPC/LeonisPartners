@@ -260,34 +260,41 @@ height: 100%;
 z-index: 10!important;
 }
 
+.title_img {
+transform: translateX(-100%);
+transform: transalteX(100%);
+}
+
 .parallax__layer__0 {
--webkit-transform: translateZ(-250px) scale(3.5);
-        transform: translateZ(-250px) scale(3.5);
+-webkit-transform: translateZ(-60px) scale(1.5);
+        transform: translateZ(-60px) scale(1.5);
 }
       
 .parallax__layer__1 {
--webkit-transform: translateZ(-200px) scale(3);
-        transform: translateZ(-200px) scale(3);
-}
-
-.parallax__layer__2 {
--webkit-transform: translateZ(-150px) scale(2.5);
-        transform: translateZ(-150px) scale(2.5);
-}
-
-.parallax__layer__3 {
--webkit-transform: translateZ(-100px) scale(2);
-        transform: translateZ(-100px) scale(2);
-}
-
-.parallax__layer__4 {
 -webkit-transform: translateZ(-50px) scale(1.5);
         transform: translateZ(-50px) scale(1.5);
 }
 
+.parallax__layer__2 {
+-webkit-transform: translateZ(-100px) scale(2);
+        transform: translateZ(-100px) scale(2);
+
+}
+
+.parallax__layer__3 {
+-webkit-transform: translateZ(-150px) scale(2.5);
+        transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+
+-webkit-transform: translateZ(-200px) scale(3);
+        transform: translateZ(-200px) scale(3);
+}
+
 .parallax__layer__5 {
--webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
+-webkit-transform: translateZ(-1px) scale(2);
+        transform: translateZ(-1px) scale(2);
 }
 .mobile_img {
         display: none!important;
@@ -541,7 +548,65 @@ z-index: 10!important;
                 max-width: 200px;
         }
 }
-        
+
+/* -------- Press tiles ------------- */
+
+#post-grid-197 .item {
+width: 350px;
+padding: 30px;
+background: #1abc9c;
+margin: auto;
+transition: .3s ease;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+#post-grid-197 .item:hover {
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+transform: translateY(-10px) scale(1.02);
+}
+#post-grid-197 .item:hover .entry-title {
+background-position: -100% 0;
+}
+
+#post-grid-197 .title {
+background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #16a085 50%);
+background-size: 200%;
+background-position: 0 0;
+display: inline;
+transition: .5s ease-in-out;
+font-family: raleway, arial, sans-serif;
+text-transform: uppercase;
+}
+#post-grid-197 .title a {
+color: white;
+text-decoration: none;
+}
+
+#post-grid-197 .excerpt {
+margin-top: 20px;
+display: block;
+font-family: raleway, arial, sans-serif;
+color: white;
+text-transform: uppercase;
+}
+#post-grid-197 .excerpt a {
+font-weight: 700;
+color: white;
+text-decoration: none;
+}
+
+#post-grid-197 span {
+display: block;
+margin-top: 10px;
+font-family: raleway, arial, sans-serif;
+font-weight: 700;
+color: #16a085;
+}
+#post-grid-197 span a {
+color: white;
+}
+      
+
+
 /* -------- NAV - Hamburger Menu ------------------- */
 
 .hamburger,
