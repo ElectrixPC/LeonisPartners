@@ -36,8 +36,8 @@
         <div id="content" role="main">
                 
             <?php query_posts(array('post_type'=>'page', 'orderby'=>'menu_order')); ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-                        <div class="inline_page" id="page_<?php the_ID(); ?> <?php get_post_type();?>">
+                <?php while ( have_posts() ) if get_post_type( get_the_ID() ) == 'page' : the_post(); ?>
+                        <div class="inline_page" id="page_<?php the_ID(); ?>">
                                 <div id="page_title">
                                         <h1><?php the_title(); ?><h1>
 
