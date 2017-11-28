@@ -37,9 +37,13 @@
                 
             <?php query_posts(array('post_type'=>'page', 'orderby'=>'menu_order')); ?>
                 <?php while ( have_posts() ) : the_post(); ?>
-                        <div class="inline_page" id="page_<?php the_ID(); ?>">
+                        <div class="inline_page" id="page_<?php the_ID(); ?> <?php get_post_type();?>">
                                 <div id="page_title">
                                         <h1><?php the_title(); ?><h1>
+
+                                        <?php $post_type = get_post_type( get_the_ID() );
+                                                echo '<p>' . $post_type . '</p>';
+                                        ?>
                                 </div>
                                 <div id="page_content">
                                         <?php the_content(); ?>

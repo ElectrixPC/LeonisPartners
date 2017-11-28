@@ -359,7 +359,8 @@ transform: transalteX(100%);
 }
 /* Transactions Page */
 #page_35, #page_47 {
-        background-color: #263318;
+        background: url('wp-content/themes/leonisWPTheme/images/background.svg');
+        background-size: 100%;
         color: white;
         min-height: 800px;
         padding-left: 200px;
