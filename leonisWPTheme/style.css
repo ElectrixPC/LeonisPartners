@@ -426,15 +426,22 @@ transform: transalteX(100%);
 }
 .trans-img1 {
         position: relative;
-        padding: 25px 25px 0px 25px;
+        width: 150px;
+        height: 100px;
+        margin: 0 auto;
+        top: 20px;
 }
 .trans-img1 > img {
+
         height: auto;
         width: auto;
         max-width: 150px;
         max-height: 100px;
         filter: grayscale(100%);
         transition: filter 0.3s ease-in-out;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
 }
 .trans-img2 {
         position: relative;
@@ -528,6 +535,9 @@ transform: transalteX(100%);
         max-height: 125px;
         max-width: 300px;
         filter: none;
+        position: unset!important;
+        top: unset!important;
+        transform: unset!important;
 }
 
 
