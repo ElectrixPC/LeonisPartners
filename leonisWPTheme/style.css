@@ -459,7 +459,6 @@ transform: transalteX(100%);
         z-index: 0;
         height: 300px;
         width: 200px;
-        border-radius: 5px;
         color: white;
         transition: width 0.2s ease-in-out;
         transition: height 0.2s ease-in-out;
