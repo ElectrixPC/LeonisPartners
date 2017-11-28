@@ -248,6 +248,7 @@ display: block;
 position: absolute;
 bottom: 0;
 z-index: 0;
+width: 100%;
 }
 
 .parallax__cover {
@@ -540,6 +541,9 @@ transform: transalteX(100%);
         position: unset!important;
         top: unset!important;
         transform: unset!important;
+}
+.transaction:hover .trans-img1 {
+        width: unset!important;
 }
 
 

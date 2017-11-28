@@ -6,27 +6,11 @@
   <div id="home" class="parallax">
         <img class="title_img" src="<?php echo get_bloginfo('template_url') ?>/images/fulllogowhite.svg"/>
     <div class="parallax__layer parallax__layer__0">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-5.svg"/>
-            <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-5-large.svg"/>
-    </div>
-    <div class="parallax__layer parallax__layer__1">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-4.svg"/>
-            <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-4-large.svg"/>
-    </div>
-    <div class="parallax__layer parallax__layer__2">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-3.svg"/>
-            <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-3-large.svg"/>
-    </div>
-    <div class="parallax__layer parallax__layer__3">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-2.svg"/>
-            <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-2-large.svg"/>
-    </div>
-    <div class="parallax__layer parallax__layer__4">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-1.svg"/>
+            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc.png"/>
             <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-1-large.svg"/>
     </div>
     <div class="parallax__layer parallax__layer__5">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-0.svg"/>
+            <img src="<?php echo get_bloginfo('template_url') ?>/images/empire.png"/>
             <img class="mobile_img" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-layer-0-large.svg"/>
     </div>
 
