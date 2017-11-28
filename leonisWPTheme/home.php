@@ -50,7 +50,8 @@
                                         <?php the_content(); ?>
                                 </div>
                         </div>
-                <?php endwhile ?>
+                <?php endwhile; ?>
+                <?php endif; ?>
         </div><!-- #content -->
     </div><!-- #primary -->
         <?php get_sidebar(); ?>
