@@ -91,7 +91,8 @@ $parallax__layers: 5;
   display: block;
   font-family: raleway, arial, sans-serif;
   color: black;
-  text-transform: uppercase;
+  max-height: 90px;
+  overflow: hidden;
   
   #post-grid-197 a{
     font-weight: 700;

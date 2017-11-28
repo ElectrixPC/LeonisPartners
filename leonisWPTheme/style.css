@@ -546,6 +546,7 @@ transform: transalteX(100%);
 }
 .transaction:hover .trans-img1 {
         width: unset!important;
+        top: 0;
 }
 
 
@@ -605,7 +606,6 @@ margin-top: 20px;
 display: block;
 font-family: raleway, arial, sans-serif;
 color: white;
-text-transform: uppercase;
 }
 #post-grid-197 .excerpt a {
 font-weight: 700;
