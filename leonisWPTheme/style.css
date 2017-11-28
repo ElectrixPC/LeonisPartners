@@ -532,6 +532,8 @@ transform: transalteX(100%);
 }
 .transaction:hover .trans-img1 > img {
         transition: max-width 0.3s ease-in-out;
+        height: unset!important;
+        width: unset!important;
         max-height: 125px;
         max-width: 300px;
         filter: none;
