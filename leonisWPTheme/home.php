@@ -36,19 +36,21 @@
         <div id="content" role="main">
                 
             <?php query_posts(array('post_type'=>'page', 'orderby'=>'menu_order')); ?>
-                <?php while ( have_posts() ) if get_post_type( get_the_ID() ) == 'page' : the_post(); ?>
-                        <div class="inline_page" id="page_<?php the_ID(); ?>">
-                                <div id="page_title">
-                                        <h1><?php the_title(); ?><h1>
+                <?php while ( have_posts() ) : the_post(); ?>
+                        <?php if(get_post_type( get_the_ID() ) == 'page') ?>
+                                <div class="inline_page" id="page_<?php the_ID(); ?>">
+                                        <div id="page_title">
+                                                <h1><?php the_title(); ?><h1>
 
-                                        <?php $post_type = get_post_type( get_the_ID() );
-                                                echo '<p>' . $post_type . '</p>';
-                                        ?>
+                                                <?php $post_type = get_post_type( get_the_ID() );
+                                                        echo '<p>' . $post_type . '</p>';
+                                                ?>
+                                        </div>
+                                        <div id="page_content">
+                                                <?php the_content(); ?>
+                                        </div>
                                 </div>
-                                <div id="page_content">
-                                        <?php the_content(); ?>
-                                </div>
-                        </div>
+                        
                 <?php endwhile ?>
                 <?php wp_reset_query(); ?>
         </div><!-- #content -->
