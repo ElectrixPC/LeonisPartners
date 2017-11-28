@@ -45,6 +45,7 @@
                                         <?php the_content(); ?>
                                 </div>
                         </div>
+                <?php endwhile ?>
                 <?php wp_reset_query(); ?>
         </div><!-- #content -->
     </div><!-- #primary -->
