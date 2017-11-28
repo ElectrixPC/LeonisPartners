@@ -4,7 +4,7 @@
         <div id="content" role="main">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="inline_page" id="page_<?php the_ID(); ?>">
-                <div id="page_title" style="background-color: #263318; color: white;">
+                <div id="page_title" style="background-color: #263318; color: white; padding: 50px;">
                     <h1><?php the_title(); ?><h1>
                 </div>
                 <div id="page_content">

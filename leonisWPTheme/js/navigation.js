@@ -255,12 +255,11 @@ $(document).ready(function(){
         }
    });
 });
-
 // Function for getting the last element in the row/last row
 $('.transaction').on('mouseover', function(e) {
     // calculate how many boxes will be in a "row" 
     var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth();
+    var boxWidth = $('.transaction').outerWidth() + 10;
     var boxesPerRow = ~~(windowWidth / boxWidth);
     // Get the total length of the transactions
     if ($(".trans_hide")[0].style.display == "inline-block") {
@@ -277,7 +276,7 @@ $('.transaction').on('mouseover', function(e) {
     // and select that element
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
     var gapToOuter = ($('body').width() - windowWidth) /2;
-    var gapToContainer = (windowWidth - (boxesPerRow * 210)) /2;
+    var gapToContainer = (windowWidth - (boxesPerRow * 212)) /2;
     var gap = gapToOuter + gapToContainer + 1; 
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
     // Set the style at the end of the row to go to the left
@@ -292,7 +291,7 @@ $('.transaction').on('mouseover', function(e) {
     if (modBottom > 0) minUp = size - modBottom;
     var $bottomGuy = $('.transaction').eq(index);
     if ((index > minUp -1) && (minUp > 1)) {
-        $bottomGuy[0].children[0].style.bottom = "120px";
+        $bottomGuy[0].children[0].style.bottom = "90px";
         // disable the going right-> left for the bottom row
         if (modBottom > 0) {
             $endOfRow[0].children[0].style.right = "auto";
