@@ -35,23 +35,14 @@
     <div id="primary" class="site-content">
         <div id="content" role="main">
                 
-                <?php query_posts(array('post_type'=>'page', 'orderby'=>'menu_order')); ?>
-                <?php if (have_posts()) : ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-                        <div class="inline_page" id="page_<?php the_ID(); ?>">
-                                <div id="page_title">
-                                        <h1><?php the_title(); ?><h1>
-
-                                        <?php $post_type = get_post_type( get_the_ID() );
-                                                echo '<p>' . $post_type . '</p>';
-                                        ?>
-                                </div>
-                                <div id="page_content">
-                                        <?php the_content(); ?>
-                                </div>
-                        </div>
-                <?php endwhile; ?>
-                <?php endif; ?>
+        <?php   $args = array('post_type' => 'page', 
+                'orderby' => 'menu_order');
+                $query = new WP_Query( $args );
+                while ( $query->have_posts() ) : $query->the_post();
+                if (get_post_type( get_the_ID() ) == 'page') {
+                        echo '<div class="inline_page" id="page_' . get_the_ID() . '"><div id="page_title"><h1>' . get_the_title() . '<h1></div><div id="page_content">' . do_shortcode(get_post_field('post_content', $postid)) . '</div></div>';
+                }
+                endwhile; ?>
         </div><!-- #content -->
     </div><!-- #primary -->
         <?php get_sidebar(); ?>
