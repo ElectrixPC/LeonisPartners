@@ -222,54 +222,54 @@ margin: 0;
 /* ------------- PARALLAX -------------- */
 
 .parallax {
--webkit-perspective: 100px;
-perspective: 100px;
-height: 100vh;
-overflow-x: hidden;
-overflow-y: auto;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
+        -webkit-perspective: 100px;
+        perspective: 100px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 }
 
 .parallax > img {
-width: 100%;
+        width: 100%;
 }
 
 .parallax__layer {
-position: absolute;
-right: 0;
-bottom: 0;
-left: 0;
-height: 50%;
-z-index: -1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
 
 }
 .parallax__layer img {
-display: block;
-position: absolute;
-bottom: 0;
-z-index: 0;
-left: -10px;
-height: fit-content;
-width: 100%;
+        display: block;
+        position: absolute;
+        z-index: 0;
+        left: -10px;
+        height: auto;
+        width: 100%;
+        bottom: -100px;
 }
 
 .parallax__cover {
-display: block;
-position: absolute;
-top: 51.5%; /* To fix the gap between the parallax and the background */
-left: 0;
-right: 0;
-height: 100%;
-z-index: 10!important;
+        display: block;
+        position: absolute;
+        top: 70%; /* To fix the gap between the parallax and the background */
+        left: 0;
+        right: 0;
+        height: 100%;
+        z-index: 10!important;
 }
 
 .title_img {
-transform: translateX(-100%);
-transform: transalteX(100%);
+        transform: translateX(-100%);
+        transform: transalteX(100%);
 }
 
 .parallax__layer__0 {
@@ -303,6 +303,10 @@ transform: transalteX(100%);
         left: -3px;
 -webkit-transform: translateZ(0px) scale(1);
         transform: translateZ(0px) scale(1);
+}
+.parallax__layer__5 > img {
+        left: -5px;
+        bottom: 30%;
 }
 
 @media screen and (orientation: portrait) {
