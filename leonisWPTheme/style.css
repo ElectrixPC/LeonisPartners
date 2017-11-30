@@ -258,10 +258,9 @@ width: 100%;
 }
 
 .parallax__cover {
-background: white;
 display: block;
 position: absolute;
-top: 60%; /* To fix the gap between the parallax and the background */
+top: 51.5%; /* To fix the gap between the parallax and the background */
 left: 0;
 right: 0;
 height: 100%;
@@ -346,7 +345,16 @@ transform: transalteX(100%);
 }
 
 /* ------------ SPECIFIC PAGES (Main screen) ------------ */
-
+#page_268 {
+        background-color: rgba(38, 51, 24, 0.8) !important;
+        color: white;
+}
+#page_268 #page_title {
+        padding-top: 50px;
+}
+#page_268 #page_content {
+        padding: 0px 20px 20px 20px;
+}
 #page_188 {
         background-color: #263318;
         color: white;
