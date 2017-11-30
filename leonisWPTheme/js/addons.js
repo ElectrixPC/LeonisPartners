@@ -244,9 +244,9 @@ var my_style = [
 ]
 // button for showing the hidden tombstones
 $(document).ready(function(){
-
+    
     var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 12;
+    var boxWidth = $('.transaction').outerWidth() + 8;
     var boxesPerRow = ~~(windowWidth / boxWidth);
     var totalNumber = boxesPerRow * 2;
     for (var item = 0; item < totalNumber -1; item++) {
@@ -263,20 +263,24 @@ $(document).ready(function(){
             var $thisGuy = $('.transaction').eq(i);
             $thisGuy[0].children[0].style.bottom = "auto";
         }
-   });
+    });
 });
 // Function for getting the last element in the row/last row
 $('.transaction').on('mouseover', function(e) {
     // calculate how many boxes will be in a "row" 
     var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 10;
+    var boxWidth = $('.transaction').outerWidth() + 8;
     var boxesPerRow = ~~(windowWidth / boxWidth);
+    
+    var smallTransactions = boxesPerRow * 2;
+    var hiddenTransactions = $('.transaction').length - smallTransactions;
+
     // Get the total length of the transactions
-    if ($(".trans_hide")[0].style.display == "inline-block") {
+    if ($(".trans_hide")[hiddenTransactions].style.display == "inline-block") {
         var size  = $('.transaction').length;
     }
     else {
-        var size  = $('.transaction').not('.trans_hide').length;
+        var size = smallTransactions;
     }
     // get the index of the clicked element
     var index = $(e.currentTarget).index();
@@ -286,7 +290,7 @@ $('.transaction').on('mouseover', function(e) {
     // and select that element
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
     var gapToOuter = ($('body').width() - windowWidth) /2;
-    var gapToContainer = (windowWidth - (boxesPerRow * 212)) /2;
+    var gapToContainer = (windowWidth - (boxesPerRow * 211)) /2;
     var gap = gapToOuter + gapToContainer + 1; 
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
     // Set the style at the end of the row to go to the left
@@ -308,4 +312,21 @@ $('.transaction').on('mouseover', function(e) {
         }
     }
 
+});
+
+window.addEventListener('resize', function(event){
+    var windowWidth = $('.trans_container').width();
+    var boxWidth = $('.transaction').outerWidth() + 8;
+    var boxesPerRow = ~~(windowWidth / boxWidth);
+
+    var smallTransactions = boxesPerRow * 2;
+    var totalTransactions = $('.transaction').length;
+
+    for (var item = smallTransactions; item < totalTransactions; item++) {
+        $(".trans_hide")[item].style = "display: none";
+    }
+    for(var i=0; i<$('.transaction').length; i++) {
+            var $thisGuy = $('.transaction').eq(i);
+            $thisGuy[0].children[0].style.bottom = "auto";
+    }
 });
