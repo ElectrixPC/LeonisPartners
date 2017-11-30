@@ -525,31 +525,31 @@ transform: transalteX(100%);
         display: block;
         text-align: left;
         position: absolute;
-        bottom: 150px;
+        bottom: 125px;
 }
 .transaction:hover .trans-date {
         display: block;
         text-align: left;
         position: absolute;
-        bottom: 120px;
-}
-.transaction:hover .trans-sector {
-        display: block;
-        text-align: left;
-        position: absolute;
-        bottom: 90px;
+        bottom: 100px;
 }
 .transaction:hover .trans-location {
         display: block;
         text-align: left;
         position: absolute;
-        bottom: 60px;
+        bottom: 75px;
+}
+.transaction:hover .trans-sector {
+        display: block;
+        text-align: left;
+        position: absolute;
+        bottom: 50px;
 }
 .transaction:hover .trans-type-short {
         display: block;
         text-align: left;
         position: absolute;
-        bottom: 30px;
+        bottom: 25px;
 }
 .transaction:hover .trans-press {
         display: block;
