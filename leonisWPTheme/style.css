@@ -665,7 +665,20 @@ color: white;
         padding: unset!important;
 }
       
-
+#post-grid-197 .element_2 {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        left: 0px;
+        color: white;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        padding-top: 10px;
+        height: 50px;
+        background-color: #855723;
+}
 
 /* -------- NAV - Hamburger Menu ------------------- */
 
