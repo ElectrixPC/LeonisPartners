@@ -640,7 +640,7 @@ transform: transalteX(100%);
 #post-grid-197 .item {
 width: 350px;
 padding: 30px;
-background: #1abc9c;
+background: #DBCA69;
 margin: auto;
 transition: .3s ease;
 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -654,7 +654,7 @@ background-position: -100% 0;
 }
 
 #post-grid-197 .title {
-background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #16a085 50%);
+background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #DBCA69  50%);
 background-size: 200%;
 background-position: 0 0;
 display: inline;
