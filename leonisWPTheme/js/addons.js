@@ -244,6 +244,16 @@ var my_style = [
 ]
 // button for showing the hidden tombstones
 $(document).ready(function(){
+
+    var windowWidth = $('.trans_container').width();
+    var boxWidth = $('.transaction').outerWidth() + 12;
+    var boxesPerRow = ~~(windowWidth / boxWidth);
+    var totalNumber = boxesPerRow * 2;
+    for (var item = 0; item < totalNumber -1; item++) {
+        $(".trans_hide")[item].style = "display: inline-block"
+    }
+
+    
     $(".button").click(function(){
         window.focus();
         // display the hidden tombstones
