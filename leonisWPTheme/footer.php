@@ -1,5 +1,5 @@
 <div id="footer">
-    <h3>&copy; <?php echo date("Y"); echo " "; echo bloginfo('name'); ?></h3>
+    <h3>&copy; 2013 - <?php echo date("Y"); echo " "; echo bloginfo('name'); ?><br>Securities offered through Leonis Securities, LLC</h3>
 </div>
 </div>
 <?php wp_footer(); ?>

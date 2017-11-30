@@ -113,7 +113,7 @@ header > img {
         height: 100%;
         width: auto;
         position: relative;
-        padding: 15px;
+        padding: 10px;
 }
 
 header nav {
@@ -213,6 +213,10 @@ margin: 0;
         background-color: #263318;
         color: white;
         z-index: 999999;
+        
+}
+#footer > h3 {
+        font-size: 17px!important;
 }
 
 /* ------------- PARALLAX -------------- */
@@ -487,6 +491,15 @@ transform: transalteX(100%);
 .trans-press {
         display: none;
 }
+.trans-sector {
+        display: none;
+}
+.trans-location {
+        display: none;
+}
+.trans-type-short {
+        display: none;
+}
 
 /* ---------- TRANSACTION ON HOVER ----------------- */
 .transaction:hover > .trans-expand {
@@ -512,9 +525,27 @@ transform: transalteX(100%);
         display: block;
         text-align: left;
         position: absolute;
-        bottom: 60px;
+        bottom: 150px;
 }
 .transaction:hover .trans-date {
+        display: block;
+        text-align: left;
+        position: absolute;
+        bottom: 120px;
+}
+.transaction:hover .trans-sector {
+        display: block;
+        text-align: left;
+        position: absolute;
+        bottom: 90px;
+}
+.transaction:hover .trans-location {
+        display: block;
+        text-align: left;
+        position: absolute;
+        bottom: 60px;
+}
+.transaction:hover .trans-type-short {
         display: block;
         text-align: left;
         position: absolute;
