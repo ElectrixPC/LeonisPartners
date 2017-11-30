@@ -306,16 +306,16 @@ margin: 0;
 }
 .parallax__layer__5 > img {
         left: -5px;
-        bottom: 30%;
+        bottom: 29%;
 }
 
-@media screen and (orientation: portrait) {
-        .parallax__layer img {
-                
-                height: 100%;
-                width: auto;
-                }
-
+@media screen and (max-device-aspect-ratio: 4/3) {
+.parallax__layer img {
+    height: -webkit-fill-available;
+    width: auto;
+    left: 50%!important;
+    transform: translateX(-50%);
+}
 }
 
 /* ---------- STANDARD PAGES (Main Screen) ------------ */ 
