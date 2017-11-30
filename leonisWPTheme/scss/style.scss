@@ -32,6 +32,8 @@ body{
     display: block;
     position: absolute;
     bottom: 0;
+    height: fit-content!important;
+    width: 100%!important;
   }
 }
 
