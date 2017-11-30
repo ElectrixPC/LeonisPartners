@@ -102,7 +102,7 @@ function transactions_output($atts) {
           {
             $trans = '<div class="transaction">';
           }
-          $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $location . $ sector . $type_short . $press . '</div></div>';
+          $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $location . $sector . $type_short . $press . '</div></div>';
           $count++;
     endwhile;
 
