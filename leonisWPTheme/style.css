@@ -396,7 +396,7 @@ transform: transalteX(100%);
 #inner_map {
         padding-top: 120px;
 }
-#inner_map > h2 {
+#inner_map > h2, h3 {
         margin-bottom: 0px;
 }
 #inner_map > p {
