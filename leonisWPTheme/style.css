@@ -260,7 +260,7 @@ margin: 0;
 .parallax__cover {
         display: block;
         position: absolute;
-        top: 70%; /* To fix the gap between the parallax and the background */
+        top: 67%; /* To fix the gap between the parallax and the background */
         left: 0;
         right: 0;
         height: 100%;
