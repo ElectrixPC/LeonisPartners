@@ -330,5 +330,6 @@ window.addEventListener('resize', function(event){
     for(var i=0; i<$('.transaction').length; i++) {
             var $thisGuy = $('.transaction').eq(i);
             $thisGuy[0].children[0].style.bottom = "auto";
+            $thisGuy[0].children[0].style.right = "auto";
     }
 });
