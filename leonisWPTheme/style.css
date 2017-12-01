@@ -68,8 +68,8 @@ a.button, a.button:visited {
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 300;
         font-size: 1.17em;
-        color: white;
-        border: 2px solid white;
+        color: #263318;
+        border: 2px solid #263318;
         padding: 11px 40px 9px;
         text-decoration: none;
         -webkit-border-radius: 2px;
@@ -84,7 +84,7 @@ a.button, a.button:visited {
 a.button:hover {
         background: white;
         color: #263318;
-        border: 2px solid white;
+        border: 2px solid #263318;
         text-decoration: none;
         -webkit-transition: all .2s ease;
         -moz-transition: all .2s ease;
@@ -363,6 +363,9 @@ margin: 0;
         background-color: #263318;
         color: white;
 }
+#page_185 {
+        background-color: #B99C6B;
+}
 
 #page_32 {
         background-color: #263318;
@@ -380,8 +383,8 @@ margin: 0;
 }
 /* Transactions Page */
 #page_35, #page_47 {
-        background-color: #263318;
-        color: white;
+        background-color: beige;
+        color: black;
         min-height: 800px;
         padding-left: 200px;
         padding-right: 200px;
@@ -509,7 +512,7 @@ margin: 0;
         color: #263318;
 }
 .trans-expand {
-        background: lightgray;
+        background: gainsboro;
         position: absolute;
         z-index: 0;
         height: 300px;
