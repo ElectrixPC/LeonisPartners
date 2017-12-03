@@ -452,6 +452,14 @@ margin: 0;
         transform: translateY(-10px) scale(1.02);
     }
 
+/* ----------- OUR SERVICES SECTION -----------*/
+
+.services {
+        width: 60%;
+        display: inline-block;
+}
+
+
 /* ------------- TRANSACTIONS UI -------------- */
 
 .transaction {
