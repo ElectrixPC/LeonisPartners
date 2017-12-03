@@ -458,7 +458,14 @@ margin: 0;
         width: 60%;
         display: inline-block;
 }
-
+.services-child {
+        padding: 20px;
+        width: 400px;
+        display: inline-block;
+}
+.services-child p {
+        float: left;
+}
 
 /* ------------- TRANSACTIONS UI -------------- */
 
