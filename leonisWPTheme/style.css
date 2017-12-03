@@ -454,9 +454,19 @@ margin: 0;
 
 /* ----------- OUR SERVICES SECTION -----------*/
 
-.services {
+.services-top-tag {
         width: 60%;
-        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+}
+.services-main {
+        background-color: beige;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        width: 900px;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
 }
 .services-child {
         padding: 20px;
@@ -466,6 +476,7 @@ margin: 0;
 .services-child p {
         float: left;
 }
+
 
 /* ------------- TRANSACTIONS UI -------------- */
 
