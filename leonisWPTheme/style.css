@@ -553,9 +553,9 @@ margin: 0;
         transition: height 0.2s ease-in-out;
         padding: 25px;
         background: white;
-        transition: color 0.2s ease-in-out;
         color: black;
         border: none;
+        transition: .3s ease;
 
 }
 .transaction:hover .trans-title {
