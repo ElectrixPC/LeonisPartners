@@ -333,3 +333,7 @@ window.addEventListener('resize', function(event){
             $thisGuy[0].children[0].style.right = "auto";
     }
 });
+
+$('.button-file').click(function() {
+    $('.wpcf7').toggle();
+});
