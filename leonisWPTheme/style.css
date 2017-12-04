@@ -763,6 +763,12 @@ color: white;
         background-color: rgba(133, 87, 35, 0.9)!important;
 }
 
+/* ----------- EMAIL BEFORE DOWNLOAD --------------- */
+
+.wpcf7 {
+        display: none;
+}
+
 /* -------- NAV - Hamburger Menu ------------------- */
 
 .hamburger,
