@@ -47,6 +47,12 @@ body{
   z-index: 10;
 }
 
+@media screen and (orientation: portrait) {
+  .parallax__cover {
+    top: 56%!important;
+  }
+}
+
 $parallax__layers: 5;
 
 @for $i from 0 through $parallax__layers {
