@@ -338,3 +338,8 @@ $('.button-file').click(function() {
     $('.wpcf7').css({"height":"50%", "width":"50%"});
     $('.wpcf7-form').css({"display" : "block"});
 });
+
+$('.wpcf7-submit').click(function() {
+    $('.wpcf7').css({"height":"0%", "width":"0%"});
+    $('.wpcf7-form').css({"display" : "none"});
+});
