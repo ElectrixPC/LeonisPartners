@@ -9,7 +9,8 @@
                 </div>
                 <div id="page_content">
 
-                    <?php $shortcode = sprintf('[transaction-single id="%1$s"]', the_ID());
+                    <?php $id = 255;
+                    $shortcode = sprintf('[transaction-single id="%1$s"]', $id);
                           echo do_shortcode( $shortcode ); ?>
                 </div>
             </div>
