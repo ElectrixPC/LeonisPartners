@@ -9,7 +9,7 @@
                 </div>
                 <div id="page_content">
 
-                    <?php $shortcode = "[single-transaction id=" . the_ID() . "]";
+                    <?php $shortcode = "[transaction-single id='" . the_ID() . "']";
                           echo do_shortcode( $shortcode ); ?>
                 </div>
             </div>
