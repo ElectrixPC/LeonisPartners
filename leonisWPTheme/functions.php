@@ -137,3 +137,15 @@ function single_transaction($atts) {
     return $output; 
 }
 add_shortcode( 'transaction-single', 'single_transaction');
+
+
+function download_by_email($atts) {
+    $downloadid = $atts['id'];
+
+    $output = '<div class="email-download"><p>Download File</p>';
+    
+    $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $downloadid);
+    $output .= do_shortcode( $shortcode );
+    $output .= '</div>';
+}
+add_shortcode('email-download', 'download_by_email');
