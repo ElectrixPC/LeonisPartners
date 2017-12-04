@@ -766,7 +766,7 @@ color: white;
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
 
 .wpcf7 {
-        display: none;
+        display: block;
         margin: 0;
         padding: 0;
         position: fixed;
@@ -778,8 +778,11 @@ color: white;
         background-color: rgba(38, 51, 24, 0.8) !important;
         z-index: 999999;
         color: white;
+        transition: all 0.3s ease;
 }
-
+.wpcf7-form {
+        display: none;
+}
 /* -------- NAV - Hamburger Menu ------------------- */
 
 .hamburger,

@@ -335,5 +335,6 @@ window.addEventListener('resize', function(event){
 });
 
 $('.button-file').click(function() {
-    $('.wpcf7').css({"display":"block", "height":"50%", "width":"50%"});
+    $('.wpcf7').css({"height":"50%", "width":"50%"});
+    $('.wpcf7-form').css({"display" : "block"});
 });
