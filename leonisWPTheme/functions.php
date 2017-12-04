@@ -116,7 +116,7 @@ add_shortcode( 'transactions', 'transactions_output');
 function single_transaction($atts) {
     $postid = $atts['id'];
 
-    $output = '<div class="trans_container">';
+    $output = '<div class="trans_container trans_container_single" style="height:650px;">';
 
     $title      = '<div class="trans-title"><h2>'     . get_post_meta($postid, "wpcf-transaction-title",         true) . '</h2></div>';
     $firm1      = '<div class="trans-firm1"><h2>'     . get_post_meta($postid, "wpcf-company-1-name",            true) . '</h2></div>';
