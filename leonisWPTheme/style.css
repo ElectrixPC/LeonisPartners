@@ -666,6 +666,9 @@ margin: 0;
         .transaction:hover .trans-img1 > img {
                 max-width: 200px;
         }
+        .transaction:hover .trans-title { 
+                font-size: 1.1em;
+        }
 }
 
 /* -------- Press tiles ------------- */
