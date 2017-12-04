@@ -483,6 +483,17 @@ margin: 0;
         float: left;
 }
 
+@media screen and (orientation: portrait) {
+        .services-top-tag {
+                width: 90%;
+        }
+        .services-main {
+                width: 90%;
+        }
+        .services-child {
+                width: 100%;
+        }
+}
 
 /* ------------- TRANSACTIONS UI -------------- */
 
