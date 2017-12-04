@@ -111,3 +111,29 @@ function transactions_output($atts) {
     return $output; 
 }
 add_shortcode( 'transactions', 'transactions_output');
+
+
+function single_transaction($atts) {
+    $postid = $atts['id'];
+
+    $output = '<div class="trans_container">';
+
+    $title      = '<div class="trans-title"><h2>'     . get_post_meta(get_the_ID(), "wpcf-transaction-title",         true) . '</h2></div>';
+    $firm1      = '<div class="trans-firm1"><h2>'     . get_post_meta(get_the_ID(), "wpcf-company-1-name",            true) . '</h2></div>';
+    $firm2      = '<div class="trans-firm2"><h2>'     . get_post_meta(get_the_ID(), "wpcf-company-2-name",            true) . '</h2></div>';
+    $type       = '<div class="trans-type"><p>'       . get_post_meta(get_the_ID(), "wpcf-transaction-type",          true) . '</p></div>';
+    $size       = '<div class="trans-size"><p><b>Transaction Size:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-size",          true) . '</p></div>'; 
+    $press      = '<div class="trans-press"><p><b>Press Release:</b> '   . get_post_meta(get_the_ID(), "wpcf-transaction-press-release", true) . '</p></div>';
+    $date       = '<div class="trans-date"><p><b>Date:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-date",          true) . '</p></div>';
+    $firm1_img  = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1",                 true) . '></div>';
+    $firm2_img  = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2",                 true) . '></div>';
+    $type_short = '<div class="trans-type-short"><p><b>Type:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-type-short",    true) . '</p></div>';
+    $sector     = '<div class="trans-sector"><p><b>Sector:</b> '     . get_post_meta(get_the_ID(), "wpcf-transaction-sector",        true) . '</p></div>';
+    $location   = '<div class="trans-location"><p><b>Company Location:</b> '   . get_post_meta(get_the_ID(), "wpcf-transaction-location",      true) . '</p></div>';
+
+    $trans = '<div class="transaction">';
+
+    $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $location . $sector . $type_short . $press . '</div></div></div>';
+    return $output; 
+}
+add_shortcode( 'transaction-single', 'single_transaction');

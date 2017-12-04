@@ -4,11 +4,11 @@
         <div id="content" role="main">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="inline_page" id="page_<?php the_ID(); ?>">
-                <div id="page_title_transactions_single">
+                <div id="page_title">
                     <h1><?php the_title(); ?><h1>
                 </div>
                 <div id="page_content">
-                        <?php the_content(); ?>
+                    <?php echo do_shortcode("[single-transaction id=" . the_ID() . "]"); ?>
                 </div>
             </div>
             <?php endwhile; else: ?>
