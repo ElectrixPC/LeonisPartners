@@ -148,4 +148,4 @@ function download_by_email($atts) {
     $output .= do_shortcode( $shortcode );
     $output .= '</div>';
 }
-add_shortcode('email-download', 'download_by_email');
+add_shortcode('email', 'download_by_email');
