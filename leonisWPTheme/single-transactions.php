@@ -8,7 +8,7 @@
                     <h1><?php the_title(); ?><h1>
                 </div>
                 <div id="page_content">
-                    <?php echo do_shortcode("[single-transaction id=" . the_ID() . "]"); ?>
+                    <?php echo do_shortcode("[single-transaction id=the_ID()]"); ?>
                 </div>
             </div>
             <?php endwhile; else: ?>
