@@ -360,7 +360,7 @@ margin: 0;
 }
 #page_188 {
         background-color: #e1d5b1;
-        color: white;
+        color: black;
 }
 #page_185 {
         background-color: #c4bd8b;
@@ -455,6 +455,7 @@ margin: 0;
 @media screen and (orientation: portrait) {
         .advantage-box {
                 width: 90%;
+                padding: 10px!important;
         }
 }
 /* ----------- OUR SERVICES SECTION -----------*/
