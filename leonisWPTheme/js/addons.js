@@ -335,8 +335,16 @@ window.addEventListener('resize', function(event){
 });
 
 $('.button-file').click(function() {
-    $('.wpcf7').css({"height":"30%", "width":"30%"});
+    var mq = window.matchMedia( "(max-width: 1000px)" );
     $('.wpcf7-form').css({"display" : "block"});
+    if (mq.matches) {
+        $('.wpcf7').css({"height":"70%", "width":"90%"});
+    }
+    else {
+        $('.wpcf7').css({"height":"30%", "width":"30%"});
+    }
+    
+    
 });
 
 $('.wpcf7-submit').click(function() {
