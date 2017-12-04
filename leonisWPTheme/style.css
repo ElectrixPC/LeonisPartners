@@ -666,7 +666,7 @@ margin: 0;
         .transaction:hover .trans-img1 > img {
                 max-width: 200px;
         }
-        .transaction:hover .trans-title { 
+        .transaction:hover .trans-title > h2 { 
                 font-size: 1.1em;
         }
 }
@@ -833,7 +833,7 @@ position: absolute; }
 
 @media(max-width: 1099px) {
         header nav a {
-                font-size: 1.5rem!important;
+                font-size: 1.3rem!important;
         }
 }
 
