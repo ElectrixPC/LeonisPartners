@@ -147,5 +147,7 @@ function download_by_email($atts) {
     $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $downloadid);
     $output .= do_shortcode( $shortcode );
     $output .= '</div>';
+
+    return $output;
 }
 add_shortcode('email', 'download_by_email');
