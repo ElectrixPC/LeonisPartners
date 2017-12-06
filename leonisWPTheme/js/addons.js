@@ -420,15 +420,15 @@ jQuery('.transaction').click(function(){
                                       "text-align": "left",
                                         "position": "absolute",
                                           "bottom": "75px"});//location
-    $(this.children[0].children[0]).css({"display": "block",
+    $(this.children[0].children[9]).css({"display": "block",
                                       "text-align": "left",
                                         "position": "absolute",
                                           "bottom": "50px"});//sector
-    $(this.children[0].children[0]).css({"display": "block",
+    $(this.children[0].children[10]).css({"display": "block",
                                       "text-align": "left",
                                         "position": "absolute",
                                           "bottom": "25px"});//type short
-    $(this.children[0].children[0]).css({"display": "block",
+    $(this.children[0].children[11]).css({"display": "block",
                                       "text-align": "left",
                                         "position": "absolute",
                                           "bottom": "0px"});//press
