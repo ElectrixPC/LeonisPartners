@@ -596,7 +596,6 @@ margin: 0;
         height: 300px;
         width: 200px;
         overflow: hidden;
-        transition: width 0.5s ease-in-out;
         display: inline-block;
         margin: 5px;
         color: black;
@@ -673,8 +672,6 @@ margin: 0;
         height: 300px;
         width: 200px;
         color: white;
-        transition: width 0.2s ease-in-out;
-        transition: height 0.2s ease-in-out;
         box-shadow: 0 5px 20px rgba(0,0,0,.8);
 }
 .trans_hide {
@@ -696,103 +693,11 @@ margin: 0;
         display: none;
 }
 
-/* ---------- TRANSACTION ON HOVER ----------------- 
-.transaction:active > .trans-expand {
-        z-index: 999;
-        width: 412px;
-        height: 615px;
-        transition: width 0.2s ease-in-out;
-        transition: height 0.2s ease-in-out;
-        padding: 25px;
-        background: white;
-        color: black;
-        border: none;
-        transition: .3s ease;
-        overflow: hidden;
-
-}
-.transaction:active .trans-title {
-        display: block;
-}
-.transaction:active .trans-type {
-        display: block;
-}
-.transaction:active .trans-size {
-        display: block;
-        text-align: left;
-        position: absolute;
-        bottom: 125px;
-}
-.transaction:active .trans-date {
-        display: block;
-        text-align: left;
-        position: absolute;
-        bottom: 100px;
-}
-.transaction:active .trans-location {
-        display: block;
-        text-align: left;
-        position: absolute;
-        bottom: 75px;
-}
-.transaction:active .trans-sector {
-        display: block;
-        text-align: left;
-        position: absolute;
-        bottom: 50px;
-}
-.transaction:active .trans-type-short {
-        display: block;
-        text-align: left;
-        position: absolute;
-        bottom: 25px;
-}
-.transaction:active .trans-press {
-        display: block;
-        text-align: left;
-        position: absolute;
-        bottom: 0px;
-}
-.transaction:active .trans-img2 > img {
-        transition: max-width 0.3s ease-in-out;
-        max-height: 125px;
-        max-width: 300px;
-        filter: none;
-}
-.transaction:active .trans-img1 > img {
-        transition: max-width 0.3s ease-in-out;
-        height: unset!important;
-        width: unset!important;
-        max-height: 125px;
-        max-width: 300px;
-        filter: none;
-        position: unset!important;
-        top: unset!important;
-        transform: unset!important;
-}
-.transaction:active .trans-img1 {
-        width: unset!important;
-        top: 0;
-}*/
-
-
-
 @media screen and (max-width: 600px) {
         #page_35, #page_47 {
                 padding-left: 0px;
                 padding-right: 0px;
         }
-        /*.transaction:active > .trans-expand {
-                left: 5%;
-                height: 600px;
-                width: 90%;
-        }
-        .transaction:hover .trans-img2 > img {
-                max-width: 200px;
-        }
-        .transaction:hover .trans-img1 > img {
-                max-width: 200px;
-        }*/
         .transaction:hover .trans-title > h2 { 
                 font-size: 1.1em;
         }
