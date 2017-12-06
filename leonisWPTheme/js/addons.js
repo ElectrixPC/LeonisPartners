@@ -379,11 +379,6 @@ $('.box-ss').click(function() {
 
 
 jQuery('.transaction').click(function(){
-    jQuery(this).toggleClass('active');
-    jQuery(this)[0].children[0].toggleClass('active');
- });
-
- jQuery('.transaction').click(function(){
     $(this.children[0]).css({   "z-index": "999",
                                 "width": "412px",
                                 "height": "615px",
