@@ -353,26 +353,26 @@ $('.wpcf7-submit').click(function() {
 });
 
 $('.box-ma').click(function() {
-    $('.services-cr').css({"opacity":"0", "position":"absolute"});
-    $('.services-fv').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"1", "position":"relative"});
+    $('.services-cr').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-fv').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ss').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ma').css({"opacity":"1", "position":"relative", "height": "auto"});
 });
 $('.box-cr').click(function() {
-    $('.services-fv').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"0", "position":"absolute"});
-    $('.services-cr').css({"opacity":"1", "position":"relative"});
+    $('.services-fv').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ss').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ma').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-cr').css({"opacity":"1", "position":"relative", "height": "auto"});
 });
 $('.box-fv').click(function() {
-    $('.services-cr').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"0", "position":"absolute"});
-    $('.services-fv').css({"opacity":"1", "position":"relative"});
+    $('.services-cr').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ss').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ma').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-fv').css({"opacity":"1", "position":"relative", "height": "auto"});
 });
 $('.box-ss').click(function() {
-    $('.services-cr').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"0", "position":"absolute"});
-    $('.services-fv').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"1", "position":"relative"});
+    $('.services-cr').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ma').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-fv').css({"opacity":"0", "position":"absolute", "height": "0px"});
+    $('.services-ss').css({"opacity":"1", "position":"relative", "height": "auto"});
 });

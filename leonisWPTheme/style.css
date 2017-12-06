@@ -501,11 +501,14 @@ margin: 0;
 }
 .services-child {
         padding: 20px;
+        height: 0px;
         width: 100%;
         opacity: 0;
         position: absolute;
         display: block;
-        transition: opacity 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: darkgray;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 }
 .services-child p {
         float: left;
