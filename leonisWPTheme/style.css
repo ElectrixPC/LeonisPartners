@@ -697,7 +697,7 @@ margin: 0;
 }
 
 /* ---------- TRANSACTION ON HOVER ----------------- */
-.transaction:hover > .trans-expand {
+.transaction:active > .trans-expand {
         z-index: 999;
         width: 412px;
         height: 615px;
@@ -711,55 +711,55 @@ margin: 0;
         overflow: hidden;
 
 }
-.transaction:hover .trans-title {
+.transaction:active .trans-title {
         display: block;
 }
-.transaction:hover .trans-type {
+.transaction:active .trans-type {
         display: block;
 }
-.transaction:hover .trans-size {
+.transaction:active .trans-size {
         display: block;
         text-align: left;
         position: absolute;
         bottom: 125px;
 }
-.transaction:hover .trans-date {
+.transaction:active .trans-date {
         display: block;
         text-align: left;
         position: absolute;
         bottom: 100px;
 }
-.transaction:hover .trans-location {
+.transaction:active .trans-location {
         display: block;
         text-align: left;
         position: absolute;
         bottom: 75px;
 }
-.transaction:hover .trans-sector {
+.transaction:active .trans-sector {
         display: block;
         text-align: left;
         position: absolute;
         bottom: 50px;
 }
-.transaction:hover .trans-type-short {
+.transaction:active .trans-type-short {
         display: block;
         text-align: left;
         position: absolute;
         bottom: 25px;
 }
-.transaction:hover .trans-press {
+.transaction:active .trans-press {
         display: block;
         text-align: left;
         position: absolute;
         bottom: 0px;
 }
-.transaction:hover .trans-img2 > img {
+.transaction:active .trans-img2 > img {
         transition: max-width 0.3s ease-in-out;
         max-height: 125px;
         max-width: 300px;
         filter: none;
 }
-.transaction:hover .trans-img1 > img {
+.transaction:active .trans-img1 > img {
         transition: max-width 0.3s ease-in-out;
         height: unset!important;
         width: unset!important;
@@ -770,7 +770,7 @@ margin: 0;
         top: unset!important;
         transform: unset!important;
 }
-.transaction:hover .trans-img1 {
+.transaction:active .trans-img1 {
         width: unset!important;
         top: 0;
 }
@@ -782,7 +782,7 @@ margin: 0;
                 padding-left: 0px;
                 padding-right: 0px;
         }
-        .transaction:hover > .trans-expand {
+        .transaction:active > .trans-expand {
                 left: 5%;
                 height: 600px;
                 width: 90%;

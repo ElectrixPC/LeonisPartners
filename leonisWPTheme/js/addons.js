@@ -376,3 +376,9 @@ $('.box-ss').click(function() {
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
     $('.services-ss').css({"opacity":"1", "position":"relative"});
 });
+
+
+jQuery('.transaction').click(function(){
+    jQuery(this).toggleClass('active');
+    jQuery(this)[0].children[0].toggleClass('active');
+ });
