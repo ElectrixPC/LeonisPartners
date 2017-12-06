@@ -502,7 +502,6 @@ margin: 0;
 .services-child {
         padding: 20px;
         height: 0px;
-        top: -50px;
         width: 100%;
         opacity: 0;
         position: absolute;
@@ -542,13 +541,6 @@ margin: 0;
         background-color: white;
 }
 
-.services-expanded-point {
-        width: 0;
-        height: 0;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
-        border-bottom: 50px solid darkgray;
-}
 
 .services-child-box-big {
         display: inline-table;
