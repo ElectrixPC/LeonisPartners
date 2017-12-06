@@ -359,7 +359,7 @@ margin: 0;
         padding: 0px 20px 20px 20px;
 }
 #page_188 {
-        background-color: #e1d5b1;
+        background-color: white;
         color: black;
 }
 #page_185 {
@@ -440,7 +440,7 @@ margin: 0;
         padding: 20px;
         margin: 10px;
         color: white;
-        background-color: #855723;
+        background-color: gainsboro;
         transition: .3s ease;
 }
 .advantage-content {
