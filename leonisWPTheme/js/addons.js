@@ -351,3 +351,28 @@ $('.wpcf7-submit').click(function() {
     $('.wpcf7').css({"height":"0%", "width":"0%"});
     $('.wpcf7-form').css({"display" : "none"});
 });
+
+$('.services-box ma').click(function() {
+    $('.services-cr').css({"display":"none"});
+    $('.services-fv').css({"display":"none"});
+    $('.services-ss').css({"display":"none"});
+    $('.services-ma').css({"display":"block"});
+});
+$('.services-box cr').click(function() {
+    $('.services-fv').css({"display":"none"});
+    $('.services-ss').css({"display":"none"});
+    $('.services-ma').css({"display":"none"});
+    $('.services-cr').css({"display":"block"});
+});
+$('.services-box fv').click(function() {
+    $('.services-cr').css({"display":"none"});
+    $('.services-ss').css({"display":"none"});
+    $('.services-ma').css({"display":"none"});
+    $('.services-fv').css({"display":"block"});
+});
+$('.services-box ss').click(function() {
+    $('.services-cr').css({"display":"none"});
+    $('.services-ma').css({"display":"none"});
+    $('.services-fv').css({"display":"none"});
+    $('.services-ss').css({"display":"block"});
+});
