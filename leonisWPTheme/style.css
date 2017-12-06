@@ -501,7 +501,7 @@ margin: 0;
 }
 .services-child {
         padding: 20px;
-        width: 400px;
+        width: 100%;
         opacity: 0;
         position: absolute;
         display: block;
@@ -531,6 +531,13 @@ margin: 0;
 .services-box:hover .services-expand p {
         display: block;
 }
+
+.services-child-box {
+        display: inline-block;
+        width: 400px;
+        background-color: white;
+}
+
 
 @media screen and (orientation: portrait) {
         .services-top-tag {
