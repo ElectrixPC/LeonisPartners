@@ -244,16 +244,6 @@ var my_style = [
 ]
 // button for showing the hidden tombstones
 $(document).ready(function(){
-    
-    var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 8;
-    var boxesPerRow = ~~(windowWidth / boxWidth);
-    var totalNumber = boxesPerRow * 2;
-    for (var item = 0; item < totalNumber -1; item++) {
-        $(".trans_hide")[item].style = "display: inline-block"
-    }
-
-    
     $(".button").click(function(){
         window.focus();
         // display the hidden tombstones
@@ -266,7 +256,88 @@ $(document).ready(function(){
     });
 });
 // Function for getting the last element in the row/last row
-$('.transaction').on('mouseover', function(e) {
+$('.transaction').on('click', function(e) {
+    
+    $('.trans-expand').removeAttr( 'style' );
+    $('.trans-title').removeAttr( 'style' );
+    $('.trans-type').removeAttr( 'style' );
+    $('.trans-size').removeAttr( 'style' );
+    $('.trans-date').removeAttr( 'style' );
+    $('.trans-location').removeAttr( 'style' );
+    $('.trans-sector').removeAttr( 'style' );
+    $('.trans-type-short').removeAttr( 'style' );
+    $('.trans-press').removeAttr( 'style' );
+    $('img').removeAttr( 'style' );
+    $('.trans-img1').removeAttr( 'style' );
+    $('.trans-img2').removeAttr( 'style' );
+
+
+    $(this.children[0]).css({   "z-index": "999",
+                                "width": "412px",
+                                "height": "615px",
+                                "transition": "width 0.2s ease-in-out",
+                                "transition": "height 0.2s ease-in-out",
+                                "padding": "25px",
+                                "background": "white",
+                                "color": "black",
+                                "border": "none",
+                                "transition": ".3s ease",
+                                "overflow": "hidden"});
+    $(this.children[0].children[0]).css({"width": "unset", 
+                                         "top": "0"});//img1
+    $(this.children[0].children[0].children[0]).css({   "transition": "max-width 0.3s ease-in-out", 
+                                                         "max-width": "300px", 
+                                                            "filter": "none", 
+                                                               "top": "unset", 
+                                                         "transform": "unset"})//img1 img 
+    $(this.children[0].children[1]).css({"display": "block"});//type
+    $(this.children[0].children[2].children[0]).css({"transition": "max-width 0.3s ease-in-out",
+                                                     "max-height": "125px",
+                                                      "max-width": "300px",
+                                                         "filter": "none"});//img2 img
+    $(this.children[0].children[3]).css({"display": "block"});//title
+    $(this.children[0].children[6]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "125px"});//size
+    $(this.children[0].children[7]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "100px"});//date
+    $(this.children[0].children[8]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "75px"});//location
+    $(this.children[0].children[9]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "50px"});//sector
+    $(this.children[0].children[10]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "25px"});//type short
+    $(this.children[0].children[11]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "0px"});//press
+
+    var tr = window.matchMedia( "(max-width: 600px)" );
+    if (tr.matches) {
+        $(this.children[0]).css({"width": "90%",
+                                "height": "600px",
+                                "left": "5%"});
+        $(this.children[0].children[0].children[0]).css({"max-width": "200px"})//img1 img 
+        $(this.children[0].children[2].children[0]).css({"max-width": "200px"});//img2 img
+    }
+    
+    var windowWidth = $('.trans_container').width();
+    var boxWidth = $('.transaction').outerWidth() + 8;
+    var boxesPerRow = ~~(windowWidth / boxWidth);
+    var totalNumber = boxesPerRow * 2;
+    for (var item = 0; item < totalNumber -1; item++) {
+        $(".trans_hide")[item].style = "display: inline-block"
+    }
+
     // calculate how many boxes will be in a "row" 
     var windowWidth = $('.trans_container').width();
     var boxWidth = $('.transaction').outerWidth() + 8;
@@ -376,79 +447,3 @@ $('.box-ss').click(function() {
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
     $('.services-ss').css({"opacity":"1", "position":"relative"});
 });
-
-
-jQuery('.transaction').click(function(){
-    $('.trans-expand').removeAttr( 'style' );
-    $('.trans-title').removeAttr( 'style' );
-    $('.trans-type').removeAttr( 'style' );
-    $('.trans-size').removeAttr( 'style' );
-    $('.trans-date').removeAttr( 'style' );
-    $('.trans-location').removeAttr( 'style' );
-    $('.trans-sector').removeAttr( 'style' );
-    $('.trans-type-short').removeAttr( 'style' );
-    $('.trans-press').removeAttr( 'style' );
-    $('img').removeAttr( 'style' );
-    $('.trans-img1').removeAttr( 'style' );
-    $('.trans-img2').removeAttr( 'style' );
-
-    
-    $(this.children[0]).css({   "z-index": "999",
-                                "width": "412px",
-                                "height": "615px",
-                                "transition": "width 0.2s ease-in-out",
-                                "transition": "height 0.2s ease-in-out",
-                                "padding": "25px",
-                                "background": "white",
-                                "color": "black",
-                                "border": "none",
-                                "transition": ".3s ease",
-                                "overflow": "hidden"});
-    $(this.children[0].children[0]).css({"width": "unset", 
-                                         "top": "0"});//img1
-    $(this.children[0].children[0].children[0]).css({   "transition": "max-width 0.3s ease-in-out", 
-                                                         "max-width": "300px", 
-                                                            "filter": "none", 
-                                                               "top": "unset", 
-                                                         "transform": "unset"})//img1 img 
-    $(this.children[0].children[1]).css({"display": "block"});//type
-    $(this.children[0].children[2].children[0]).css({"transition": "max-width 0.3s ease-in-out",
-                                                     "max-height": "125px",
-                                                      "max-width": "300px",
-                                                         "filter": "none"});//img2 img
-    $(this.children[0].children[3]).css({"display": "block"});//title
-    $(this.children[0].children[6]).css({"display": "block",
-                                      "text-align": "left",
-                                        "position": "absolute",
-                                          "bottom": "125px"});//size
-    $(this.children[0].children[7]).css({"display": "block",
-                                      "text-align": "left",
-                                        "position": "absolute",
-                                          "bottom": "100px"});//date
-    $(this.children[0].children[8]).css({"display": "block",
-                                      "text-align": "left",
-                                        "position": "absolute",
-                                          "bottom": "75px"});//location
-    $(this.children[0].children[9]).css({"display": "block",
-                                      "text-align": "left",
-                                        "position": "absolute",
-                                          "bottom": "50px"});//sector
-    $(this.children[0].children[10]).css({"display": "block",
-                                      "text-align": "left",
-                                        "position": "absolute",
-                                          "bottom": "25px"});//type short
-    $(this.children[0].children[11]).css({"display": "block",
-                                      "text-align": "left",
-                                        "position": "absolute",
-                                          "bottom": "0px"});//press
-
-    var tr = window.matchMedia( "(max-width: 600px)" );
-    if (tr.matches) {
-        $(this.children[0]).css({"width": "90%",
-                                "height": "600px",
-                                "left": "5%"});
-        $(this.children[0].children[0].children[0]).css({"max-width": "200px"})//img1 img 
-        $(this.children[0].children[2].children[0]).css({"max-width": "200px"});//img2 img
-    }
-   
- });
