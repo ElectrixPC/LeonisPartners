@@ -465,27 +465,67 @@ margin: 0;
 }
 /* ----------- OUR SERVICES SECTION -----------*/
 
+#page_185 #page_title h1 {
+        font-size: 2.5em;
+}
+
+
 .services-top-tag {
         width: 60%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
 }
-.services-main {
-        background-color: beige;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-        width: 900px;
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
+.services-box {
+        padding: 50px;
+        width: 400px;
+        display: inline-grid;
+}
+.services-title {
+        background-color: white;
+        margin-top: 20px;
+}
+.services-expand p {
+        margin: 7px;
+}
+.services-box:hover .services-expand i {
+        display: none;
+}
+.services-box:hover .services-expand p {
+        display: block;
+}
+.services-expand {
+        background-color: #263318;
+        color: white;
 }
 .services-child {
         padding: 20px;
         width: 400px;
-        display: inline-block;
+        display: none;
 }
 .services-child p {
         float: left;
+}
+.services-expand p {
+        margin: 7px;
+        display: none;
+}
+
+.services-box:hover .services-title {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        transform: translateY(-10px) scale(1.02);
+        transition: 0.3s all ease-in-out;
+}
+.services-box:hover .services-expand {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        transform: translateY(-10px) scale(1.02);
+        transition: 0.3s all ease-in-out;
+}
+.services-box:hover .services-expand i {
+        display: none;
+}
+.services-box:hover .services-expand p {
+        display: block;
 }
 
 @media screen and (orientation: portrait) {
