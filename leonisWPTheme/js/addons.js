@@ -379,6 +379,20 @@ $('.box-ss').click(function() {
 
 
 jQuery('.transaction').click(function(){
+    $('.trans-expand').removeAttr( 'style' );
+    $('.trans-title').removeAttr( 'style' );
+    $('.trans-type').removeAttr( 'style' );
+    $('.trans-size').removeAttr( 'style' );
+    $('.trans-date').removeAttr( 'style' );
+    $('.trans-location').removeAttr( 'style' );
+    $('.trans-sector').removeAttr( 'style' );
+    $('.trans-type-short').removeAttr( 'style' );
+    $('.trans-press').removeAttr( 'style' );
+    $('img').removeAttr( 'style' );
+    $('.trans-img1').removeAttr( 'style' );
+    $('.trans-img2').removeAttr( 'style' );
+
+    
     $(this.children[0]).css({   "z-index": "999",
                                 "width": "412px",
                                 "height": "615px",
