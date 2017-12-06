@@ -463,8 +463,8 @@ margin: 0;
                 padding: 10px!important;
         }
         #page_188 #page_content > h3 {
-                padding-left: unset;
-                padding-right: unset;
+                padding-left: unset!important;
+                padding-right: unset!important;
         }
 }
 /* ----------- OUR SERVICES SECTION -----------*/
