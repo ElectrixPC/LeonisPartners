@@ -484,6 +484,7 @@ margin: 0;
 .services-title {
         background-color: white;
         margin-top: 20px;
+        height: 90px;
 }
 .services-expand p {
         margin: 7px;
