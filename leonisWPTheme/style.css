@@ -696,7 +696,7 @@ margin: 0;
         display: none;
 }
 
-/* ---------- TRANSACTION ON HOVER ----------------- */
+/* ---------- TRANSACTION ON HOVER ----------------- 
 .transaction:active > .trans-expand {
         z-index: 999;
         width: 412px;
@@ -773,7 +773,7 @@ margin: 0;
 .transaction:active .trans-img1 {
         width: unset!important;
         top: 0;
-}
+}*/
 
 
 
@@ -782,7 +782,7 @@ margin: 0;
                 padding-left: 0px;
                 padding-right: 0px;
         }
-        .transaction:active > .trans-expand {
+        /*.transaction:active > .trans-expand {
                 left: 5%;
                 height: 600px;
                 width: 90%;
@@ -792,7 +792,7 @@ margin: 0;
         }
         .transaction:hover .trans-img1 > img {
                 max-width: 200px;
-        }
+        }*/
         .transaction:hover .trans-title > h2 { 
                 font-size: 1.1em;
         }

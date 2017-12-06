@@ -382,3 +382,64 @@ jQuery('.transaction').click(function(){
     jQuery(this).toggleClass('active');
     jQuery(this)[0].children[0].toggleClass('active');
  });
+
+ jQuery('.transaction').click(function(){
+    $(this.children[0]).css({   "z-index": "999",
+                                "width": "412px",
+                                "height": "615px",
+                                "transition": "width 0.2s ease-in-out",
+                                "transition": "height 0.2s ease-in-out",
+                                "padding": "25px",
+                                "background": "white",
+                                "color": "black",
+                                "border": "none",
+                                "transition": ".3s ease",
+                                "overflow": "hidden"});
+    $(this.children[0].children[0]).css({"width": "unset!important", 
+                                         "top": "0"});//img1
+    $(this.children[0].children[0].children[0]).css({   "transition": "max-width 0.3s ease-in-out", 
+                                                         "max-width": "300px", 
+                                                            "filter": "none", 
+                                                               "top": "unset!important", 
+                                                         "transform": "unset!important"})//img1 img 
+    $(this.children[0].children[1]).css({"display": "block"});//type
+    $(this.children[0].children[2].children[0]).css({"transition": "max-width 0.3s ease-in-out",
+                                                     "max-height": "125px",
+                                                      "max-width": "300px",
+                                                         "filter": "none"});//img2 img
+    $(this.children[0].children[3]).css({"display": "block"});//title
+    $(this.children[0].children[6]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "125px"});//size
+    $(this.children[0].children[7]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "100px"});//date
+    $(this.children[0].children[8]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "75px"});//location
+    $(this.children[0].children[0]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "50px"});//sector
+    $(this.children[0].children[0]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "25px"});//type short
+    $(this.children[0].children[0]).css({"display": "block",
+                                      "text-align": "left",
+                                        "position": "absolute",
+                                          "bottom": "0px"});//press
+
+    var tr = window.matchMedia( "(max-width: 600px)" );
+    if (tr.matches) {
+        $(this.children[0]).css({"width": "90%",
+                                "height": "600px",
+                                "left": "5%"});
+        $(this.children[0].children[0].children[0]).css({"max-width": "200px"})//img1 img 
+        $(this.children[0].children[2].children[0]).css({"max-width": "200px"});//img2 img
+    }
+   
+ });
