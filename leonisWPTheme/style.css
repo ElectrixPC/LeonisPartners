@@ -562,6 +562,24 @@ margin: 0;
         padding: 10px;
         color: #263318;
 }
+.trans-location {
+        display: block;
+}
+.trans-location p {
+        display: none;
+}
+.trans-location-content {
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+}
+.trans-location-content p {
+        display: block!important;
+}
+
 .trans-expand {
         background: gainsboro;
         position: absolute;
@@ -586,9 +604,6 @@ margin: 0;
         display: none;
 }
 .trans-sector {
-        display: none;
-}
-.trans-location {
         display: none;
 }
 .trans-type-short {
