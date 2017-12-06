@@ -502,6 +502,7 @@ margin: 0;
 .services-child {
         padding: 20px;
         height: 0px;
+        top: -50px;
         width: 100%;
         opacity: 0;
         position: absolute;
@@ -539,6 +540,35 @@ margin: 0;
         display: inline-block;
         width: 400px;
         background-color: white;
+}
+
+.services-expanded-point {
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 50px solid darkgray;
+}
+
+.services-child-box-big {
+        display: inline-table;
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+        margin: 10px;
+        color: black;
+        background-color: gainsboro;
+        transition: .3s ease;
+}
+
+.services-child-box-big .services-child-title {
+        height: 80px;
+}
+
+
+.services-child-box-big:hover {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        transform: translateY(-10px) scale(1.02);
 }
 
 
