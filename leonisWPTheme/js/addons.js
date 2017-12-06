@@ -390,13 +390,13 @@ jQuery('.transaction').click(function(){
                                 "border": "none",
                                 "transition": ".3s ease",
                                 "overflow": "hidden"});
-    $(this.children[0].children[0]).css({"width": "unset!important", 
+    $(this.children[0].children[0]).css({"width": "unset", 
                                          "top": "0"});//img1
     $(this.children[0].children[0].children[0]).css({   "transition": "max-width 0.3s ease-in-out", 
                                                          "max-width": "300px", 
                                                             "filter": "none", 
-                                                               "top": "unset!important", 
-                                                         "transform": "unset!important"})//img1 img 
+                                                               "top": "unset", 
+                                                         "transform": "unset"})//img1 img 
     $(this.children[0].children[1]).css({"display": "block"});//type
     $(this.children[0].children[2].children[0]).css({"transition": "max-width 0.3s ease-in-out",
                                                      "max-height": "125px",
