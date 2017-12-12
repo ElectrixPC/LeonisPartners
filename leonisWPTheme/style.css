@@ -614,6 +614,9 @@ margin: 0;
 .trans-firm2 {
         display: none;
 }
+.trans-exit {
+        display: none;
+}
 .trans-img1 {
         position: relative;
         width: 150px;

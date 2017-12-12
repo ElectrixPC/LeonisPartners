@@ -292,6 +292,10 @@ $('.trans-exit').on('click', function(e) {
 });
 // Function for getting the last element in the row/last row
 $('.transaction').on('click', function(e) {
+
+    if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
+        return;
+    };
     
     $('.trans-expand').removeAttr( 'style' );
     $('.trans-title').removeAttr( 'style' );
@@ -365,8 +369,9 @@ $('.transaction').on('click', function(e) {
     $(this.children[0].children[12]).css({"display": "block",
                                        "text-align": "right",
                                          "position": "absolute",
-                                              "top": "0px",
-                                           "right" : "0px"});//press
+                                              "top": "5px",
+                                           "right" : "5px",
+                                           "color" : "#263318"});//press
 
     var tr = window.matchMedia( "(max-width: 600px)" );
     if (tr.matches) {
