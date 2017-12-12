@@ -244,6 +244,23 @@ var my_style = [
 ]
 // button for showing the hidden tombstones
 $(document).ready(function(){
+    var windowWidth = $('.trans_container').width();
+    var boxWidth = $('.transaction').outerWidth() + 8;
+    var boxesPerRow = ~~(windowWidth / boxWidth);
+
+    var smallTransactions = boxesPerRow * 2;
+    var totalTransactions = $('.transaction').length;
+    for (var item = 0; item < smallTransactions; item++) {
+        $(".trans_hide")[item].style = "display: inline-block";
+    }
+    for (var item = smallTransactions -1; item < totalTransactions -1; item++) {
+        $(".trans_hide")[item].style = "display: none";
+    }
+    for(var i=0; i<$('.transaction').length; i++) {
+            var $thisGuy = $('.transaction').eq(i);
+            $thisGuy[0].children[0].style.bottom = "auto";
+            $thisGuy[0].children[0].style.right = "auto";
+    }
     $(".button").click(function(){
         window.focus();
         // display the hidden tombstones
