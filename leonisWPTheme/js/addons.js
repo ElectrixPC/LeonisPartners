@@ -272,6 +272,24 @@ $(document).ready(function(){
         }
     });
 });
+
+$('.trans-exit').on('click', function(e) {
+    $('.trans-expand').removeAttr( 'style' );
+    $('.trans-title').removeAttr( 'style' );
+    $('.trans-type').removeAttr( 'style' );
+    $('.trans-size').removeAttr( 'style' );
+    $('.trans-date').removeAttr( 'style' );
+    $('.trans-location').removeAttr( 'style' );
+    $('.trans-sector').removeAttr( 'style' );
+    $('.trans-type-short').removeAttr( 'style' );
+    $('.trans-press').removeAttr( 'style' );
+    $('img').removeAttr( 'style' );
+    $('p').removeAttr('style');
+    $('.trans-img1').removeAttr( 'style' );
+    $('.trans-img2').removeAttr( 'style' );
+    $('.trans-exit').removeAttr( 'style' );
+
+});
 // Function for getting the last element in the row/last row
 $('.transaction').on('click', function(e) {
     
@@ -288,7 +306,7 @@ $('.transaction').on('click', function(e) {
     $('p').removeAttr('style');
     $('.trans-img1').removeAttr( 'style' );
     $('.trans-img2').removeAttr( 'style' );
-
+    $('.trans-exit').removeAttr( 'style' );
 
     $(this.children[0]).css({   "z-index": "999",
                                 "width": "412px",
@@ -344,6 +362,11 @@ $('.transaction').on('click', function(e) {
                                       "text-align": "left",
                                         "position": "absolute",
                                           "bottom": "0px"});//press
+    $(this.children[0].children[12]).css({"display": "block",
+                                       "text-align": "right",
+                                         "position": "absolute",
+                                              "top": "0px",
+                                           "right" : "0px"});//press
 
     var tr = window.matchMedia( "(max-width: 600px)" );
     if (tr.matches) {
