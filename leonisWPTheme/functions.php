@@ -93,13 +93,13 @@ function transactions_output($atts) {
               $firm1_img  = '<div class="trans-img1"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-1", true) . '></div>';
           }
           else {
-              $firm1_img = '';
+              $firm1_img = '<div class="trans-img1"></div>';
           }
           if (get_post_meta(get_the_ID(), "wpcf-company-2", true)) {
               $firm2_img  = '<div class="trans-img2"><img src=' . get_post_meta(get_the_ID(), "wpcf-company-2", true) . '></div>';
           }
           else {
-              $firm2_img = '';
+              $firm2_img = '<div class="trans-img2"></div>';
           }
           $type_short = '<div class="trans-type-short"><p><b>Type:</b> ' . get_post_meta(get_the_ID(), "wpcf-transaction-type-short",    true) . '</p></div>';
           $sector     = '<div class="trans-sector"><p><b>Sector:</b> '     . get_post_meta(get_the_ID(), "wpcf-transaction-sector",        true) . '</p></div>';
