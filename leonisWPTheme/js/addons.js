@@ -285,6 +285,7 @@ $('.transaction').on('click', function(e) {
     $('.trans-type-short').removeAttr( 'style' );
     $('.trans-press').removeAttr( 'style' );
     $('img').removeAttr( 'style' );
+    $('p').removeAttr('style');
     $('.trans-img1').removeAttr( 'style' );
     $('.trans-img2').removeAttr( 'style' );
 
@@ -325,6 +326,7 @@ $('.transaction').on('click', function(e) {
                                       "text-align": "left",
                                         "position": "absolute",
                                           "bottom": "75px"});//location
+    $(this.children[0].children[8].children[0]).css({"display": "block"});//location p                                     
     $(this.children[0].children[9]).css({"display": "block",
                                       "text-align": "left",
                                         "position": "absolute",
