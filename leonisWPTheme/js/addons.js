@@ -330,7 +330,8 @@ $('.transaction').on('click', function(e) {
     $(this.children[0].children[8].children[1]).css({"bottom"    : "0px",
                                                      "left"      : "105%",
                                                      "transform" : "unset",
-                                                     "float"     : "right"});//location trans-location-content                               
+                                                     "float"     : "right",
+                                                     "width"     : "300%"});//location trans-location-content                               
     $(this.children[0].children[9]).css({"display": "block",
                                       "text-align": "left",
                                         "position": "absolute",
