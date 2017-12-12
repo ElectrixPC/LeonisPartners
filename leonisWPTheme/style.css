@@ -724,6 +724,7 @@ background: white;
 margin: 10px;
 transition: .3s ease;
 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+overflow: hidden;
 }
 .news:hover {
 box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
@@ -731,6 +732,9 @@ transform: translateY(-10px) scale(1.02);
 }
 .news:hover .news-title {
 background-position: -100% 0;
+}
+.news:hover .news-readmore {
+        bottom: 0px;
 }
 
 .news .news-title {
@@ -771,20 +775,20 @@ color: #16a085;
 color: white;
 }
 
-.news .news-readmore{
+.news > .news-readmore {
         display: block;
         font-size: 12px;
         font-weight: bold;
         text-align: center;
-        left: 0px;
+        left: inherit;
         color: white;
-        bottom: 0px;
         position: absolute;
-        width: 100%;
+        width: 250px;
+        bottom: 40px;
         padding-top: 10px;
         height: 50px;
         background-color: rgba(133, 87, 35, 0.9);
-}
+    }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
 
