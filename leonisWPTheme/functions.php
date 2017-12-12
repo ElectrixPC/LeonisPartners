@@ -175,3 +175,21 @@ function download_by_email($atts) {
     return $output;
 }
 add_shortcode('email', 'download_by_email');
+
+function get_news($atts) {
+    $args = array('post_type' => 'posts',
+    'posts_per_page' => 4); // these arguments are telling WP_Query to only look for the post types called transactions
+    $query = new WP_Query( $args );
+    $output = '<div class="news_container">';
+
+    while ( $query->have_posts() ) : $query->the_post();
+        $container = '<div class="news">';
+        $title = '<div class="news-title">' . the_title() . '</div>';
+        $content = '<div class="news-content">' . the_content() . '</div>';
+        $readmore = '<a target class="news-readmore" href=' . get_permalink() . '>Read More.<br><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>';
+        $close = "</div>";
+
+        $output .= $container . $title . $content . $readmore . $close;
+    return $output;
+}
+add_shortcode( 'news', $atts);
