@@ -190,6 +190,8 @@ function get_news($atts) {
         $close = "</div>";
 
         $output .= $container . $title . $content . $readmore . $close;
+    endwhile;
+
     return $output;
 }
-add_shortcode( 'news', $atts);
+add_shortcode( 'news', 'get_news');
