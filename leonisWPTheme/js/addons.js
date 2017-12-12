@@ -280,6 +280,7 @@ $('.trans-exit').on('click', function(e) {
     $('.trans-size').removeAttr( 'style' );
     $('.trans-date').removeAttr( 'style' );
     $('.trans-location').removeAttr( 'style' );
+    $('.trans-location-content').removeAttr( 'style' );
     $('.trans-sector').removeAttr( 'style' );
     $('.trans-type-short').removeAttr( 'style' );
     $('.trans-press').removeAttr( 'style' );
@@ -303,6 +304,7 @@ $('.transaction').on('click', function(e) {
     $('.trans-size').removeAttr( 'style' );
     $('.trans-date').removeAttr( 'style' );
     $('.trans-location').removeAttr( 'style' );
+    $('.trans-location-content').removeAttr( 'style' );
     $('.trans-sector').removeAttr( 'style' );
     $('.trans-type-short').removeAttr( 'style' );
     $('.trans-press').removeAttr( 'style' );
