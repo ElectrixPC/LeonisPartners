@@ -83,7 +83,7 @@ a.button, a.button:visited {
 
 a.button:hover {
         background: #263318;
-        color: #B99C6B;
+        color: transparent;
         border: 2px solid #263318;
         text-decoration: none;
         -webkit-transition: all .2s ease;
@@ -366,9 +366,6 @@ margin: 0;
         background-color: #C0C0C0;
         font-family: 'Open Sans Condensed', sans-serif;
         color: black;
-}
-#page_32 h1 {
-        color: white;
 }
 /* Contact us */
 #page_2, #page_11, #page_24{
