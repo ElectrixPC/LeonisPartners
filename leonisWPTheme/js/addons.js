@@ -326,7 +326,11 @@ $('.transaction').on('click', function(e) {
                                       "text-align": "left",
                                         "position": "absolute",
                                           "bottom": "75px"});//location
-    $(this.children[0].children[8].children[0]).css({"display": "block"});//location p                                     
+    $(this.children[0].children[8].children[0]).css({"display": "block"});//location p
+    $(this.children[0].children[8].children[1]).css({"bottom"    : "0px",
+                                                     "left"      : "105%",
+                                                     "transform" : "unset",
+                                                     "float"     : "right"});//location trans-location-content                               
     $(this.children[0].children[9]).css({"display": "block",
                                       "text-align": "left",
                                         "position": "absolute",
