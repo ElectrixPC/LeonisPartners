@@ -716,10 +716,12 @@ margin: 0;
 /* -------- Press tiles ------------- */
 
 .news {
-width: 350px;
+width: 250px;
+display: inline-grid;
+height: 250px;
 padding: 30px;
-background: #DBCA69;
-margin: auto;
+background: white;
+margin: 10px;
 transition: .3s ease;
 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -739,6 +741,7 @@ display: inline;
 transition: .5s ease-in-out;
 font-family: raleway, arial, sans-serif;
 text-transform: uppercase;
+font-size: 23px;
 }
 .news .news-title a {
 color: white;
@@ -749,7 +752,7 @@ text-decoration: none;
 margin-top: 20px;
 display: block;
 font-family: raleway, arial, sans-serif;
-color: white;
+color: black;
 }
 .news .news-content a {
 font-weight: 700;
@@ -768,24 +771,19 @@ color: #16a085;
 color: white;
 }
 
-#post-grid-197 .element_0 {
-        display: unset!important;
-        padding: unset!important;
-}
-      
 .news .news-readmore{
-        display: block!important;
-        font-size: 12px!important;
-        font-weight: bold!important;
-        text-align: center!important;
-        left: 0px!important;
-        color: white!important;
-        bottom: 0px!important;
-        position: absolute!important;
-        width: 100%!important;
-        padding-top: 10px!important;
-        height: 50px!important;
-        background-color: rgba(133, 87, 35, 0.9)!important;
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        left: 0px;
+        color: white;
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
+        padding-top: 10px;
+        height: 50px;
+        background-color: rgba(133, 87, 35, 0.9);
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
