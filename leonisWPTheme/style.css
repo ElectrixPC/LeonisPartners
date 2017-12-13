@@ -718,6 +718,7 @@ margin: 0;
 .news-container {
 width: 50%;
 padding-left: 100px;
+float: left;
 }
 
 .news {
@@ -793,7 +794,7 @@ color: white;
         background-color: rgba(38, 51, 24, 0.8);
 }
 
-.news-socal-container {
+.news-social-container {
         float: right;
         width: 50%;
         position: relative;
