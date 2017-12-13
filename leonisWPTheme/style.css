@@ -715,6 +715,11 @@ margin: 0;
 
 /* -------- Press tiles ------------- */
 
+.news-container {
+width: 50%;
+padding-left: 100px;
+}
+
 .news {
 width: 250px;
 display: inline-grid;
@@ -725,6 +730,7 @@ margin: 10px;
 transition: .3s ease;
 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 overflow: hidden;
+position: relative;
 }
 .news:hover {
 box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);

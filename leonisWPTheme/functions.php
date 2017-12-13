@@ -192,7 +192,7 @@ function get_news($atts) {
         $output .= $container . $title . $content . $readmore . $close;
     endwhile;
 
-    $output .= '</div>';
+    $output .= '<a type="button" class="news-button" href="#">View All</a></div>';
 
     return $output;
 }
