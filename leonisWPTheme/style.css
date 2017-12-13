@@ -825,14 +825,17 @@ color: white;
 
 .news-download-item .fa-5x {
         font-size: 5em;
-        border: 3px solid black;
+        color: #263318;
+        border: 3px solid #263318;
         height: 135px;
         width: 135px;
         padding: 25px;
         border-radius: 50%;
 }
 .news-download-item .fa-check {
-        background-color: white;
+        background-color: #263318;
+        color: white;
+        border-color: white;
         opacity: 0;
         transition: all 0.4s ease-in-out;
         height: 0px;
