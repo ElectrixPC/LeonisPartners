@@ -461,15 +461,13 @@ window.addEventListener('resize', function(event){
 
 $('.button-file').click(function() {
     var mq = window.matchMedia( "(max-width: 1000px)" );
-    $('.wpcf7-form').css({"display" : "block"});
+    $(this.parentElement.parentElement.children[2].children[1]).css({"display" : "block"});
     if (mq.matches) {
-        $('.wpcf7').css({"height":"70%", "width":"90%"});
+        $(this.parentElement.parentElement.children[2]).css({"height":"70%", "width":"90%"});
     }
     else {
-        $('.wpcf7').css({"height":"30%", "width":"30%"});
+        $(this.parentElement.parentElement.children[2]).css({"height":"30%", "width":"30%"});
     }
-    
-    
 });
 
 $('.wpcf7-submit').on('click', function(e) {
