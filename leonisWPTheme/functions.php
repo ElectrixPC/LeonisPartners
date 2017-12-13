@@ -245,7 +245,7 @@ function get_downloads($atts) {
         $output .= do_shortcode( $shortcode );
         $output .= '</div>';
     }
-    $outout .= '</div>';
+    $output .= '</div>';
     reutrn $output;
 }
 add_shortcode( 'news-downloads', 'get_downloads');
