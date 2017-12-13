@@ -213,7 +213,7 @@ function get_downloads($atts) {
     if (empty($atts['id1']) == false) {
         $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><i class="fa fa-check fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id1']) . '</h2>';
         $output .= '<div class="email-download"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
-        $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $atts['id1']);
+        $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="358"]', $atts['id1']);
         $output .= do_shortcode( $shortcode );
         $output .= '</div></div>';
     }
