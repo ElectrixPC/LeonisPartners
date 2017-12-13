@@ -791,7 +791,23 @@ color: white;
         padding-top: 10px;
         height: 50px;
         background-color: rgba(38, 51, 24, 0.8);
-    }
+}
+
+.news-socal-container {
+        float: right;
+        width: 50%;
+        position: relative;
+        top: 100px;
+}
+
+.news-social-container a {
+        display: block;
+        width: fit-content;
+}
+
+.news-social-container .fa {
+        font-size: 150px;
+}
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
 

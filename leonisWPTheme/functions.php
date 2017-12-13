@@ -200,7 +200,7 @@ add_shortcode( 'news', 'get_news');
 
 function get_social($atts) {
     
-    $output = '<div class="news-socal-container"><a type="button" href="#"><i class="fa fa-twitter-square fa-8x" aria-hidden="true"></i></a>';
+    $output = '<div class="news-social-container"><a type="button" href="#"><i class="fa fa-twitter-square fa-8x" aria-hidden="true"></i></a>';
     $output .= '<a type="button" href="#"><i class="fa fa-linkedin-square fa-8x" aria-hidden="true"></i></a></div>';
 
     return $output;
