@@ -206,3 +206,46 @@ function get_social($atts) {
     return $output;
 }
 add_shortcode( 'news-social', 'get_social');
+
+function get_downloads($atts) {
+
+    $output = '<div class="news-download-container">'
+    if (empty($atts['id1'] == false)) {
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i>'
+        $output .= '<div class="email-download1"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
+        $shortcode = sprintf('[email-download1 download_id="%1$s" contact_form_id="295"]', $atts['id1']);
+        $output .= do_shortcode( $shortcode );
+        $output .= '</div>';
+    }
+    if (empty($atts['id2'] == false)) {
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i>'
+        $output .= '<div class="email-download2"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
+        $shortcode = sprintf('[email-download2 download_id="%1$s" contact_form_id="295"]', $atts['id2']);
+        $output .= do_shortcode( $shortcode );
+        $output .= '</div>';
+    }
+    if (empty($atts['id3'] == false)) {
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i>'
+        $output .= '<div class="email-download3"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
+        $shortcode = sprintf('[email-download3 download_id="%1$s" contact_form_id="295"]', $atts['id3']);
+        $output .= do_shortcode( $shortcode );
+        $output .= '</div>';
+    }
+    if (empty($atts['id4'] == false)) {
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i>'
+        $output .= '<div class="email-download4"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
+        $shortcode = sprintf('[email-download4 download_id="%1$s" contact_form_id="295"]', $atts['id4']);
+        $output .= do_shortcode( $shortcode );
+        $output .= '</div>';
+    }
+    if (empty($atts['id5'] == false)) {
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i>'
+        $output .= '<div class="email-download5"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
+        $shortcode = sprintf('[email-download5 download_id="%1$s" contact_form_id="295"]', $atts['id5']);
+        $output .= do_shortcode( $shortcode );
+        $output .= '</div>';
+    }
+    $outout .= '</div>';
+    reutrn $output;
+}
+add_shortcode( 'news-downloads', 'get_downloads');
