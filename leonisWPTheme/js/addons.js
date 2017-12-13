@@ -472,7 +472,7 @@ $('.button-file').click(function() {
     
 });
 
-$('.wpcf7-submit').click(function() {
+$('.wpcf7-submit').on('click', function(e) {
     $('.wpcf7').css({"height":"0%", "width":"0%"});
     $('.wpcf7-form').css({"display" : "none"});
 
