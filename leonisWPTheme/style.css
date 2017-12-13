@@ -733,9 +733,6 @@ transform: translateY(-10px) scale(1.02);
 .news:hover .news-title {
 background-position: -100% 0;
 }
-.news:hover .news-readmore {
-        bottom: 0px;
-}
 
 .news .news-title {
 background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #DBCA69  50%);
@@ -775,7 +772,7 @@ color: #16a085;
 color: white;
 }
 
-.news > .news-readmore {
+.news .news-readmore {
         display: block;
         font-size: 12px;
         font-weight: bold;
@@ -784,10 +781,10 @@ color: white;
         color: white;
         position: absolute;
         width: 250px;
-        bottom: 40px;
+        bottom: 0px;
         padding-top: 10px;
         height: 50px;
-        background-color: rgba(133, 87, 35, 0.9);
+        background-color: rgba(38, 51, 24, 0.8);
     }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
