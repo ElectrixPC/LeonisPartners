@@ -261,7 +261,7 @@ $(document).ready(function(){
             $thisGuy[0].children[0].style.bottom = "auto";
             $thisGuy[0].children[0].style.right = "auto";
     }
-    $(".button").click(function(){
+    $(".button-trans").click(function(){
         window.focus();
         // display the hidden tombstones
         $(".trans_hide").css({"display":"inline-block"});
