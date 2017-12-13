@@ -823,6 +823,20 @@ color: white;
         padding: 25px;
 }
 
+.news-download-item .fa-5x {
+        font-size: 5em;
+        border: 3px solid black;
+        height: 135px;
+        width: 135px;
+        padding: 25px;
+        border-radius: 50%;
+}
+.news-download-item .fa-check {
+        background-color: white;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+}
+
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
 
 .wpcf7 {

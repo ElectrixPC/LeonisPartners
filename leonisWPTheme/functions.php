@@ -211,35 +211,35 @@ function get_downloads($atts) {
 
     $output = '<br><div class="news-download-container">';
     if (empty($atts['id1']) == false) {
-        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id1']) . '</h2>';
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><i class="fa fa-check fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id1']) . '</h2>';
         $output .= '<div class="email-download"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
         $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $atts['id1']);
         $output .= do_shortcode( $shortcode );
         $output .= '</div></div>';
     }
     if (empty($atts['id2']) == false) {
-        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id2']) . '</h2>';
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><i class="fa fa-check fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id2']) . '</h2>';
         $output .= '<div class="email-download"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
         $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $atts['id2']);
         $output .= do_shortcode( $shortcode );
         $output .= '</div></div>';
     }
     if (empty($atts['id3']) == false) {
-        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id3']) . '</h2>';
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><i class="fa fa-check fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id3']) . '</h2>';
         $output .= '<div class="email-download"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
         $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $atts['id3']);
         $output .= do_shortcode( $shortcode );
         $output .= '</div></div>';
     }
     if (empty($atts['id4']) == false) {
-        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id4']) . '</h2>';
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><i class="fa fa-check fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id4']) . '</h2>';
         $output .= '<div class="email-download"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
         $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $atts['id4']);
         $output .= do_shortcode( $shortcode );
         $output .= '</div></div>';
     }
     if (empty($atts['id5']) == false) {
-        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id5']) . '</h2>';
+        $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><i class="fa fa-check fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id5']) . '</h2>';
         $output .= '<div class="email-download"><div class="email-download-title"><a type="button" class="button button-file" href="#">Download File</a></div>';
         $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $atts['id5']);
         $output .= do_shortcode( $shortcode );
