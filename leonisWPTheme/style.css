@@ -833,8 +833,11 @@ color: white;
 }
 .news-download-item .fa-check {
         background-color: white;
-        visibility: hidden;
+        opacity: 0;
         transition: all 0.4s ease-in-out;
+        height: 0px;
+        width: 0px;
+        padding: 0px;
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
