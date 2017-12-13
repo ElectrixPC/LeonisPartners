@@ -1,5 +1,16 @@
 <?php
 
+// Change default WordPress email address
+add_filter('wp_mail_from', 'new_mail_from');
+add_filter('wp_mail_from_name', 'new_mail_from_name');
+ 
+function new_mail_from($old) {
+return 'enquiries@leonispartners.com';
+}
+function new_mail_from_name($old) {
+return 'Leonis Partners';
+}
+
 function leonis_setup() {
     // This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
