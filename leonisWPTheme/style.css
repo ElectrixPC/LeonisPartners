@@ -366,6 +366,7 @@ margin: 0;
         background-color: #C0C0C0;
         font-family: 'Open Sans Condensed', sans-serif;
         color: black;
+        overflow: hidden;
 }
 /* Contact us */
 #page_2, #page_11, #page_24{
@@ -717,7 +718,7 @@ margin: 0;
 
 .news-container {
 width: 50%;
-padding: 0px 200px 200px 200px;
+padding: 0px 200px 0px 200px;
 float: left;
 }
 
@@ -810,6 +811,17 @@ color: white;
 
 .news-social-container .fa {
         font-size: 150px;
+}
+
+.news-download-container {
+        position: relative;
+        float: left;
+        width: 100%;
+}
+
+.news-download-item {
+        display: inline-block;
+        padding: 25px;
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
