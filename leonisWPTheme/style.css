@@ -798,13 +798,16 @@ color: white;
         float: right;
         width: 50%;
         position: relative;
-        top: 100px;
-}
+        left: 50%;
+        transform: translateX(-50%);
+        min-height: 500px;
+    }
 
 .news-social-container a {
         display: block;
         width: fit-content;
-}
+        padding: 50px;
+    }
 
 .news-social-container .fa {
         font-size: 150px;
