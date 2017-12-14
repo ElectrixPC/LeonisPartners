@@ -478,13 +478,14 @@ window.addEventListener('resize', function(event){
             $thisGuy[0].children[0].style.bottom = "auto";
             $thisGuy[0].children[0].style.right = "auto";
     }
-
-    var newsWindowWidth = $('.news-container')[0].clientWidth;
-    var newsBoxWidth = $('.news').outerWidth() + 40;
-    var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
-    var spacestr = space + 'px';
-    $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
-
+    if ($('.inline_page').length != 1) 
+    {   // check whether the page is the news one
+        var newsWindowWidth = $('.news-container')[0].clientWidth;
+        var newsBoxWidth = $('.news').outerWidth() + 40;
+        var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
+        var spacestr = space + 'px';
+        $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
+    }
 
 });
 
