@@ -242,8 +242,9 @@ var my_style = [
         ]
     }
 ]
-// button for showing the hidden tombstones
+
 $(document).ready(function(){
+    // show the right amount of transactions on load
     var windowWidth = $('.trans_container').width();
     var boxWidth = $('.transaction').outerWidth() + 8;
     var boxesPerRow = ~~(windowWidth / boxWidth);
@@ -261,6 +262,7 @@ $(document).ready(function(){
             $thisGuy[0].children[0].style.bottom = "auto";
             $thisGuy[0].children[0].style.right = "auto";
     }
+    // show all transactions on click
     $(".button-trans").click(function(){
         window.focus();
         // display the hidden tombstones
@@ -271,12 +273,25 @@ $(document).ready(function(){
             $thisGuy[0].children[0].style.bottom = "auto";
         }
     });
-
-    var newsWindowWidth = $('.news-container')[0].clientWidth;
-    var newsBoxWidth = $('.news').outerWidth() + 40;
-    var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
-    var spacestr = space + 'px';
+    
     $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
+    // check if there is only one inner page on the overall page
+    if ($('.inline_page').length == 1) 
+    {   // check whether the page is the news one
+        if ($('#page_title')[0].baseURI.includes('news'))
+        {
+            $('.news-container').css({"width": "100%"});//make the news boxes full width
+            $('.news-social').css({"display": "none"}); //make the social buttons dissapear
+        }
+    }
+    else {
+        // Show two lines of news boxes based on paddings
+        var newsWindowWidth = $('.news-container')[0].clientWidth;
+        var newsBoxWidth = $('.news').outerWidth() + 40;
+        var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
+        var spacestr = space + 'px';
+    }
+
 });
 
 $('.trans-exit').on('click', function(e) {
