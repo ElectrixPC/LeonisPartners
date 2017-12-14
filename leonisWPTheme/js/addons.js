@@ -280,8 +280,9 @@ $(document).ready(function(){
     {   // check whether the page is the news one
         if ($('#page_title')[0].baseURI.includes('news'))
         {
-            $('.news-container').css({"width": "100%", "padding" : "none"});//make the news boxes full width
+            $('.news-container').css({"width": "100%", "padding" : "none", "padding-bottom" : "200px"});//make the news boxes full width
             $('.news-social-container').css({"display": "none"}); //make the social buttons dissapear
+            $('.news-button').css({"display" : "none"}); // make the show all button go away
         }
     }
     else {
