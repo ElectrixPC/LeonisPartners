@@ -314,7 +314,7 @@ $(document).ready(function(){
 
 });
 
-$('.trans-exit').on('click', function(e) {
+$('.trans-exit').on('click touchstart', function(e) {
     $('.trans-expand').removeAttr( 'style' );
     $('.trans-title').removeAttr( 'style' );
     $('.trans-type').removeAttr( 'style' );
@@ -333,7 +333,7 @@ $('.trans-exit').on('click', function(e) {
 
 });
 // Function for getting the last element in the row/last row
-$('.transaction').on('click', function(e) {
+$('.transaction').on('click touchstart', function(e) {
 
     if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
         return;

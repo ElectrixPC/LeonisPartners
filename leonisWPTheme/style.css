@@ -605,11 +605,28 @@ margin: 0;
         .services-top-tag {
                 width: 90%;
         }
-        .services-main {
+        .services-box {
+                padding: 0px;
                 width: 90%;
+
         }
         .services-child {
+                width: 90%;
+                margin-top:100px;
+        }
+        .services-child-tagline p {
+                padding: 0px; 
+        }
+        .services-child-box-big {
                 width: 100%;
+                margin: 0px;
+                margin-bottom: 10px;
+        }
+        .services-child-box {
+                width: 100%;
+        }
+        .services-child-box-title {
+                height: fit-content;
         }
 }
 
