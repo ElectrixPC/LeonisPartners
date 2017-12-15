@@ -305,6 +305,12 @@ $(document).ready(function(){
             $('.news-button').css({"display" : "none"}); // make the show all button go away
         }
     }
+
+    $('.button-social').hover(
+        function() { $(this.parentElement).css({"color": "white"}) }
+    );
+
+
 });
 
 $('.trans-exit').on('click', function(e) {

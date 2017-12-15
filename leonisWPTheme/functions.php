@@ -211,9 +211,7 @@ add_shortcode( 'news', 'get_news');
 
 function get_social($atts) {
     
-    $output  = '<div class="news-social-container"><div class="social" style="
-    "><i class="fa fa-twitter-square fa-8x" aria-hidden="true"></i><br><a type="button" class="button" href="#">Follow Us</a></div><div class="social"><i class="fa fa-linkedin-square fa-8x" aria-hidden="true"></i><br><a type="button" class="button" href="https://www.linkedin.com/in/derickschaudies/">Connect with Us</a></div></div>';
-    $output .= '<a type="button" href="#"><i class="fa fa-linkedin-square fa-8x" aria-hidden="true"></i></a><br><a type="button" class="button" href="https://www.linkedin.com/in/derickschaudies/">Connect with Us</a></div>';
+    $output  = '<div class="news-social-container"><div class="social"><i class="fa fa-twitter-square fa-8x" aria-hidden="true"></i><br><a type="button" class="button button-social" href="#">Follow Us</a></div><div class="social"><i class="fa fa-linkedin-square fa-8x" aria-hidden="true"></i><br><a type="button" class="button button-social" href="https://www.linkedin.com/in/derickschaudies/">Connect with Us</a></div></div>';
 
     return $output;
 }
