@@ -706,6 +706,7 @@ margin: 0;
         left: 50%;
         transform: translateX(-50%);
         color: black;
+        width: fit-content;
 }
 .trans-location-content p {
         display: block!important;
