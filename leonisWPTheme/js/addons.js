@@ -407,7 +407,7 @@ $('.transaction').on('click', function(e) {
     }
     
     var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 8;
+    var boxWidth = $('.transaction').outerWidth() + 10;
     var boxesPerRow = ~~(windowWidth / boxWidth);
     var totalNumber = boxesPerRow * 2;
     for (var item = 0; item < totalNumber -1; item++) {
@@ -416,7 +416,7 @@ $('.transaction').on('click', function(e) {
 
     // calculate how many boxes will be in a "row" 
     var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 8;
+    var boxWidth = $('.transaction').outerWidth() + 10;
     var boxesPerRow = ~~(windowWidth / boxWidth);
     
     var smallTransactions = boxesPerRow * 2;
@@ -463,7 +463,7 @@ $('.transaction').on('click', function(e) {
 
 window.addEventListener('resize', function(event){
     var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 8;
+    var boxWidth = $('.transaction').outerWidth() + 10;
     var boxesPerRow = ~~(windowWidth / boxWidth);
 
     var smallTransactions = boxesPerRow * 2;
