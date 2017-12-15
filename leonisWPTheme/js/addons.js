@@ -275,6 +275,15 @@ $(document).ready(function(){
     });
     
     $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
+    
+    if ($('.inline_page').length != 1) 
+    {   // check whether the page is the news one
+        var newsWindowWidth = $('.news-container')[0].clientWidth;
+        var newsBoxWidth = $('.news').outerWidth() + 40;
+        var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
+        var spacestr = space + 'px';
+        $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
+    }
     // check if there is only one inner page on the overall page
     if ($('.inline_page').length == 1) 
     {   // check whether the page is the news one
@@ -285,14 +294,6 @@ $(document).ready(function(){
             $('.news-button').css({"display" : "none"}); // make the show all button go away
         }
     }
-    else {
-        // Show two lines of news boxes based on paddings
-        var newsWindowWidth = $('.news-container')[0].clientWidth;
-        var newsBoxWidth = $('.news').outerWidth() + 40;
-        var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
-        var spacestr = space + 'px';
-    }
-
 });
 
 $('.trans-exit').on('click', function(e) {
