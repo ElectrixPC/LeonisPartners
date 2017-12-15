@@ -307,7 +307,8 @@ $(document).ready(function(){
     }
 
     $('.button-social').hover(
-        function() { $(this.parentElement).css({"color": "white"}) }
+            function() { $(this.parentElement.children[0]).css({"color": "white", "transition" : "0.3s all ease-in-out"}) },
+            function() { $(this.parentElement.children[0]).css({"color": "#263318", "transition" : "0.3s all ease-in-out"}) }
     );
 
 
