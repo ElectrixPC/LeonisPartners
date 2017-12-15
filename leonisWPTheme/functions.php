@@ -189,7 +189,7 @@ add_shortcode('email', 'download_by_email');
 
 function get_news($atts) {
     $args = array('post_type' => 'post',
-    'posts_per_page' => 4); // these arguments are telling WP_Query to only look for the post types called transactions
+    'posts_per_page' => 1000); // these arguments are telling WP_Query to only look for the post types called transactions
     $query = new WP_Query( $args );
     $output = '<div class="news-container">';
 
@@ -211,7 +211,8 @@ add_shortcode( 'news', 'get_news');
 
 function get_social($atts) {
     
-    $output  = '<div class="news-social-container"><a type="button" href="#"><i class="fa fa-twitter-square fa-8x" aria-hidden="true"></i></a><br><a type="button" class="button" href="#">Follow Us</a>';
+    $output  = '<div class="news-social-container"><div class="social" style="
+    "><i class="fa fa-twitter-square fa-8x" aria-hidden="true"></i><br><a type="button" class="button" href="#">Follow Us</a></div><div class="social"><i class="fa fa-linkedin-square fa-8x" aria-hidden="true"></i><br><a type="button" class="button" href="https://www.linkedin.com/in/derickschaudies/">Connect with Us</a></div></div>';
     $output .= '<a type="button" href="#"><i class="fa fa-linkedin-square fa-8x" aria-hidden="true"></i></a><br><a type="button" class="button" href="https://www.linkedin.com/in/derickschaudies/">Connect with Us</a></div>';
 
     return $output;
