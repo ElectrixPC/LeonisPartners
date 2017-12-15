@@ -309,15 +309,6 @@ margin: 0;
         bottom: 29.9%;
 }
 
-@media screen and (max-device-aspect-ratio: 4/3) {
-.parallax__layer img {
-    height: -webkit-fill-available;
-    width: auto;
-    left: 50%!important;
-    transform: translateX(-50%);
-}
-}
-
 /* ---------- STANDARD PAGES (Main Screen) ------------ */ 
 
 #primary {
