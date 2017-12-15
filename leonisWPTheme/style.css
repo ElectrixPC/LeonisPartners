@@ -309,6 +309,15 @@ margin: 0;
         bottom: 29.9%;
 }
 
+@media screen and (max-device-aspect-ratio: 4/3) {
+.parallax__layer img {
+    height: -webkit-fill-available;
+    width: auto;
+    left: 50%!important;
+    transform: translateX(-50%);
+}
+}
+
 /* ---------- STANDARD PAGES (Main Screen) ------------ */ 
 
 #primary {
@@ -798,10 +807,24 @@ color: white;
         display: block;
         width: fit-content;
         padding: 50px;
-    }
+}
+
+.social {
+        width: 250px;
+}
 
 .news-social-container .fa {
         font-size: 150px;
+        width: fit-content;
+        display: block;
+        color: #263318;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+.social a.button {
+        width: 100%;
 }
 
 .news-download-container {
