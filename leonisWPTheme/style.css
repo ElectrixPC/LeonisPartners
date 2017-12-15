@@ -574,7 +574,31 @@ margin: 0;
 .services-child-box-big:hover {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
         transform: translateY(-10px) scale(1.02);
+        color: #263318;
 }
+
+.services-child-box-big:hover .services-child-icon {
+        transform: translateY(-10px) scale(1.02);
+        transition: 0.3s all ease-in-out;
+}
+
+.services-child-box:hover {
+        color: #263318;
+        transition: 0.3s all ease-in-out;
+}
+
+
+.services-child-box:hover .services-child-icon {
+        transform: translateY(-10px) scale(1.02);
+        transition: 0.3s all ease-in-out;
+}
+
+.services-child-box:hover .services-child-box-title {
+        transform: translateY(-10px) scale(1.02);
+        transition: 0.3s all ease-in-out;
+}
+
+
 
 
 @media screen and (orientation: portrait) {
