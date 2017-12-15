@@ -717,7 +717,7 @@ margin: 0;
 /* -------- Press tiles ------------- */
 
 .news-container {
-width: 50%;
+width: 40%;
 padding: 0px 200px 0px 200px;
 float: left;
 }
@@ -797,22 +797,17 @@ color: white;
 
 .news-social-container {
         float: right;
-        width: 50%;
+        width: 60%;
         position: relative;
-        left: 10%;
         min-height: 500px;
-    }
-
-.news-social-container a {
-        display: block;
-        width: fit-content;
-        padding: 50px;
 }
 
+
 .social {
-        width: 250px;
+        width: 450px;
         position: relative;
         padding: 25px;
+        display: inline-block;
 }
 
 .news-social-container .fa {
@@ -821,15 +816,13 @@ color: white;
         display: block;
         color: #263318;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+}
 
 .social a.button {
-        width: 100%;
+        width: fit-content;
         position: absolute;
         top: 75px;
-        left: 250px;
+        left: 175px;
     }
 
 .news-download-container {
