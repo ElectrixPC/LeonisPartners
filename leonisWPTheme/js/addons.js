@@ -254,7 +254,7 @@ $(document).ready(function(){
     for (var item = 0; item < smallTransactions; item++) {
         $(".trans_hide")[item].style = "display: inline-block";
     }
-    for (var item = smallTransactions -1; item < totalTransactions -1; item++) {
+    for (var item = smallTransactions; item < totalTransactions -1; item++) {
         $(".trans_hide")[item].style = "display: none";
     }
     for(var i=0; i<$('.transaction').length; i++) {
@@ -487,7 +487,7 @@ window.addEventListener('resize', function(event){
     for (var item = 0; item < smallTransactions; item++) {
         $(".trans_hide")[item].style = "display: inline-block";
     }
-    for (var item = smallTransactions -1; item < totalTransactions -1; item++) {
+    for (var item = smallTransactions; item < totalTransactions -1; item++) {
         $(".trans_hide")[item].style = "display: none";
     }
     for(var i=0; i<$('.transaction').length; i++) {
