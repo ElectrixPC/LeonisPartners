@@ -118,12 +118,12 @@ function transactions_output($atts) {
           $sector     = '<div class="trans-sector"><p><b>Sector:</b> '     . get_post_meta(get_the_ID(), "wpcf-transaction-sector",        true) . '</p></div>';
           $location   = '<div class="trans-location"><p><b>Company Location: </b></p><div class="trans-location-content"><p>' . get_post_meta(get_the_ID(), "wpcf-transaction-location", true) . '</p></div></div>';
           $exit       = '<div class="trans-exit"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>';
-          $trans = '<div class="transaction trans_hide">';
+          $trans      = '<div class="transaction trans_hide">';
           $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $location . $sector . $type_short . $press . $exit . '</div></div>';
           $count++;
     endwhile;
 
-    $output .= '</div>';
+    $output .= '</div><a type="button" class="button button-trans" href="javascript:void(0);">View All Transactions</a>';
     
     return $output; 
 }
