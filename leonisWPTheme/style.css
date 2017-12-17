@@ -219,7 +219,7 @@ margin: 0;
         font-size: 17px!important;
 }
 
-/* ------------- PARALLAX -------------- */
+/* ------------- PARALLAX --------------
 
 .parallax {
         -webkit-perspective: 100px;
@@ -260,7 +260,7 @@ margin: 0;
 .parallax__cover {
         display: block;
         position: absolute;
-        top: 67%; /* To fix the gap between the parallax and the background */
+        top: 67%;  To fix the gap between the parallax and the background 
         left: 0;
         right: 0;
         height: 100%;
@@ -318,6 +318,8 @@ margin: 0;
 }
 }
 
+*/
+
 #backvideo {
         width: -webkit-fill-available;
         position: relative;
@@ -327,15 +329,21 @@ margin: 0;
 
 #primary {
         position: relative;
+        top: -150px;
 }
+
+@media screen and (min-device-aspect-ratio: 16/9) {
+        #primary {
+                position: relative;
+                top: -350px;
+        }
+        }
 
 .inline_page {
         position: relative;
         z-index: 10;
         text-align: center;
         overflow: auto;
-
-        
 }
 
 
