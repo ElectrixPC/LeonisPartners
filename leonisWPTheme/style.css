@@ -436,11 +436,11 @@ body {
 @media screen and (orientation: portrait) {
         .map_container {
                 width: 100%;
-                height: 400px;
+                height: 700px;
         }
         #map_overlay {
                 width: 100%;
-                height: 40%;
+                height: 70%;
                 background-color: rgba(255,255,255,0.6);
                 right: 0;
         }
@@ -912,6 +912,15 @@ color: white;
         height: 0px;
         width: 0px;
         padding: 0px;
+}
+@media screen and (orientation: portrait) {
+        .news-container {
+                width: 100%;
+        }
+        .news-social-container {
+                width: 100%;
+                min-height: unset;
+        }
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
