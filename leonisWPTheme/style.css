@@ -869,7 +869,7 @@ color: white;
 }
 
 .news-social-container .fa {
-        font-size: 150px;
+        font-size: 120px;
         width: fit-content;
         display: block;
         color: #263318;
@@ -879,7 +879,8 @@ color: white;
 .social a.button {
         width: fit-content;
         position: absolute;
-        top: 75px;
+        top: 
+        60px;
         left: 175px;
     }
 
