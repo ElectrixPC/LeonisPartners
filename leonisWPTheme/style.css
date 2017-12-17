@@ -1091,6 +1091,12 @@ header {
         transition: all 150ms ease 0ms; 
         background: rgba(38, 51, 24, 0.8)  !important;
 }
+
+@media(max-width: 999px) {
+        header {
+                height: 50px;
+        }
+}
 .zoom-overlay-open header {
         transform: translateY(-100px); }
 .contact.zoom-overlay-open header {
