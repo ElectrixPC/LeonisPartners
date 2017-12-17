@@ -518,10 +518,13 @@ window.addEventListener('resize', function(event){
 });
 
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 250) {
-      $('header').css({"height" : "60px"})
-    } else {
-      $('header').css({"height" : "70px"});
+    var mq = window.matchMedia( "(min-width: 1000px)" );
+    if (mq.matches) {
+        if ($(document).scrollTop() > 250) {
+        $('header').css({"height" : "60px"})
+        } else {
+        $('header').css({"height" : "70px"});
+        }
     }
   });
 
