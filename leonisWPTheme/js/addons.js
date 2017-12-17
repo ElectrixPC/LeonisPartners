@@ -339,6 +339,10 @@ $('.transaction').on('click touchstart', function(e) {
     if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
         return;
     };
+    var mq = window.matchMedia( "(max-width: 600px)" );
+    if (mq.matches) {
+        return;
+    }
     $('.trans-expand').removeAttr( 'style' );
     $('.trans-title').removeAttr( 'style' );
     $('.trans-type').removeAttr( 'style' );
