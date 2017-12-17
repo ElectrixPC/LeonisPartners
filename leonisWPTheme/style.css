@@ -775,7 +775,7 @@ body {
                 font-size: 1.1em;
         }
 
-        .transaction:active > .trans-expand {
+        .transaction:hover > .trans-expand {
                 z-index: 999;
                 width: 412px;
                 height: 615px;
