@@ -1,3 +1,4 @@
+// Nav bar for mobile
 open_nav = function(el) {
     if (!$(el).hasClass('active')) {
         $('body, html').addClass('nav-open');
@@ -8,6 +9,7 @@ open_nav = function(el) {
     }
 };
 
+// google maps stuff for contact (mainly for the colors)
 function initMap() {
     var uluru = {lat: 33.774983, lng: -84.297189};
     var pos_nyc = {lat: 40.75437209999999, lng: -73.97618260000002};
@@ -243,30 +245,37 @@ var my_style = [
     }
 ]
 
+
+
 $(document).ready(function(){
     // show the right amount of transactions on load
     var windowWidth = $('.trans_container').width();
     var boxWidth = $('.transaction').outerWidth() + 10;
     var boxesPerRow = ~~(windowWidth / boxWidth);
-
+    // Work out how many transactions would fit on two rows
     var smallTransactions = boxesPerRow * 2;
+    // Work out the total transactions
     var totalTransactions = $('.transaction').length;
+    // Display the first two lines of transactions
     for (var item = 0; item < smallTransactions + 1; item++) {
         $(".trans_hide")[item].style = "display: inline-block";
     }
+    // Hide the rest of the transactions 
     for (var item = smallTransactions; item < totalTransactions -1; item++) {
         $(".trans_hide")[item].style = "display: none";
     }
+    // Reset the styling for the bottom and right items (otherwise it'll fuck up)
     for(var i=0; i<$('.transaction').length; i++) {
             var $thisGuy = $('.transaction').eq(i);
             $thisGuy[0].children[0].style.bottom = "auto";
             $thisGuy[0].children[0].style.right = "auto";
     }
-    
+    // If there is another page on this page
     if ($('.inline_page').length != 1) 
-    {   // check whether the page is the news one
+    {   // check whether the page is desktop size
         var mq = window.matchMedia( "(min-width: 1000px)" );
         if (mq.matches) {
+            // set it so that there is only 4 boxes that show, over two rows
             var newsWindowWidth = $('.news-container')[0].clientWidth;
             var newsBoxWidth = $('.news').outerWidth() + 40;
             var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
@@ -290,17 +299,17 @@ $(document).ready(function(){
     {   // check whether the page is the news one
         if ($('#page_title')[0].baseURI.includes('news'))
         {
+            // Style it to be a singular page
             $('.news-container').css({"width": "100%", "padding" : "none", "padding-bottom" : "200px"});//make the news boxes full width
             $('.news-social-container').css({"display": "none"}); //make the social buttons dissapear
             $('.news-button').css({"display" : "none"}); // make the show all button go away
         }
     }
+    // Make the social media icons hover white
     $('.button-social').hover(
             function() { $(this.parentElement.children[0]).css({"color": "white", "transition" : "0.3s all ease-in-out"}) },
             function() { $(this.parentElement.children[0]).css({"color": "#263318", "transition" : "0.3s all ease-in-out"}) }
     );
-
-
 });
 
 // show all transactions on click
@@ -315,6 +324,7 @@ $(".button-trans").click(function(){
     }
 });
 
+// On exit button of transaction, delete the styling from everything on transactions
 $('.trans-exit').on('click touchstart', function(e) {
     $('.trans-expand').removeAttr( 'style' );
     $('.trans-title').removeAttr( 'style' );
@@ -335,14 +345,16 @@ $('.trans-exit').on('click touchstart', function(e) {
 });
 // Function for getting the last element in the row/last row
 $('.transaction').on('click touchstart', function(e) {
-
+    // If the user has pressed the exit button, ignore the rest of this function
     if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
         return;
     };
+    // If its on a mobile, ignore the rest of the function
     var mq = window.matchMedia( "(max-width: 600px)" );
     if (mq.matches) {
         return;
     }
+    // Reset styling before we begin
     $('.trans-expand').removeAttr( 'style' );
     $('.trans-title').removeAttr( 'style' );
     $('.trans-type').removeAttr( 'style' );
@@ -358,18 +370,16 @@ $('.transaction').on('click touchstart', function(e) {
     $('.trans-img1').removeAttr( 'style' );
     $('.trans-img2').removeAttr( 'style' );
     $('.trans-exit').removeAttr( 'style' );
-
+    // Set the css for all of the classes in the transaction for onclick
     $(this.children[0]).css({   "z-index": "999",
                                 "width": "412px",
                                 "height": "615px",
-                                //"transition": "width 0.2s ease-in-out",
-                                //"transition": "height 0.2s ease-in-out",
                                 "padding": "25px",
                                 "background": "white",
                                 "color": "black",
                                 "border": "none",
                                 "transition": ".3s ease",
-                                "overflow": "hidden"});
+                                "overflow": "hidden"}); // trans-expand
     $(this.children[0].children[0]).css({"width": "unset", 
                                          "top": "0"});//img1
     $(this.children[0].children[0].children[0]).css({   "transition": "max-width 0.3s ease-in-out", 
@@ -419,7 +429,7 @@ $('.transaction').on('click touchstart', function(e) {
                                               "top": "5px",
                                            "right" : "5px",
                                            "color" : "#263318"});//press
-
+    // if the device is a mobile
     var tr = window.matchMedia( "(max-width: 600px)" );
     if (tr.matches) {
         $(this.children[0]).css({"width": "90%",
@@ -428,60 +438,6 @@ $('.transaction').on('click touchstart', function(e) {
         $(this.children[0].children[0].children[0]).css({"max-width": "200px"})//img1 img 
         $(this.children[0].children[2].children[0]).css({"max-width": "200px"});//img2 img
     }
-    
-    var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 10;
-    var boxesPerRow = ~~(windowWidth / boxWidth);
-    var totalNumber = boxesPerRow * 2;
-    for (var item = 0; item < totalNumber -1; item++) {
-        $(".trans_hide")[item].style = "display: inline-block"
-    }
-
-    // calculate how many boxes will be in a "row" 
-    var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 10;
-    var boxesPerRow = ~~(windowWidth / boxWidth);
-    
-    var smallTransactions = boxesPerRow * 2;
-    var hiddenTransactions = $('.transaction').length - smallTransactions;
-
-    // Get the total length of the transactions
-    if ($(".trans_hide")[hiddenTransactions].style.display == "inline-block") {
-        var size  = $('.transaction').length;
-    }
-    else {
-        var size = smallTransactions;
-    }
-    // get the index of the clicked element
-    var index = $(e.currentTarget).index();
-    // get the column of the clicked element
-    var col = (index % boxesPerRow) + 1;
-    // calculate how far it is to the end of this row, 
-    // and select that element
-    var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
-    var gapToOuter = ($('body').width() - windowWidth) /2;
-    var gapToContainer = (windowWidth - (boxesPerRow * 211)) /2;
-    var gap = gapToOuter + gapToContainer + 1; 
-    if (!$endOfRow.length) $endOfRow = $('.transaction').last();
-    // Set the style at the end of the row to go to the left
-    if ((size > boxesPerRow) && (boxesPerRow > 3)) {
-        $endOfRow[0].children[0].style.right = String(gap + "px");
-    }
-    // get the minimum index for the tombstone to go up 
-    var minUp = size - boxesPerRow;
-    // if the bottom doesnt have a full row, this get it
-    var modBottom =  size % boxesPerRow;
-    // find the guy
-    if (modBottom > 0) minUp = size - modBottom;
-    var $bottomGuy = $('.transaction').eq(index);
-    if ((index > minUp -1) && (minUp > 1)) {
-        $bottomGuy[0].children[0].style.bottom = "90px";
-        // disable the going right-> left for the bottom row
-        if (modBottom > 0) {
-            $endOfRow[0].children[0].style.right = "auto";
-        }
-    }
-
 });
 
 window.addEventListener('resize', function(event){
