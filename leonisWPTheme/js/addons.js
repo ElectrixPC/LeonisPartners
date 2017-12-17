@@ -246,7 +246,7 @@ var my_style = [
 $(document).ready(function(){
     // show the right amount of transactions on load
     var windowWidth = $('.trans_container').width();
-    var boxWidth = $('.transaction').outerWidth() + 8;
+    var boxWidth = $('.transaction').outerWidth() + 10;
     var boxesPerRow = ~~(windowWidth / boxWidth);
 
     var smallTransactions = boxesPerRow * 2;
@@ -262,19 +262,6 @@ $(document).ready(function(){
             $thisGuy[0].children[0].style.bottom = "auto";
             $thisGuy[0].children[0].style.right = "auto";
     }
-    // show all transactions on click
-    $(".button-trans").click(function(){
-        window.focus();
-        // display the hidden tombstones
-        $(".trans_hide").css({"display":"inline-block"});
-        // reset the existing css for the hover stuff
-        for(var i=0; i<$('.transaction').length; i++) {
-            var $thisGuy = $('.transaction').eq(i);
-            $thisGuy[0].children[0].style.bottom = "auto";
-        }
-    });
-    
-    $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
     
     if ($('.inline_page').length != 1) 
     {   // check whether the page is the news one
@@ -305,13 +292,24 @@ $(document).ready(function(){
             $('.news-button').css({"display" : "none"}); // make the show all button go away
         }
     }
-
     $('.button-social').hover(
             function() { $(this.parentElement.children[0]).css({"color": "white", "transition" : "0.3s all ease-in-out"}) },
             function() { $(this.parentElement.children[0]).css({"color": "#263318", "transition" : "0.3s all ease-in-out"}) }
     );
 
 
+});
+
+// show all transactions on click
+$(".button-trans").click(function(){
+    window.focus();
+    // display the hidden tombstones
+    $(".trans_hide").css({"display":"inline-block"});
+    // reset the existing css for the hover stuff
+    for(var i=0; i<$('.transaction').length; i++) {
+        var $thisGuy = $('.transaction').eq(i);
+        $thisGuy[0].children[0].style.bottom = "auto";
+    }
 });
 
 $('.trans-exit').on('click touchstart', function(e) {
@@ -338,7 +336,6 @@ $('.transaction').on('click touchstart', function(e) {
     if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
         return;
     };
-    
     $('.trans-expand').removeAttr( 'style' );
     $('.trans-title').removeAttr( 'style' );
     $('.trans-type').removeAttr( 'style' );
