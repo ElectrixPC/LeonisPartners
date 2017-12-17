@@ -438,6 +438,49 @@ $('.transaction').on('click touchstart', function(e) {
         $(this.children[0].children[0].children[0]).css({"max-width": "200px"})//img1 img 
         $(this.children[0].children[2].children[0]).css({"max-width": "200px"});//img2 img
     }
+    // calculate how many boxes will be in a "row" 
+    var windowWidth = $('.trans_container').width();
+    var boxWidth = $('.transaction').outerWidth() + 10;
+    var boxesPerRow = ~~(windowWidth / boxWidth);
+    var smallTransactions = boxesPerRow * 2;
+    var hiddenTransactions = $('.transaction').length - smallTransactions;
+    // Get the total length of the transactions
+    if ($(".trans_hide")[hiddenTransactions].style.display == "inline-block") {
+        var size  = $('.transaction').length;
+    }
+    else {
+        var size = smallTransactions;
+    }
+    // get the index of the clicked element
+    var index = $(e.currentTarget).index();
+    // get the column of the clicked element
+    var col = (index % boxesPerRow) + 1;
+    // calculate how far it is to the end of this row, 
+    // and select that element
+    var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
+    var gapToOuter = ($('body').width() - windowWidth) /2;
+    var gapToContainer = (windowWidth - (boxesPerRow * 210)) /2;
+    var gap = gapToOuter + gapToContainer + 1; 
+    if (!$endOfRow.length) $endOfRow = $('.transaction').last();
+    // Set the style at the end of the row to go to the left
+    if ((size > boxesPerRow) && (boxesPerRow > 3)) {
+        $endOfRow[0].children[0].style.right = String(gap + "px");
+    }
+    // get the minimum index for the tombstone to go up 
+    var minUp = size - boxesPerRow;
+    // if the bottom doesnt have a full row, this get it
+    var modBottom =  size % boxesPerRow;
+    // find the guy
+    if (modBottom > 0) minUp = size - modBottom;
+    var $bottomGuy = $('.transaction').eq(index);
+    if ((index > minUp -1) && (minUp > 1)) {
+        $bottomGuy[0].children[0].style.bottom = "90px";
+        // disable the going right-> left for the bottom row
+        if (modBottom > 0) {
+            $endOfRow[0].children[0].style.right = "auto";
+        }
+    }
+
 });
 
 window.addEventListener('resize', function(event){
