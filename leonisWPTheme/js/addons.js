@@ -459,7 +459,7 @@ $('.transaction').on('click touchstart', function(e) {
     // and select that element
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
     var gapToOuter = ($('body').width() - windowWidth) /2;
-    var gapToContainer = (windowWidth - (boxesPerRow * 215)) /2;
+    var gapToContainer = (windowWidth - (boxesPerRow * 205)) /2;
     var gap = gapToOuter + gapToContainer + 1; 
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
     // Set the style at the end of the row to go to the left
