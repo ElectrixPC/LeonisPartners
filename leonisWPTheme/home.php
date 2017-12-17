@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <body>
-  <div id="home" class="parallax">
+  <!--<div id="home" class="parallax">
         <img class="title_img" src="<?php echo get_bloginfo('template_url') ?>/images/fulllogowhite.svg"/>
     <div class="parallax__layer parallax__layer__0">
             <img src="<?php echo get_bloginfo('template_url') ?>/images/skyline_tall-smaller.png"/>
@@ -11,10 +11,13 @@
     <div class="parallax__layer parallax__layer__5" style="top: 6.4%;">
             <img style="left: -5px;" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-tall-buildings-smaller.png"/>
     </div>
-
-
-    <div class="parallax__cover">
-    <div id="primary" class="site-content">
+  -->
+    <div class="main-video">
+        <video autoplay muted loop id="backvideo">
+        </video>
+        
+    </div>
+        <div id="primary" class="site-content">
         <div id="content" role="main">
                 
         <?php   $args = array('post_type' => 'page', 
