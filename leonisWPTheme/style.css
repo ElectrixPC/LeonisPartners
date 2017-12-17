@@ -201,8 +201,9 @@ header nav a {
   
 html,
 body {
-background-color: white;
-margin: 0;
+        background-color: white;
+        margin: 0;
+        height: -webkit-fill-available;
 }
 #footer {
         text-align: center;
