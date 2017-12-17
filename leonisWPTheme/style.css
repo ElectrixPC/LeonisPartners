@@ -338,6 +338,12 @@ margin: 0;
                 top: -350px;
         }
         }
+@media screen and (orientation: portrait) {
+        #primary {
+                position: relative;
+                top: -5px;
+        }
+        }
 
 .inline_page {
         position: relative;
