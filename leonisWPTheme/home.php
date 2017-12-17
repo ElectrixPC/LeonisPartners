@@ -3,17 +3,8 @@
 <?php get_header(); ?>
 
 <body>
-  <!--<div id="home" class="parallax">
-        <img class="title_img" src="<?php echo get_bloginfo('template_url') ?>/images/fulllogowhite.svg"/>
-    <div class="parallax__layer parallax__layer__0">
-            <img src="<?php echo get_bloginfo('template_url') ?>/images/skyline_tall-smaller.png"/>
-    </div>
-    <div class="parallax__layer parallax__layer__5" style="top: 6.4%;">
-            <img style="left: -5px;" src="<?php echo get_bloginfo('template_url') ?>/images/nyc-tall-buildings-smaller.png"/>
-    </div>
-  -->
     <div class="main-video">
-        <video autoplay muted loop id="backvideo">
+        <video autoplay muted loop id="backvideo" poster="<?php echo get_bloginfo('template_url') ?>/images/nyc-poster.jpg">
                 <source src="<?php echo get_bloginfo('template_url') ?>/images/nyc.mp4" type="video/mp4">
         </video>
         
