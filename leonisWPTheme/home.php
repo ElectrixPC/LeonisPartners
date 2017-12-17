@@ -14,6 +14,7 @@
   -->
     <div class="main-video">
         <video autoplay muted loop id="backvideo">
+                <source src="<?php echo get_bloginfo('template_url') ?>/images/nyc.mp4" type="video/mp4">
         </video>
         
     </div>
