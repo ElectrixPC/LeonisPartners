@@ -916,10 +916,14 @@ color: white;
 @media screen and (orientation: portrait) {
         .news-container {
                 width: 100%;
+                padding: initial;
         }
         .news-social-container {
                 width: 100%;
                 min-height: unset;
+        }
+        .social a.button {
+                width: max-content;
         }
 }
 
