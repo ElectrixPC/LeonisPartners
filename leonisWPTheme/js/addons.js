@@ -331,7 +331,7 @@ $('.trans-exit').on('click touchstart', function(e) {
 
 });
 // Function for getting the last element in the row/last row
-function expandTrans(e) {
+$('.transaction').on('click touchstart', function(e) {
 
     if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
         return;

@@ -120,13 +120,13 @@ function transactions_output($atts) {
           $exit       = '<div class="trans-exit"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>';
           if ($count>$atts["posts"]) {
             // if there are more than 10 posts hide them
-            $trans = '<a class="transaction trans_hide" type="button" href="javascript:void(0);" onclick="expandTrans()>';
+            $trans = '<div class="transaction trans_hide">';
           }
           else
           {
-            $trans = '<a class="transaction" type="button" href="javascript:void(0);" onclick="expandTrans()>';
+            $trans = '<div class="transaction">';
           }
-          $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $location . $sector . $type_short . $press . $exit . '</div></a>';
+          $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $location . $sector . $type_short . $press . $exit . '</div></div>';
           $count++;
     endwhile;
 
