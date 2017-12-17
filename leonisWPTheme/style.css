@@ -771,18 +771,21 @@ body {
                 padding-left: 0px;
                 padding-right: 0px;
         }
+
+        .trans-expand {
+                background: gainsboro;
+                position: absolute;
+                z-index: 0;
+                height: 300px;
+                width: 200px;
+                color: white;
+                box-shadow: 0 5px 20px rgba(0,0,0,.8);
+        }
+
         .transaction:hover .trans-title > h2 { 
                 font-size: 1.1em;
         }
 
-        .transaction:hover > .trans-expand {
-                z-index: 999;
-                width: 412px;
-                height: 615px;
-                margin: 0;
-                overflow: hidden;
-        
-        }
         .transaction:hover .trans-title {
                 display: block;
         }
@@ -825,6 +828,10 @@ body {
                 position: absolute;
                 bottom: 0px;
         }
+        .transaction:hover .trans-img1 {
+                width: unset;
+                top: 0px;
+        }
         .transaction:hover .trans-img2 > img {
                 transition: max-width 0.3s ease-in-out;
                 max-height: 125px;
@@ -833,20 +840,34 @@ body {
         }
         .transaction:hover .trans-img1 > img {
                 transition: max-width 0.3s ease-in-out;
-                height: unset!important;
-                width: unset!important;
-                margin: 0;
-                top: unset!important;
-                transform: unset!important;
+                max-width: 300px;
+                filter: none;
+                top: unset;
+                transform: unset;
         }
         .transaction:hover .trans-img1 {
                 width: unset!important;
                 top: 0;
         }
+
+        .transaction:hover .trans-exit {
+                display: block;
+                text-align: right;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                color: rgb(38, 51, 24);
+        }
         .transaction:hover > .trans-expand {
-                        left: 5%;
                         height: 600px;
                         width: 90%;
+                        margin: 0;
+                        overflow: hidden;
+                        background-color: white;
+                        padding: 25px;
+                        border: none;
+                        color: black;
+                        transition: 0.3s ease;
         }
 
 }
