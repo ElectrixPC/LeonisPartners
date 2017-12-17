@@ -922,11 +922,21 @@ color: white;
                 width: 100%;
                 min-height: unset;
         }
-        .social a.button {
-                width: max-content;
+        .social {
+                width: fit-content;
                 position: relative;
-                top: unset;
+                padding: 25px;
+                display: inline-block;
+        }
+        .social a.button {
+                width: 100%;
+                position: relative;
+                top: 15px;
                 left: unset;
+        }
+        .news-social-container .fa {
+                width: 100px;
+                height: 100px;
         }
 }
 
