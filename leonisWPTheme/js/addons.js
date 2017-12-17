@@ -518,7 +518,7 @@ window.addEventListener('resize', function(event){
 });
 
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
+    if ($(document).scrollTop() > 250) {
       $('header').css({"height" : "60px"})
     } else {
       $('header').css({"height" : "70px"});
