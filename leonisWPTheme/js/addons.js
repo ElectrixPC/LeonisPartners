@@ -251,7 +251,7 @@ $(document).ready(function(){
 
     var smallTransactions = boxesPerRow * 2;
     var totalTransactions = $('.transaction').length;
-    for (var item = 0; item < smallTransactions; item++) {
+    for (var item = 0; item < smallTransactions + 1; item++) {
         $(".trans_hide")[item].style = "display: inline-block";
     }
     for (var item = smallTransactions; item < totalTransactions -1; item++) {
@@ -484,7 +484,7 @@ window.addEventListener('resize', function(event){
 
     var smallTransactions = boxesPerRow * 2;
     var totalTransactions = $('.transaction').length;
-    for (var item = 0; item < smallTransactions; item++) {
+    for (var item = 0; item < smallTransactions + 1; item++) {
         $(".trans_hide")[item].style = "display: inline-block";
     }
     for (var item = smallTransactions; item < totalTransactions -1; item++) {
