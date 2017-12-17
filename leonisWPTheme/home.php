@@ -18,7 +18,7 @@
         </video>
         
     </div>
-        <div id="primary" class="site-content">
+        <div id="main-primary" class="site-content">
         <div id="content" role="main">
                 
         <?php   $args = array('post_type' => 'page', 

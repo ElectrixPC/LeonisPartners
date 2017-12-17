@@ -327,19 +327,19 @@ margin: 0;
 
 /* ---------- STANDARD PAGES (Main Screen) ------------ */ 
 
-#primary {
+#main-primary {
         position: relative;
         top: -150px;
 }
 
 @media screen and (min-device-aspect-ratio: 16/9) {
-        #primary {
+        #main-primary {
                 position: relative;
                 top: -350px;
         }
         }
 @media screen and (orientation: portrait) {
-        #primary {
+        #main-primary {
                 position: relative;
                 top: -5px;
         }
