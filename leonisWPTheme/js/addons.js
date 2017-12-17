@@ -517,6 +517,14 @@ window.addEventListener('resize', function(event){
 
 });
 
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('header').css({"height" : "60px"})
+    } else {
+      $('header').css({"height" : "70px"});
+    }
+  });
+
 $('.button-file').click(function() {
     var mq = window.matchMedia( "(max-width: 1000px)" );
     $(this.parentElement.parentElement.children[2].children[1]).css({"display" : "block"});
