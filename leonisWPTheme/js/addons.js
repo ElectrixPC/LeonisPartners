@@ -331,7 +331,7 @@ $(".button-trans").click(function(){
 });
 
 // On exit button of transaction, delete the styling from everything on transactions
-$('.trans-exit').on('click touchstart', function(e) {
+$('.trans-exit').on('click', function(e) {
     $('.trans-expand').removeAttr( 'style' );
     $('.trans-title').removeAttr( 'style' );
     $('.trans-type').removeAttr( 'style' );
@@ -350,7 +350,7 @@ $('.trans-exit').on('click touchstart', function(e) {
 
 });
 // Function for getting the last element in the row/last row
-$('.transaction').on('click touchstart', function(e) {
+$('.transaction').on('click', function(e) {
     // If the user has pressed the exit button, ignore the rest of this function
     if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
         return;
