@@ -470,6 +470,7 @@ $('.transaction').on('click', function(e) {
     // and select that element
     var $endOfRow = $('.transaction').eq(index + boxesPerRow - col);
     var gapToOuter = ($('body').width() - windowWidth) /2;
+    // Boxes per row * the transaction plus padding
     var gapToContainer = (windowWidth - (boxesPerRow * 208.5)) /2;
     var gap = gapToOuter + gapToContainer + 1; 
     if (!$endOfRow.length) $endOfRow = $('.transaction').last();
@@ -495,10 +496,10 @@ $('.transaction').on('click', function(e) {
 });
 
 window.addEventListener('resize', function(event){
+    // Resizing the amount of tranasctions on window resize
     var windowWidth = $('.trans_container').width();
     var boxWidth = $('.transaction').outerWidth() + 10;
     var boxesPerRow = ~~(windowWidth / boxWidth);
-
     var smallTransactions = boxesPerRow * 2;
     var totalTransactions = $('.transaction').length;
     for (var item = 0; item < smallTransactions + 1; item++) {
@@ -508,15 +509,19 @@ window.addEventListener('resize', function(event){
     for (var item = smallTransactions; item < totalTransactions -1; item++) {
         $($(".trans_hide")[item]).css({"display": "none"});
     }
+    // remove the styling for the new transactions to stop it bugging out
     for(var i=0; i<$('.transaction').length; i++) {
             var $thisGuy = $('.transaction').eq(i);
             $thisGuy[0].children[0].style.bottom = "auto";
             $thisGuy[0].children[0].style.right = "auto";
     }
+    // if there is more than one inner page on the page (i.e is it the main page)
     if ($('.inline_page').length != 1) 
     {   // check whether the page is the news one
+        // if its definitely not a mobile or tablet
         var mq = window.matchMedia( "(min-width: 1000px)" );
         if (mq.matches) {
+            // change the news boxes to only have 4
             var newsWindowWidth = $('.news-container')[0].clientWidth;
             var newsBoxWidth = $('.news').outerWidth() + 40;
             var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
@@ -536,7 +541,7 @@ window.addEventListener('resize', function(event){
     }
 
 });
-
+// Make the nav bar smaller/larger on scrolling
 $(window).scroll(function() {
     var mq = window.matchMedia( "(min-width: 1000px)" );
     if (mq.matches) {
@@ -548,6 +553,7 @@ $(window).scroll(function() {
     }
   });
 
+  // Pull up the user enter information for the download
 $('.button-file').click(function() {
     var mq = window.matchMedia( "(max-width: 1000px)" );
     $(this.parentElement.parentElement.children[2].children[1]).css({"display" : "block"});
@@ -559,6 +565,7 @@ $('.button-file').click(function() {
     }
 });
 
+// On submitting the form for the download, quit it
 $('.wpcf7-submit').on('click', function(e) {
     $('.wpcf7').css({"height":"0%", "width":"0%"});
     $('.wpcf7-form').css({"display" : "none"});
@@ -574,7 +581,7 @@ $('.wpcf7-submit').on('click', function(e) {
                                                                                                              "padding": "25px"});
     }
 });
-
+// Services boxes - Show hide on click of each box
 $('.box-ma').click(function() {
     $('.services-cr').css({"opacity":"0", "position":"absolute"});
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
