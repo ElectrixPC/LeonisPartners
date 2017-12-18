@@ -274,11 +274,11 @@ $(document).ready(function(){
     var totalTransactions = $('.transaction').length;
     // Display the first two lines of transactions
     for (var item = 0; item < smallTransactions + 1; item++) {
-        $(".trans_hide")[item].style = "display: inline-block";
+        $($(".trans_hide")[item]).css({"display": "inline-block"});
     }
     // Hide the rest of the transactions 
     for (var item = smallTransactions; item < totalTransactions -1; item++) {
-        $(".trans_hide")[item].style = "display: none";
+        $($(".trans_hide")[item]).css({"display": "none"});
     }
     // Reset the styling for the bottom and right items (otherwise it'll fuck up)
     for(var i=0; i<$('.transaction').length; i++) {
@@ -497,10 +497,11 @@ window.addEventListener('resize', function(event){
     var smallTransactions = boxesPerRow * 2;
     var totalTransactions = $('.transaction').length;
     for (var item = 0; item < smallTransactions + 1; item++) {
-        $(".trans_hide")[item].style = "display: inline-block";
+        $($(".trans_hide")[item]).css({"display": "inline-block"});
     }
+    // Hide the rest of the transactions 
     for (var item = smallTransactions; item < totalTransactions -1; item++) {
-        $(".trans_hide")[item].style = "display: none";
+        $($(".trans_hide")[item]).css({"display": "none"});
     }
     for(var i=0; i<$('.transaction').length; i++) {
             var $thisGuy = $('.transaction').eq(i);
