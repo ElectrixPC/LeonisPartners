@@ -499,10 +499,11 @@ body {
 .services-box {
         padding: 50px;
         width: 400px;
-        display: inline-grid;
+        display: inline-table;
 }
 .services-title {
         background-color: white;
+        padding-top: 5px;
         margin-top: 20px;
         height: 90px;
 }
@@ -551,13 +552,16 @@ body {
 }
 .services-box:hover .services-expand i {
         display: none;
+        
 }
 .services-box:hover .services-expand p {
         display: block;
+        margin-top: 0px;
+        padding: 6px;
 }
 
 .services-child-box {
-        display: inline-grid;
+        display: inline-table;
         width: 300px;
 }
 
