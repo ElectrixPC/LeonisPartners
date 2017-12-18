@@ -261,6 +261,10 @@ $(document).ready(function(){
         if ($('#page_title')[0].baseURI.includes('news/'))
         {
             $('#page_content').css({"width" : "50%", "left" : "50%", "transform" : "translateX(-50%)"});
+            $('#page_content img').css({"width": "100%", "height" : "auto", "position" : "relative"});
+            var mq = window.matchMedia( "(max-width: 750px)" );
+            if (mq.matches) {
+                $('#page_content').css({"width" : "90%", "left" : "50%", "transform" : "translateX(-50%)"});
         }
         
     }
