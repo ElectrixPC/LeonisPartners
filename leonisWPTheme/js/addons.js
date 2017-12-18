@@ -352,7 +352,7 @@ $('.trans-exit').on('click', function(e) {
 // Function for getting the last element in the row/last row
 $('.transaction').on('click', function(e) {
     // If the user has pressed the exit button, ignore the rest of this function
-    if (e.originalEvent.path[0].className == "fa fa-times fa-2x") {
+    if (e.originalEvent.target.className == "fa fa-times fa-2x") {
         return;
     };
     // If its on a mobile, ignore the rest of the function
