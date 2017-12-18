@@ -263,12 +263,11 @@ $(document).ready(function(){
             $('#page_content').css({"width" : "50%", "left" : "50%", "transform" : "translateX(-50%)"});
             $('#page_content img').css({"width": "100%", "height" : "auto", "position" : "relative"});
             var mq = window.matchMedia( "(max-width: 750px)" );
-            if (mq.matches) {
+            if (mq.matches) 
+            {
                 $('#page_content').css({"width" : "90%", "left" : "50%", "transform" : "translateX(-50%)"});
             }
-        
         }
-        
     }
     // show the right amount of transactions on load
     var windowWidth = $('.trans_container').width();
