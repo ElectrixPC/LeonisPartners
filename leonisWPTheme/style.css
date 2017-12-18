@@ -499,7 +499,7 @@ body {
 .services-box {
         padding: 50px;
         width: 400px;
-        display: inline-block;
+        display: inline-grid;
 }
 .services-title {
         background-color: white;
@@ -548,9 +548,6 @@ body {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
         transform: translateY(-10px) scale(1.02);
         transition: 0.3s all ease-in-out;
-        height: 30px;
-        top: -5px;
-        position: relative;
 }
 .services-box:hover .services-expand i {
         display: none;
@@ -560,7 +557,7 @@ body {
 }
 
 .services-child-box {
-        display: inline-table;
+        display: inline-grid;
         width: 300px;
 }
 
