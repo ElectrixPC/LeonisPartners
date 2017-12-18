@@ -248,6 +248,22 @@ var my_style = [
 
 
 $(document).ready(function(){
+    // check if there is only one inner page on the overall page
+    if ($('.inline_page').length == 1) 
+    {   // check whether the page is the news one
+        if ($('#page_title')[0].baseURI.includes('news-research'))
+        {
+            // Style it to be a singular page
+            $('.news-container').css({"width": "100%", "padding" : "none", "padding-bottom" : "200px"});//make the news boxes full width
+            $('.news-social-container').css({"display": "none"}); //make the social buttons dissapear
+            $('.news-button').css({"display" : "none"}); // make the show all button go away
+        }
+        if ($('#page_title')[0].baseURI.includes('news/'))
+        {
+            $('#page_content').css({"width" : "50%", "left" : "50%", "transform" : "translateX(-50%)"});
+        }
+        
+    }
     // show the right amount of transactions on load
     var windowWidth = $('.trans_container').width();
     var boxWidth = $('.transaction').outerWidth() + 10;
@@ -294,17 +310,7 @@ $(document).ready(function(){
         }
         
     }
-    // check if there is only one inner page on the overall page
-    if ($('.inline_page').length == 1) 
-    {   // check whether the page is the news one
-        if ($('#page_title')[0].baseURI.includes('news'))
-        {
-            // Style it to be a singular page
-            $('.news-container').css({"width": "100%", "padding" : "none", "padding-bottom" : "200px"});//make the news boxes full width
-            $('.news-social-container').css({"display": "none"}); //make the social buttons dissapear
-            $('.news-button').css({"display" : "none"}); // make the show all button go away
-        }
-    }
+    
     // Make the social media icons hover white
     $('.button-social').hover(
             function() { $(this.parentElement.children[0]).css({"color": "white", "transition" : "0.3s all ease-in-out"}) },
