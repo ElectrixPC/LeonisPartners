@@ -322,7 +322,7 @@ body {
 */
 
 #backvideo {
-        width: -webkit-fill-available;
+        width: 100%;
         position: relative;
 }
 
