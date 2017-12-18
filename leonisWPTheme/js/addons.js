@@ -265,6 +265,8 @@ $(document).ready(function(){
             var mq = window.matchMedia( "(max-width: 750px)" );
             if (mq.matches) {
                 $('#page_content').css({"width" : "90%", "left" : "50%", "transform" : "translateX(-50%)"});
+            }
+        
         }
         
     }
