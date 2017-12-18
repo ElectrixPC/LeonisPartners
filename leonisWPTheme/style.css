@@ -947,7 +947,7 @@ color: white;
         font-size: 12px;
         font-weight: bold;
         text-align: center;
-        left: inherit;
+        left: 0px;
         color: white;
         position: absolute;
         width: 250px;
@@ -978,14 +978,13 @@ color: white;
         display: block;
         color: #263318;
         position: relative;
+        left: 50%;
+        transform: translateX(-50%);
 }
 
 .social a.button {
         width: fit-content;
-        position: absolute;
-        top: 
-        60px;
-        left: 175px;
+        position: relative;
     }
 
 .news-download-container {
