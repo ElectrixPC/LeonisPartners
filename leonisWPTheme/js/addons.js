@@ -628,7 +628,7 @@ function cssAnimation(){
     $('.css-animation').each(function(){
         var animation = $(this).attr('class').split(" ");
 
-        if($(this).visible(true)){
+        if($(this).is(":visible")){
             $(this).children().addClass(animation[1] + ' animated');
         }
         $(this).removeClass(animation);
