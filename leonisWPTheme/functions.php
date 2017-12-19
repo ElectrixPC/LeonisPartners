@@ -22,6 +22,7 @@ add_action( 'after_setup_theme', 'leonis_setup' );
 
 function leonis_all_scriptsandstyles() {
     //Load JS and CSS files in here
+      wp_register_script ('scrolling',  get_stylesheet_directory_uri() . '/js/jquery.scrollme.js', array( 'jquery'), '1', true);
       wp_register_script ('navigation', get_stylesheet_directory_uri() . '/js/addons.js', array( 'jquery' ),'1',true);
     
       wp_register_style ('scssfile', get_stylesheet_directory_uri() . '/scss/style.scss', array(),'2','all');
