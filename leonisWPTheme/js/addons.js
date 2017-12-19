@@ -589,7 +589,15 @@ $('.box-ma').click(function() {
     $('.services-cr').css({"opacity":"0", "position":"absolute"});
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
     $('.services-ss').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"1", "position":"relative"});
+    if($('.services-ma').style.opacity == 1) 
+    {
+        $('.services-ma').css({"opacity":"0", "position":"relative"});
+    }
+    else 
+    {
+        $('.services-ma').css({"opacity":"1", "position":"relative"});
+    }
+    
 });
 $('.box-cr').click(function() {
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
