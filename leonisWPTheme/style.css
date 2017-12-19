@@ -461,6 +461,14 @@ body {
 
 /* -------- LEONIS ADVANTAGE BOXES ------------- */
 
+.advantage-left {
+        width: 50%;
+        float: left;
+}
+.advantage-right {
+        width: 50%;
+}
+
 .advantage-box {
         display: inline-block;
         width: 400px;
