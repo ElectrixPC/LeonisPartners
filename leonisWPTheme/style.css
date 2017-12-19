@@ -384,7 +384,7 @@ body {
         color: black;
 }
 #page_185, #page_32 {
-        background-color: #C0C0C0;
+        background-image: url("/images/nyc-blurred.jpg");
         font-family: 'Open Sans Condensed', sans-serif;
         color: black;
         overflow: hidden;
