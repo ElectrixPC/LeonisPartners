@@ -357,13 +357,8 @@ body {
         overflow: auto;
 }
 
-
-#page_title {
-        padding-top: 50px;
-}
-
 #page_content {
-        padding: 30px;
+        padding: 0px 30px 30px 30px;
 }
 
 #content {
@@ -542,7 +537,7 @@ body {
         opacity: 0;
         position: absolute;
         display: block;
-        background-color: darkgray;
+        background-color: gainsboro;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
         left: 50%;
         transform: translateX(-50%);
@@ -680,9 +675,6 @@ body {
         margin: 5px;
         color: black;
 }
-.transaction:hover .trans-expand {
-        background-color: white;
-}
 .trans-title {
         display: none;
 }
@@ -708,8 +700,6 @@ body {
         width: auto;
         max-width: 150px;
         max-height: 100px;
-        filter: grayscale(100%);
-        transition: filter 0.3s ease-in-out;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -723,8 +713,6 @@ body {
         width: auto;
         max-width: 150px;
         max-height: 100px;
-        filter: grayscale(100%);
-        transition: filter 0.3s ease-in-out;
 }
 
 .trans-type { 
@@ -753,7 +741,7 @@ body {
 }
 
 .trans-expand {
-        background: gainsboro;
+        background: white;
         position: absolute;
         z-index: 0;
         height: 300px;
