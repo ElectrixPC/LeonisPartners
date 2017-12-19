@@ -14,7 +14,7 @@ function initMap() {
     var uluru = {lat: 33.774983, lng: -84.297189};
     var pos_nyc = {lat: 40.75437209999999, lng: -73.97618260000002};
     var map_nyc = new google.maps.Map(document.getElementById('map_nyc'), {
-      zoom: 12,
+      zoom: 14,
       center: pos_nyc,
       disableDefaultUI: true,
       styles: my_style
