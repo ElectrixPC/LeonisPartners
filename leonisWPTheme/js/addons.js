@@ -586,57 +586,57 @@ $('.wpcf7-submit').on('click', function(e) {
 });
 // Services boxes - Show hide on click of each box
 $('.box-ma').click(function() {
-    $('.services-cr').css({"opacity":"0", "position":"absolute"});
-    $('.services-fv').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"0", "position":"absolute"});
+    $('.services-cr').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-fv').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-ss').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     if($('.services-ma')[0].style.opacity == "1") 
     {
-        $('.services-ma').css({"opacity":"0", "position":"absolute"});
+        $('.services-ma').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     }
     else 
     {
-        $('.services-ma').css({"opacity":"1", "position":"relative"});
+        $('.services-ma').css({"opacity":"1", "position":"relative", "max-height" : "2000px"});
     }
     
 });
 $('.box-cr').click(function() {
-    $('.services-fv').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"0", "position":"absolute"});
+    $('.services-fv').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-ss').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-ma').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     if($('.services-cr')[0].style.opacity == "1") 
     {
-        $('.services-cr').css({"opacity":"0", "position":"absolute"});
+        $('.services-cr').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     }
     else 
     {
-        $('.services-cr').css({"opacity":"1", "position":"relative"});
+        $('.services-cr').css({"opacity":"1", "position":"relative", "max-height" : "2000px"});
     }
     
 });
 $('.box-fv').click(function() {
-    $('.services-cr').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"0", "position":"absolute"});
+    $('.services-cr').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-ss').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-ma').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     if($('.services-fv')[0].style.opacity == "1") 
     {
-        $('.services-fv').css({"opacity":"0", "position":"absolute"});
+        $('.services-fv').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     }
     else 
     {
-        $('.services-fv').css({"opacity":"1", "position":"relative"});
+        $('.services-fv').css({"opacity":"1", "position":"relative", "max-height" : "2000px"});
     }
 });
 $('.box-ss').click(function() {
-    $('.services-cr').css({"opacity":"0", "position":"absolute"});
-    $('.services-ma').css({"opacity":"0", "position":"absolute"});
-    $('.services-fv').css({"opacity":"0", "position":"absolute"});
+    $('.services-cr').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-ma').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
+    $('.services-fv').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     if($('.services-ss')[0].style.opacity == "1") 
     {
-        $('.services-ss').css({"opacity":"0", "position":"absolute"});
+        $('.services-ss').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
     }
     else 
     {
-        $('.services-ss').css({"opacity":"1", "position":"relative"});
+        $('.services-ss').css({"opacity":"1", "position":"relative", "max-height" : "2000px"});
     }
 });
 

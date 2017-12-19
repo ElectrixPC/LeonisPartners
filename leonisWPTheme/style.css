@@ -900,7 +900,7 @@ p {
 }
 .services-child {
         padding: 20px;
-        height: auto;
+        height: 0px;
         width: 90%;
         opacity: 0;
         position: absolute;
@@ -910,6 +910,7 @@ p {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
         left: 50%;
         transform: translateX(-50%);
+        transition: max-height 0.3s ease-in-out;
 }
 .services-child h1 {
         color: #263318;
