@@ -349,19 +349,6 @@ body {
         top: 100%;
 }
 
-@media screen and (min-device-aspect-ratio: 16/9) {
-        #main-primary {
-                position: relative;
-                top: -350px;
-        }
-        }
-@media screen and (orientation: portrait) {
-        #main-primary {
-                position: relative;
-                top: -5px;
-        }
-        }
-
 .inline_page {
         position: relative;
         z-index: 10;
