@@ -488,7 +488,7 @@ $('.transaction').on('click', function(e) {
     if (modBottom > 0) minUp = size - modBottom;
     var $bottomGuy = $('.transaction').eq(index);
     if ((index > minUp -1) && (minUp > 1)) {
-        $bottomGuy[0].children[0].style.bottom = "90px";
+        $bottomGuy[0].children[0].style.bottom = "100px";
         // disable the going right-> left for the bottom row
         if (modBottom > 0) {
             $endOfRow[0].children[0].style.right = "auto";
