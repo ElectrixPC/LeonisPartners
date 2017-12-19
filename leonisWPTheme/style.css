@@ -910,7 +910,7 @@ p {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
         left: 50%;
         transform: translateX(-50%);
-        transition: max-height 0.3s ease-in-out;
+        transition: max-height 0.8s ease-in-out;
 }
 .services-child h1 {
         color: #263318;
@@ -920,7 +920,11 @@ p {
 }
 .services-expand p {
         margin: 7px;
-        display: none;
+        margin-top: 0px;
+        padding: 6px;
+        display: block;
+        background-color: #263318;
+        transition: 0.3s background-color ease-in-out;
 }
 
 .services-box:hover .services-title {
@@ -933,14 +937,8 @@ p {
         transform: translateY(-10px) scale(1.02);
         transition: 0.3s all ease-in-out;
 }
-.services-box:hover .services-expand i {
-        display: none;
-        
-}
 .services-box:hover .services-expand p {
-        display: block;
-        margin-top: 0px;
-        padding: 6px;
+        background-color: rgba(38, 51, 24, 0.8);
 }
 
 .services-child-box {
