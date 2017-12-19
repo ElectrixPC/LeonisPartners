@@ -628,7 +628,7 @@ function cssAnimation(){
     $('.css-animation').each(function(){
         var animation = $(this).attr('class').split(" ");
 
-        if($(this).is(":visible")){
+        if ($(document).scrollTop() > 250){
             $(this).children().addClass(animation[1] + ' animated');
         }
         $(this).removeClass(animation);
