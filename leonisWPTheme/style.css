@@ -383,13 +383,15 @@ body {
         background-color: white;
         color: black;
 }
-#page_185, #page_32 {
-        background-image: url(images/nyc-blurred.jpg);
+#page_185 {
+        background: url(images/nyc-blurred.jpg) no-repeat center center fixed;
         font-family: 'Open Sans Condensed', sans-serif;
         color: black;
         overflow: hidden;
         background-size: 100% auto;
-        background-position: bottom;
+}
+#page_32 {
+        background-color: gainsboro;
 }
 /* Contact us */
 #page_2, #page_11, #page_24{
