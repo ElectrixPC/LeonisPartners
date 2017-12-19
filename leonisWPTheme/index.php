@@ -5,7 +5,7 @@
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="inline_page" id="page_<?php the_ID(); ?>">
                 <div id="page_title" style="background-color: #263318; color: white; padding: 50px;">
-                    <h1><?php the_title(); ?><h1>
+                    <h1 style="color: white;"><?php the_title(); ?><h1>
                 </div>
                 <div id="page_content" style="width: 75%; left: 12.5%; position: relative;">
                         <?php the_content(); ?>
