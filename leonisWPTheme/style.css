@@ -346,7 +346,7 @@ body {
 
 #main-primary {
         position: relative;
-        top: -150px;
+        top: 100%;
 }
 
 @media screen and (min-device-aspect-ratio: 16/9) {
@@ -387,6 +387,7 @@ body {
 #page_268 {
         background-color: rgba(38, 51, 24, 0.8) !important;
         color: white;
+        top: -62px;
 }
 #page_268 #page_title {
         padding-top: 0px!important;
