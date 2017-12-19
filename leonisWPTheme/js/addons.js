@@ -254,8 +254,8 @@ $(document).ready(function(){
         if ($('#page_title')[0].baseURI.includes('news-research'))
         {
             // Style it to be a singular page
-            $('.news-container').css({"width": "100%", "padding" : "none", "padding-bottom" : "200px"});//make the news boxes full width
-            $('.news-social-container').css({"display": "none"}); //make the social buttons dissapear
+            //$('.news-container').css({"width": "100%", "padding" : "none", "padding-bottom" : "200px"});//make the news boxes full width
+            //$('.news-social-container').css({"display": "none"}); //make the social buttons dissapear
             $('.news-button').css({"display" : "none"}); // make the show all button go away
         }
         if ($('#page_title')[0].baseURI.includes('news/'))
@@ -292,29 +292,29 @@ $(document).ready(function(){
             $thisGuy[0].children[0].style.right = "auto";
     }
     // If there is another page on this page
-    if ($('.inline_page').length != 1) 
-    {   // check whether the page is desktop size
-        var mq = window.matchMedia( "(min-width: 1000px)" );
-        if (mq.matches) {
-            // set it so that there is only 4 boxes that show, over two rows
-            var newsWindowWidth = $('.news-container')[0].clientWidth;
-            var newsBoxWidth = $('.news').outerWidth() + 40;
-            var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
-            var spacestr = space + 'px';
-            $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
-            var smallNews = 4;
-            var totalNews = $('.news').length;
-            if (totalNews > smallNews) {
-                for (var item = smallNews; item < smallNews; item++) {
-                    $(".news")[item].style = "display: inline-block";
-                }
-                for (var item = smallNews -1; item < totalNews -1; item++) {
-                    $(".news")[item].style = "display: none";
-                }
-            } 
-        }
-        
-    }
+    //if ($('.inline_page').length != 1) 
+    //{   // check whether the page is desktop size
+    //    var mq = window.matchMedia( "(min-width: 1000px)" );
+    //    if (mq.matches) {
+    //        // set it so that there is only 4 boxes that show, over two rows
+    //        var newsWindowWidth = $('.news-container')[0].clientWidth;
+    //       var newsBoxWidth = $('.news').outerWidth() + 40;
+    //        var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
+    //        var spacestr = space + 'px';
+    //        $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
+    //        var smallNews = 4;
+    //        var totalNews = $('.news').length;
+    //        if (totalNews > smallNews) {
+    //            for (var item = smallNews; item < smallNews; item++) {
+    //                $(".news")[item].style = "display: inline-block";
+    //            }
+    //            for (var item = smallNews -1; item < totalNews -1; item++) {
+    //                $(".news")[item].style = "display: none";
+    //            }
+    //        } 
+    //    }
+    //    
+    //}
     
     // Make the social media icons hover white
     $('.button-social').hover(
@@ -516,29 +516,29 @@ window.addEventListener('resize', function(event){
             $thisGuy[0].children[0].style.right = "auto";
     }
     // if there is more than one inner page on the page (i.e is it the main page)
-    if ($('.inline_page').length != 1) 
-    {   // check whether the page is the news one
-        // if its definitely not a mobile or tablet
-        var mq = window.matchMedia( "(min-width: 1000px)" );
-        if (mq.matches) {
-            // change the news boxes to only have 4
-            var newsWindowWidth = $('.news-container')[0].clientWidth;
-            var newsBoxWidth = $('.news').outerWidth() + 40;
-            var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
-            var spacestr = space + 'px';
-            $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
-            var smallNews = 4;
-            var totalNews = $('.news').length;
-            if (totalNews > smallNews) {
-                for (var item = smallNews; item < smallNews; item++) {
-                    $(".news")[item].style = "display: inline-block";
-                }
-                for (var item = smallNews -1; item < totalNews -1; item++) {
-                    $(".news")[item].style = "display: none";
-                }
-            } 
-        }
-    }
+    //if ($('.inline_page').length != 1) 
+    //{   // check whether the page is the news one
+    //    // if its definitely not a mobile or tablet
+    //    var mq = window.matchMedia( "(min-width: 1000px)" );
+    //    if (mq.matches) {
+    //        // change the news boxes to only have 4
+    //        var newsWindowWidth = $('.news-container')[0].clientWidth;
+    //        var newsBoxWidth = $('.news').outerWidth() + 40;
+    //        var space = (newsWindowWidth - (newsBoxWidth * 2)) /2;
+    //        var spacestr = space + 'px';
+    //        $(".news-container").css({"padding-left": spacestr, "padding-right" : spacestr});
+    //        var smallNews = 4;
+    //        var totalNews = $('.news').length;
+    //        if (totalNews > smallNews) {
+    //            for (var item = smallNews; item < smallNews; item++) {
+    //                $(".news")[item].style = "display: inline-block";
+    //            }
+    //            for (var item = smallNews -1; item < totalNews -1; item++) {
+    //                $(".news")[item].style = "display: none";
+    //            }
+    //        } 
+    //    }
+    //}
 
 });
 // Make the nav bar smaller/larger on scrolling

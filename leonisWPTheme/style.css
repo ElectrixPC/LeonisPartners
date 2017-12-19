@@ -885,8 +885,7 @@ body {
 /* -------- Press tiles ------------- */
 
 .news-container {
-width: 40%;
-padding: 0px 200px 0px 200px;
+width: 100%;
 float: left;
 }
 
