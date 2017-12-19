@@ -859,7 +859,7 @@ p {
 
 /* ----------- OUR SERVICES SECTION -----------*/
 
-#page_185 #page_title h1 {
+#page_185 h1 {
         font-size: 2.5em;
         color: white;
 }
@@ -910,6 +910,9 @@ p {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
         left: 50%;
         transform: translateX(-50%);
+}
+.services-child h1 {
+        color: #263318;
 }
 .services-child p {
         float: left;
