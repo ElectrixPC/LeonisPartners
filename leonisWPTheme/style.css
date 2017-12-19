@@ -396,6 +396,11 @@ body {
         overflow: hidden;
         background-size: 100% auto;
 }
+@media screen and (max-width: 750px) {
+        #page_185 {
+                background: unset!important;
+        }
+}
 #page_32 {
         background-color: gainsboro;
 }
