@@ -536,6 +536,15 @@ body {
         transition: .3s all ease 
 }
 
+@media screen and (min-width: 1300px) {
+        .advantage-left {
+                padding-left: 200px;
+        }
+        .advantage-right {
+                padding-left: 200px;
+        }
+}
+
 @media screen and (orientation: portrait) {
         .advantage-box {
                 width: 90%;
