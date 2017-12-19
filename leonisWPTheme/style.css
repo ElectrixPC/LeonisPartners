@@ -896,6 +896,7 @@ p {
 }
 .services-expand {
         background-color: #263318;
+        transition: 0.3s background-color ease-in-out;
         color: white;
 }
 .services-child {
@@ -923,8 +924,6 @@ p {
         margin-top: 0px;
         padding: 6px;
         display: block;
-        background-color: #263318;
-        transition: 0.3s background-color ease-in-out;
 }
 
 .services-box:hover .services-title {
@@ -937,7 +936,7 @@ p {
         transform: translateY(-10px) scale(1.02);
         transition: 0.3s all ease-in-out;
 }
-.services-box:hover .services-expand p {
+.services-box:hover .services-expand {
         background-color: rgba(38, 51, 24, 0.8);
 }
 
