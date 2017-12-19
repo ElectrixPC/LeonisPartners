@@ -14,6 +14,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
         <script src="https://use.fontawesome.com/3257f69565.js"></script>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script type="text/javascript" src="/js/skrollr.js"></script>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
         <?php wp_head(); ?>
     </head>
     <header>
