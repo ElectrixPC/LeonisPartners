@@ -7,7 +7,7 @@
                 <div id="page_title" style="background-color: #263318; color: white; padding: 50px;">
                     <h1 style="color: white;"><?php the_title(); ?><h1>
                 </div>
-                <div id="page_content" style="width: 75%; left: 12.5%; position: relative;">
+                <div id="page_content" style="width: 75%; left: 12.5%; position: relative; top: 100px;">
                         <?php the_content(); ?>
                 </div>
             </div>
