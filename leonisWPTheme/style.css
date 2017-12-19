@@ -517,29 +517,6 @@ p {
         margin: auto auto 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .pricing-header, .day {
-        color: #000000;
-    }
-h1, .pricing-header h3 {
-        letter-spacing: -2px;
-        text-transform: uppercase;
-}
-h1, .alpha, .pricing-table .cost {
-        font-size: 48px;
-}
-h1, .counter-count {
-        font-family: montserratbold, sans-serif;
-        font-weight: normal;
-}
-h1, .alpha {
-        margin-bottom: 0.495em;
-}
-h1, h2, h3, h4, h5, h6 {
-        line-height: 1;
-        margin-top: 0;
-        text-rendering: optimizeLegibility;
-}
-
 .skrollr .slideInLeft {
         -webkit-animation-name: slideInLeft;
         animation-name: slideInLeft;
