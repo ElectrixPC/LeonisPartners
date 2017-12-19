@@ -4,6 +4,11 @@
 
 <body>
     <div class="main-video">
+    <div class="inline_page" id="page_268">
+        <div id="page_content">
+        <h3>Leonis Partners specializes in M&amp;A and Capital Raising advisory services for rapidly growing, founder-led technology, IT services, and healthcare companies</h3>
+        </div>
+    </div>
         <video autoplay muted loop id="backvideo" poster="<?php echo get_bloginfo('template_url') ?>/images/nyc-poster.jpg">
                 <source src="<?php echo get_bloginfo('template_url') ?>/images/nyc.mp4" type="video/mp4">
         </video>

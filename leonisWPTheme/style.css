@@ -323,12 +323,11 @@ body {
 */
 
 .main-video {
-        position: absolute;
+        position: fixed;
         top: -50%;
         left: -50%;
         width: 200%;
         height: 200%;
-        overflow: hidden;
 }
 
 #backvideo {
@@ -340,6 +339,8 @@ body {
         margin: auto;
         min-height: 50%;
         min-width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
 }
 
 /* ---------- STANDARD PAGES (Main Screen) ------------ */ 
@@ -374,7 +375,13 @@ body {
 #page_268 {
         background-color: rgba(38, 51, 24, 0.8) !important;
         color: white;
-        top: -62px;
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        z-index: 9999999;
+        height: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
 }
 #page_268 #page_title {
         padding-top: 0px!important;
