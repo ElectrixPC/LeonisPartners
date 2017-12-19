@@ -549,10 +549,13 @@ $(window).scroll(function() {
     if (mq.matches) {
         if ($(document).scrollTop() > 250) {
         $('html').addClass('skrollr');
+        $('#page_268').css({"display" : "none"});
         $('header').css({"height" : "60px"})
         } else {
         $('header').css({"height" : "70px"});
+        $('#page_268').css({"display" : "block"});    
         }
+
     }
   });
 
