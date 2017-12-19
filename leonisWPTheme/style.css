@@ -970,7 +970,7 @@ p {
         font-size: 0.8em;
 }
 .services-child-title h1 {
-        color: #263318;
+        color: #263318!important;
 }
 
 .services-child-box-big .services-child-title {
