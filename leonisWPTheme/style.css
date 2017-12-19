@@ -461,12 +461,19 @@ body {
 
 /* -------- LEONIS ADVANTAGE BOXES ------------- */
 
+.advantage-content {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+}
+
 .advantage-left {
         width: 50%;
         float: left;
 }
 .advantage-right {
         width: 50%;
+        float: right;
 }
 
 .advantage-box {
@@ -474,7 +481,7 @@ body {
         width: 400px;
         height: 320px;
         padding: 20px;
-        margin: 10px;
+        margin: 10px 10px 0px 10px;
         color: black;
         background-color: gainsboro;
         transition: .3s ease;
