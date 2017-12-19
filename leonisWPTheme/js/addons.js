@@ -589,9 +589,9 @@ $('.box-ma').click(function() {
     $('.services-cr').css({"opacity":"0", "position":"absolute"});
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
     $('.services-ss').css({"opacity":"0", "position":"absolute"});
-    if($('.services-ma').style.opacity == 1) 
+    if($('.services-ma')[0].style.opacity == "1") 
     {
-        $('.services-ma').css({"opacity":"0", "position":"relative"});
+        $('.services-ma').css({"opacity":"0", "position":"absolute"});
     }
     else 
     {
@@ -603,19 +603,41 @@ $('.box-cr').click(function() {
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
     $('.services-ss').css({"opacity":"0", "position":"absolute"});
     $('.services-ma').css({"opacity":"0", "position":"absolute"});
-    $('.services-cr').css({"opacity":"1", "position":"relative"});
+    if($('.services-cr')[0].style.opacity == "1") 
+    {
+        $('.services-cr').css({"opacity":"0", "position":"absolute"});
+    }
+    else 
+    {
+        $('.services-cr').css({"opacity":"1", "position":"relative"});
+    }
+    
 });
 $('.box-fv').click(function() {
     $('.services-cr').css({"opacity":"0", "position":"absolute"});
     $('.services-ss').css({"opacity":"0", "position":"absolute"});
     $('.services-ma').css({"opacity":"0", "position":"absolute"});
-    $('.services-fv').css({"opacity":"1", "position":"relative"});
+    if($('.services-fv')[0].style.opacity == "1") 
+    {
+        $('.services-fv').css({"opacity":"0", "position":"absolute"});
+    }
+    else 
+    {
+        $('.services-fv').css({"opacity":"1", "position":"relative"});
+    }
 });
 $('.box-ss').click(function() {
     $('.services-cr').css({"opacity":"0", "position":"absolute"});
     $('.services-ma').css({"opacity":"0", "position":"absolute"});
     $('.services-fv').css({"opacity":"0", "position":"absolute"});
-    $('.services-ss').css({"opacity":"1", "position":"relative"});
+    if($('.services-ss')[0].style.opacity == "1") 
+    {
+        $('.services-ss').css({"opacity":"0", "position":"absolute"});
+    }
+    else 
+    {
+        $('.services-ss').css({"opacity":"1", "position":"relative"});
+    }
 });
 
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
