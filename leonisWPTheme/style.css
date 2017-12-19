@@ -517,6 +517,14 @@ p {
         margin: auto auto 1.5em;
 }
 
+.icon .fa-2x {
+        border: 1px solid #263318;
+        height: 60px;
+        width: 60px;
+        padding: 12px;
+        border-radius: 50%;
+}
+
 .skrollr .slideInLeft {
         -webkit-animation-name: slideInLeft;
         animation-name: slideInLeft;
@@ -537,7 +545,10 @@ p {
         -webkit-animation-name: slideInRight;
         animation-name: slideInRight;
 }
-    
+<i class="fa fa-industry fa-2x" aria-hidden="true"></i>
+<i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+<i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
+<i class="fa fa-university fa-2x" aria-hidden="true"></i>
 .skrollr .css-animation {
         visibility: hidden;
 }
