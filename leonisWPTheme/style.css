@@ -359,6 +359,7 @@ body {
 
 #page_content {
         padding: 0px 30px 30px 30px;
+        overflow: hidden;
 }
 
 #content {
@@ -474,22 +475,57 @@ body {
 .advantage-right {
         width: 50%;
         float: right;
+        position: relative;
+        top: -18px;
 }
 
 .advantage-box {
         display: inline-block;
-        width: 400px;
-        height: 320px;
+        width: 500px;
+        height: 250px;
         padding: 20px;
         margin: 10px 10px 0px 10px;
         color: black;
-        background-color: gainsboro;
         transition: .3s ease;
         white-space: normal;
 }
+
+.advantage-icon {
+        float: left;
+        position: relative;
+}
+.advantage-right .advantage-icon {
+        float: right;
+}
+
+.advantage-box .fa-4x {
+        font-size: 3em;
+        color: #263318;
+        border: 3px solid #263318;
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+        border-radius: 50%;
+}
+
+.advantage-box h2 {
+        font-size: 1.3em;
+        float: left;
+        padding-top: 20px;
+        padding-left: 10px;
+}
+
+.advantage-right h2 {
+        float: right;
+        padding-right: 10px;
+}
+
 .advantage-content {
         float: left;
+        text-align: left;
 }
+
+
 
 .advantage-box:hover {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
