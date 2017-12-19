@@ -346,7 +346,7 @@ body {
 /* ---------- STANDARD PAGES (Main Screen) ------------ */ 
 
 #main-primary {
-        position: relative;
+        position: absolute;
         top: 100%;
 }
 
