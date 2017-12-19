@@ -895,9 +895,10 @@ p {
         display: block;
 }
 .services-expand {
-        background-color: #263318;
+        background-color: rgba(255, 255, 255, 0.1);
         transition: 0.3s background-color ease-in-out;
         color: white;
+        border: 2px solid white;
 }
 .services-child {
         padding: 20px;
@@ -920,9 +921,9 @@ p {
         float: left;
 }
 .services-expand p {
-        margin: 7px;
         margin-top: 0px;
         padding: 6px;
+        padding-bottom: 0px;
         display: block;
 }
 
@@ -937,7 +938,10 @@ p {
         transition: 0.3s all ease-in-out;
 }
 .services-box:hover .services-expand {
-        background-color: rgba(38, 51, 24, 0.8);
+        background-color: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+        transform: translateY(-10px) scale(1.02);
+        transition: 0.3s all ease-in-out;
 }
 
 .services-child-box {
@@ -965,7 +969,7 @@ p {
         padding: 10px;
         font-size: 0.8em;
 }
-.services-child-title {
+.services-child-title h1 {
         color: #263318;
 }
 
