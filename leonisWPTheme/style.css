@@ -374,6 +374,12 @@ body {
         position: relative;
         z-index: 9;
 }
+#page_title {
+        width: max-content;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+}
 
 /* ------------ SPECIFIC PAGES (Main screen) ------------ */
 #page_268 {
@@ -417,6 +423,16 @@ body {
 }
 #page_32 h1{
         text-transform: capitalize;
+}
+
+#page_32, #page_24 h1:after {
+        content: '';
+        width: 120%;
+        position: absolute;
+        left: -10%;
+        bottom: 1px;
+        border-width: 0 0 1px;
+        border-style: solid;
 }
 
 
