@@ -386,6 +386,9 @@ body {
 #page_268 #page_content {
         padding: 0px 20px 20px 20px;
 }
+#page_268 h3 {
+        font-size: 2em;
+}
 #page_188 {
         background-color: white;
         color: black;
@@ -990,8 +993,8 @@ h4:after {
 
 .services-child-box-big {
         display: inline-table;
-        width: 400px;
-        height: 450px;
+        width: 380px;
+        height: 480px;
         padding: 20px;
         margin: 10px;
         color: black;
