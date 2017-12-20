@@ -425,7 +425,7 @@ body {
         text-transform: capitalize;
 }
 
-#page_32, #page_24 h1:after {
+#page_32 h1:after, #page_24 h1:after {
         content: '';
         width: 120%;
         position: absolute;
