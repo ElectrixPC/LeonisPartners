@@ -97,6 +97,13 @@ a.button:hover {
 
 /* ------------ HEADER & FOOTER ------------ */
 
+.scroll-slug {
+        display: block;
+        position: relative;
+        top: -60px;
+        visibility: hidden;
+}
+
 header {
         width: 100%;
         position: fixed;

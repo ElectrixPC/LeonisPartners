@@ -22,7 +22,7 @@
                 $query = new WP_Query( $args );
                 while ( $query->have_posts() ) : $query->the_post();
                 if (get_post_type( get_the_ID() ) == 'page') {
-                        echo '<div id="' . basename(get_permalink()) . '"><div class="inline_page" id="page_' . get_the_ID() . '"><div id="page_title"><h1>' . get_the_title() . '<h1></div><div id="page_content">' . do_shortcode(get_post_field('post_content', $postid)) . '</div></div></div>';
+                        echo '<div class="scroll-slug" id="' . basename(get_permalink()) . '"></div><div class="inline_page" id="page_' . get_the_ID() . '"><div id="page_title"><h1>' . get_the_title() . '<h1></div><div id="page_content">' . do_shortcode(get_post_field('post_content', $postid)) . '</div></div>';
                 }
                 endwhile; ?>
         </div><!-- #content -->
