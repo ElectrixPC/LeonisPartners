@@ -1134,9 +1134,12 @@ h4:after {
 .trans-type {
         position: relative;
         top: 0%;
-        padding: 10px;
         padding-top: 20px;
-        color: #263318;
+        color: #263318;   
+}
+.trans-type p {
+        font-style: italic;
+        font-weight: bold;
 }
 .trans-location {
         display: block;
@@ -1155,6 +1158,7 @@ h4:after {
 }
 .trans-location-content p {
         display: block!important;
+        font-weight: bold;
 }
 
 .trans-expand {
