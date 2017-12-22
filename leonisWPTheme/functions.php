@@ -82,6 +82,25 @@ function revcon_change_post_object() {
 add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
 
+// Creates the team section in the wp editor
+function team_init() {
+    $args = array(
+      'label' => 'Team',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'team'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-businessman',
+        'supports' => array(
+            'title',
+            'page-attributes',)
+        );
+    register_post_type( 'team', $args );
+}
+add_action( 'init', 'team_init' );
+
 
 // [transactions] - main function for the transactions UI, points to the shortcode [transactions]
 function transactions_output($atts) {
