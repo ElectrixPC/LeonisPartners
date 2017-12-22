@@ -253,7 +253,7 @@ $(document).ready(function(){
     // check if there is only one inner page on the overall page
     if ($('.inline_page').length == 1) 
     {   // check whether the page is the news one
-        $('page_title').css({"width" : "unset"});
+        $('#page_title').css({"width" : "unset"});
         if ($('#page_title')[0].baseURI.includes('news-research'))
         {
             // Style it to be a singular page
