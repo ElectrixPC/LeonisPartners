@@ -296,7 +296,7 @@ $(document).ready(function(){
     // if there is more than one inner page on the page (i.e is it the main page)
     if ($('.inline_page').length != 1) 
     {   // check whether the page is the team one
-        $('page_430').css({"display" : "none"});
+        $('#page_430').css({"display" : "none"});
     }
     
     // Make the social media icons hover white
