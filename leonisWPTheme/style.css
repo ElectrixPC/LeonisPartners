@@ -1769,7 +1769,7 @@ transform: rotateZ(-66.46310423517549deg)   ;
 }
 
 .team-close {
-        display: none!important;
+        display: none;
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
