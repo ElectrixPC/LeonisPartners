@@ -1595,6 +1595,11 @@ a.button-team {
         padding: 7px;
         border: 1px solid #263318;
 }
+
+a.button-team:hover {
+        border: 1px solid #263318;
+}
+
     
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
