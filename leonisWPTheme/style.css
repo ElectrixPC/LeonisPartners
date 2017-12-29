@@ -1680,9 +1680,7 @@ a.button-team:hover {
         border: 1px solid #263318;
 }
 
-.team-close {
-        display: none;
-}
+
 
 .team-close {
 display: inline-block;
@@ -1770,7 +1768,9 @@ text-shadow: none;
 transform: rotateZ(-66.46310423517549deg)   ;
 }
 
-    
+.team-close {
+        display: none!important;
+}
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
 
