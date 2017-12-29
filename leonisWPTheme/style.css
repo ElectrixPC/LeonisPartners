@@ -1523,7 +1523,7 @@ color: white;
         display: none;
         position: relative;
         left: 60px;
-        top: -33px;
+        top: -25px;
 }
 
 .team-phone-number p {
@@ -1624,9 +1624,14 @@ a.button-team {
         border: 1px solid #263318;
 }
 
+.team .fa {
+        float: left;
+}
+
 a.button-team:hover {
         border: 1px solid #263318;
 }
+
 
     
 
