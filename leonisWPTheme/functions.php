@@ -294,9 +294,9 @@ function team_output($atts) {
           $photo      = '<div class="team-photo"><img src='   . get_post_meta(get_the_ID(), "wpcf-team-photo", true) . '></div>';
           $name       = '<div class="team-name"><p>'          . get_post_meta(get_the_ID(), "wpcf-team-name",          true) . '</p></div>';
           $title      = '<div class="team-job-title"><p>'     . get_post_meta(get_the_ID(), "wpcf-team-job-title",     true) . '</p></div>';
-          $email      = '<div class="team-email-address"><i class="fa fa-envelope" aria-hidden="true" href="' . get_post_meta(get_the_ID(), "wpcf-team-email-address", true) . '"></i></div>';
+          $email      = '<div class="team-email-address"><a href="mailto:' . get_post_meta(get_the_ID(), "wpcf-team-email-address", true) . '"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>';
           $phone      = '<div class="team-phone-number"><p>'  . get_post_meta(get_the_ID(), "wpcf-team-phone-number",  true) . '</p></div>';
-          $social     = '<div class="team-linkedin"><i class="fa fa-linkedin" aria-hidden="true" href="' . get_post_meta(get_the_ID(), "wpcf-team-linkedin",      true) . '"></i></div>'; 
+          $social     = '<div class="team-linkedin"><a href="' . get_post_meta(get_the_ID(), "wpcf-team-linkedin",      true) . '"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>'; 
           $desc       = '<div class="team-description"><p>'   . get_post_meta(get_the_ID(), "wpcf-team-description",   true) . '</p></div>';
           $experience = '<div class="team-experience"><p>'    . get_post_meta(get_the_ID(), "wpcf-team-experience",    true) . '</p></div>';
           
