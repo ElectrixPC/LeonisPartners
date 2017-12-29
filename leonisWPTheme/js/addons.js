@@ -555,8 +555,13 @@ $('.wpcf7-submit').on('click', function(e) {
 
 $('.button-team').click(function(e) {
     ;$('.team').removeAttr( 'style' );
-    $('.team-expand').css({"height": "500px"});
     $('.team-readmore').removeAttr('style');
+    $('.team-linkedin').removeAttr('style');
+    $('.team-email-address').removeAttr('style');
+    
+    $('.team-expand').css({"height": "500px"});
+    
+
 
     var windowWidth = $('.team-container').width();
     var boxWidth = $('.team').outerWidth();
@@ -575,6 +580,8 @@ $('.button-team').click(function(e) {
     var vPositionStr = '-' + vBlockPosition + '20%';
     $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
     $(this.parentElement.parentElement.children[3]).css({"display" : "none"});
+    $(this.parentElement.parentElement.children[4]).css({"position": "absolute", "left": "100%", "top": "10%"});
+    $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "left": "125%", "top": "10%"});
 });
 
 

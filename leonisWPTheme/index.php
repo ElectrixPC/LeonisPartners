@@ -3,7 +3,7 @@
     <div id="primary" class="site-content">
         <div id="content" role="main">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="inline_page" style="min-height: 95vh;" id="page_<?php the_ID(); ?>">
+            <div class="inline_page" style="min-height: 95vh; overflow:hidden" id="page_<?php the_ID(); ?>">
                 <div id="page_title" style="background-color: #263318; color: white; padding: 50px;">
                     <h1 style="color: white;"><?php the_title(); ?><h1>
                 </div>
