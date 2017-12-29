@@ -564,7 +564,7 @@ $('.button-team').click(function(e) {
     $('.team-description').removeAttr('style');
     $('.team-experience').removeAttr('style');
     $('.team-expand').css({"height": "500px"});
-    
+    $('.team-close').removeAttr('style');
 
 
     var windowWidth = $('.team-container').width();
@@ -606,7 +606,8 @@ $('.team-close').click(function() {
     $('p').removeAttr('style');
     $('.team-description').removeAttr('style');
     $('.team-experience').removeAttr('style');
-    $('.team-expand').css({"height": "0px"});
+    $('.team-expand').removeAttr('style');
+    $('.team-close').removeAttr('style');
 });
 
 
