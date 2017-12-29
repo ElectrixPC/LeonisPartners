@@ -562,13 +562,16 @@ $('.button-team').click(function(e) {
     var boxesPerRow = ~~(windowWidth / boxWidth);
     var currentItem = $(e.currentTarget.parentElement.parentElement).index();
 
-    var hBlockPosition = currentItem % boxesPerRow -1;
+    
     if(hBlockPosition == -1) {
-        hBlockPosition = boxesPerRow -1;
+        var hBlockPosition = boxesPerRow -1;
+        var vBlockPosition = Math.floor(currentItem / boxesPerRow);
+    }
+    else {
+        var hBlockPosition = currentItem % boxesPerRow -1;
+        var vBlockPosition = Math.floor(currentItem / boxesPerRow) + 1;
     }
     var hPositionStr = '-' + hBlockPosition + '00%';
-
-    var vBlockPosition = Math.floor(currentItem / boxesPerRow) + 1;
     var vPositionStr = '-' + vBlockPosition + '20%';
     $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
 });
