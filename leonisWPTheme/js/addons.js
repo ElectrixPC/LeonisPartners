@@ -555,8 +555,9 @@ $('.wpcf7-submit').on('click', function(e) {
 
 $('.button-team').click(function() {
     $('.team-expand').css({"height": "500px"});
-    $(this).css({"position": "absolute", "top": "0px"});
+    $(this.parentElement.parentElement).css({"position": "absolute", "top": "0px"});
 });
+
 
 // Services boxes - Show hide on click of each box
 $('.box-ma').click(function() {
