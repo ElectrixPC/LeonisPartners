@@ -558,7 +558,9 @@ $('.button-team').click(function(e) {
     $('.team-readmore').removeAttr('style');
     $('.team-linkedin').removeAttr('style');
     $('.team-email-address').removeAttr('style');
-    
+    $('.team-phone-number').removeAttr('style');
+    $('i').removeAttr('style');
+    $('p').removeAttr('style');
     $('.team-expand').css({"height": "500px"});
     
 
