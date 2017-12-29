@@ -554,7 +554,7 @@ $('.wpcf7-submit').on('click', function(e) {
 // Team expand/collapse
 
 $('.button-team').click(function(e) {
-    ;$('.team').removeAttr( 'style' );
+    $('.team').removeAttr( 'style' );
     $('.team-readmore').removeAttr('style');
     $('.team-linkedin').removeAttr('style');
     $('.team-email-address').removeAttr('style');
@@ -592,10 +592,22 @@ $('.button-team').click(function(e) {
     $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "135px", "top": "unset", "font-size" : "2em"});
     $(this.parentElement.parentElement.children[7]).css({"display" : "block"}); // description
     $(this.parentElement.parentElement.children[8]).css({"display" : "block"}); // experience
+    $(this.parentElement.parentElement.children[9]).css({"display" : "block"}); // exit button
 });
 
 
-
+$('.team-close').click(function() {
+    $('.team').removeAttr( 'style' );
+    $('.team-readmore').removeAttr('style');
+    $('.team-linkedin').removeAttr('style');
+    $('.team-email-address').removeAttr('style');
+    $('.team-phone-number').removeAttr('style');
+    $('i').removeAttr('style');
+    $('p').removeAttr('style');
+    $('.team-description').removeAttr('style');
+    $('.team-experience').removeAttr('style');
+    $('.team-expand').css({"height": "0px"});
+});
 
 
 // Services boxes - Show hide on click of each box

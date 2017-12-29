@@ -1680,6 +1680,91 @@ a.button-team:hover {
         border: 1px solid #263318;
 }
 
+.team-close {
+display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 0.75em;
+height: 0.75em;
+position: relative;
+border: none;
+-webkit-border-radius: 1em;
+border-radius: 1em;
+font: normal 8em/normal Arial, Helvetica, sans-serif;
+color: rgba(0,0,0,1);
+-o-text-overflow: clip;
+text-overflow: clip;
+background: darkgray;
+-webkit-transform: rotateZ(471.54426539266757deg)   ;
+transform: rotateZ(471.54426539266757deg)   ;
+}
+
+.team-close:hover {
+background: #263318;
+-webkit-transition: background 350ms cubic-bezier(0.42, 0, 0.58, 1) 10ms, all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+-moz-transition: background 350ms cubic-bezier(0.42, 0, 0.58, 1) 10ms, all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+-o-transition: background 350ms cubic-bezier(0.42, 0, 0.58, 1) 10ms, all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+transition: background 350ms cubic-bezier(0.42, 0, 0.58, 1) 10ms, all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+-webkit-transform: rotateX(-1.7188733853924696deg) rotateZ(19.48056503444799deg)   ;
+transform: rotateX(-1.7188733853924696deg) rotateZ(19.48056503444799deg)   ;
+}
+
+.team-close:active {
+background: darkgray;
+-webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.5) inset;
+box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.5) inset;
+-webkit-transition: none;
+-moz-transition: none;
+-o-transition: none;
+transition: none;
+-webkit-transform: rotateZ(471.54426539266757deg)   ;
+transform: rotateZ(471.54426539266757deg)   ;
+}
+
+.team-close::before {
+display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 0.45em;
+height: 0.1em;
+position: absolute;
+content: "";
+top: 0.33em;
+left: 0.155em;
+border: none;
+font: normal 100%/normal Arial, Helvetica, sans-serif;
+color: rgba(0,0,0,1);
+-o-text-overflow: clip;
+text-overflow: clip;
+background: #ffffff;
+text-shadow: none;
+-webkit-transform: rotateZ(24.064227395494576deg)   ;
+transform: rotateZ(24.064227395494576deg)   ;
+}
+
+.team-close::after {
+display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 0.45em;
+height: 0.1em;
+position: absolute;
+content: "";
+top: 0.33em;
+left: 0.155em;
+border: none;
+font: normal 100%/normal Arial, Helvetica, sans-serif;
+color: rgba(0,0,0,1);
+-o-text-overflow: clip;
+text-overflow: clip;
+background: #ffffff;
+text-shadow: none;
+-webkit-transform: rotateZ(-66.46310423517549deg)   ;
+transform: rotateZ(-66.46310423517549deg)   ;
+}
 
     
 
