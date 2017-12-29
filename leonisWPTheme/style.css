@@ -1513,12 +1513,15 @@ color: white;
 .team-expand:after {
         display: block;
         content: '';
-        width: 500px;
+        width: 75%;
         height: 1px;
-        margin: 13px auto 8px auto;
+        margin: 13px auto 0px auto;
         background: #263318;
-    }
-
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+}
 
 .team p {
         font-size: 15px;
@@ -1542,7 +1545,30 @@ color: white;
 }
 
 .team-description {
-display: none;
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 100%;
+        width: 400px;
+        text-align: left;
+}
+
+.team-description h3 {
+        text-align: left;
+        margin-bottom: 10px;
+}
+
+.team-description h3:after {
+        display: block;
+        content: '';
+        width: 75%;
+        height: 1px;
+        margin: 13px auto 0px auto;
+        background: #263318;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
 }
 
 .team-experience {

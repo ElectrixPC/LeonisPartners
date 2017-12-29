@@ -586,9 +586,9 @@ $('.button-team').click(function(e) {
     
     $(this.parentElement.parentElement.children[4].children[1]).css({"display" : "block"}); // paragraph
     $(this.parentElement.parentElement.children[5]).css({"position": "absolute", "display" : "block", "left": "300px", "width" : "200px", "bottom": "5%", "font-size" : "2em"});
-    
     $(this.parentElement.parentElement.children[5].children[1]).css({"display" : "block"}); // paragraph
     $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "135px", "top": "unset", "font-size" : "2em"});
+    $(this.parentElement.parentElement.children[7]).css({"display" : "block"}); // description
 });
 
 
