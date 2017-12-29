@@ -564,7 +564,7 @@ $('.button-team').click(function(e) {
 
     var hBlockPosition = currentItem % boxesPerRow -1;
     if(hBlockPosition == -1) {
-        hBlockPosition = boxesPerRow;
+        hBlockPosition = boxesPerRow -1;
     }
     var hPositionStr = '-' + hBlockPosition + '00%';
 
