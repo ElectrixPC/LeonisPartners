@@ -553,12 +553,20 @@ $('.wpcf7-submit').on('click', function(e) {
 });
 // Team expand/collapse
 
-$('.button-team').click(function() {
+$('.button-team').click(function(e) {
     $('.team').removeAttr( 'style' );
     $('.team-expand').css({"height": "500px"});
-    
+
+    var windowWidth = $('.team-container').width();
+    var boxWidth = $('.team').outerWidth() + 12.5;
+    var boxesPerRow = ~~(windowWidth / boxWidth);
+    var currentItem = $(e.currentTarget).index();
+
+    var blockPosition = currentItem / boxesPerRow;
+
     $(this.parentElement.parentElement).css({"transform": "translate(-200%, -120%)"});
 });
+
 
 
 // Services boxes - Show hide on click of each box
