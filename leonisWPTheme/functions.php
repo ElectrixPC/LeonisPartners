@@ -286,7 +286,7 @@ function team_output($atts) {
     $args = array('post_type' => 'team',
                   'posts_per_page' => 1000); // these arguments are telling WP_Query to only look for the post types called team
     $query = new WP_Query( $args );
-    $output = '<div class="team-container">';
+    $output = '<div class="team-container"><div class="team-expand"></div>';
 
     while ( $query->have_posts() ) : $query->the_post();
           // pull all of the data out of the meta in each team
