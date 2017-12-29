@@ -1681,6 +1681,10 @@ a.button-team:hover {
 }
 
 .team-close {
+        display: none;
+}
+
+.team-close {
 display: inline-block;
 -webkit-box-sizing: content-box;
 -moz-box-sizing: content-box;

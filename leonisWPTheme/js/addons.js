@@ -592,7 +592,7 @@ $('.button-team').click(function(e) {
     $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "135px", "top": "unset", "font-size" : "2em"});
     $(this.parentElement.parentElement.children[7]).css({"display" : "block"}); // description
     $(this.parentElement.parentElement.children[8]).css({"display" : "block"}); // experience
-    $(this.parentElement.parentElement.children[9]).css({"display" : "block"}); // exit button
+    $(this.parentElement.parentElement.children[9]).css({"display" : "inline-block", "position" : "absolute", "top" : "-20px", "left" : "1100px"}); // exit button
 });
 
 
