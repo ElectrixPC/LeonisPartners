@@ -301,7 +301,7 @@ function team_output($atts) {
           $experience = '<div class="team-experience"><p>'    . get_post_meta(get_the_ID(), "wpcf-team-experience",    true) . '</p></div>';
           
           $team      = '<div class="team team-collapsed">';
-          $output     .= $team . '<div class="team-expand">' . $name . $title . $email . $phone . $social . $photo . $desc . $experience . '</div></div>';
+          $output     .= $team . $name . $title . $email . $phone . $social . $photo . $desc . $experience . '</div>';
           $count++;
     endwhile;
 
