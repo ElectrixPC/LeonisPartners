@@ -294,11 +294,11 @@ function team_output($atts) {
           $photo      = '<div class="team-photo"><img src='   . get_post_meta(get_the_ID(), "wpcf-team-photo", true) . '></div>';
           $name       = '<div class="team-name"><p>'          . get_post_meta(get_the_ID(), "wpcf-team-name",          true) . '</p></div>';
           $title      = '<div class="team-job-title"><p>'     . get_post_meta(get_the_ID(), "wpcf-team-job-title",     true) . '</p></div>';
-          $email      = '<div class="team-email-address"><a href="mailto:' . get_post_meta(get_the_ID(), "wpcf-team-email-address", true) . '"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>';
-          $phone      = '<div class="team-phone-number"><p>'  . get_post_meta(get_the_ID(), "wpcf-team-phone-number",  true) . '</p></div>';
+          $email      = '<div class="team-email-address"><a href="mailto:' . get_post_meta(get_the_ID(), "wpcf-team-email-address", true) . '"><i class="fa fa-envelope" aria-hidden="true"></i></a><p>' . get_post_meta(get_the_ID(), "wpcf-team-email-address", true) . '</p></div>';
+          $phone      = '<div class="team-phone-number"><i class="fa fa-phone" aria-hidden="true"></i><p>'  . get_post_meta(get_the_ID(), "wpcf-team-phone-number",  true) . '</p></div>';
           $social     = '<div class="team-linkedin"><a href="' . get_post_meta(get_the_ID(), "wpcf-team-linkedin",      true) . '"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>'; 
-          $desc       = '<div class="team-description"><p>'   . get_post_meta(get_the_ID(), "wpcf-team-description",   true) . '</p></div>';
-          $experience = '<div class="team-experience"><p>'    . get_post_meta(get_the_ID(), "wpcf-team-experience",    true) . '</p></div>';
+          $desc       = '<div class="team-description"><h3>Description</h3><p>'   . get_post_meta(get_the_ID(), "wpcf-team-description",   true) . '</p></div>';
+          $experience = '<div class="team-experience"><h3>Experience</h3><p>'    . get_post_meta(get_the_ID(), "wpcf-team-experience",    true) . '</p></div>';
           $readmore   = '<div class="team-readmore"><a type="button" class="button button-team" href="javascript:void(0);">Read More</a></div>';
           $team      = '<div class="team team-collapsed">';
           $output     .= $team . $photo . $name . $title . $readmore . $email . $phone . $social . $desc . $experience . '</div>';
