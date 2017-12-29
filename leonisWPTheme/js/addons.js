@@ -556,7 +556,8 @@ $('.wpcf7-submit').on('click', function(e) {
 $('.button-team').click(function() {
     $('.team').removeAttr( 'style' );
     $('.team-expand').css({"height": "500px"});
-    $(this.parentElement.parentElement).css({"position": "absolute", "top": "0px"});
+    
+    $(this.parentElement.parentElement).css({"transform": "translate(-200%, -120%)"});
 });
 
 
