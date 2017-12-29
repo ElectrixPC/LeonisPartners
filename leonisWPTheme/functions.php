@@ -299,7 +299,7 @@ function team_output($atts) {
           $social     = '<div class="team-linkedin"><a href="' . get_post_meta(get_the_ID(), "wpcf-team-linkedin",      true) . '"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>'; 
           $desc       = '<div class="team-description"><h3>Description</h3><p>'   . get_post_meta(get_the_ID(), "wpcf-team-description",   true) . '</p></div>';
           $experience = '<div class="team-experience"><h3>Experience</h3><p>'    . get_post_meta(get_the_ID(), "wpcf-team-experience",    true) . '</p></div>';
-          $readmore   = '<div class="team-readmore"><a type="button" class="button button-team" href="javascript:void(0);">Read More</a></div>';
+          $readmore   = '<div class="team-readmore"><a type="button" class="button button-team" href="#team-expand">Read More</a></div>';
           $team      = '<div class="team team-collapsed">';
           $output     .= $team . $photo . $name . $title . $readmore . $email . $phone . $social . $desc . $experience . '</div>';
           $count++;
