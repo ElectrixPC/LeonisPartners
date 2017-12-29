@@ -405,7 +405,8 @@ $('.transaction').on('click', function(e) {
                                                      "left"      : "105%",
                                                      "transform" : "unset",
                                                      "float"     : "right",
-                                                     "width"     : "300%"});//location trans-location-content                               
+                                                     "width"     : "300%"});//location trans-location-content
+    $(this.children[0].children[8].children[1].children[0]).css({"font-weight" : "unset"}); // trans-location-content p                                                                                
     $(this.children[0].children[9]).css({"display": "block",
                                       "text-align": "left",
                                         "position": "absolute",
