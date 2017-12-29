@@ -580,8 +580,8 @@ $('.button-team').click(function(e) {
     var vPositionStr = '-' + vBlockPosition + '20%';
     $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
     $(this.parentElement.parentElement.children[3]).css({"display" : "none"});
-    $(this.parentElement.parentElement.children[4]).css({"position": "absolute", "left": "100%", "top": "10%"});
-    $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "left": "125%", "top": "10%"});
+    $(this.parentElement.parentElement.children[4]).css({"position": "absolute", "display" : "block", "left": "100%", "top": "10%", "font-size" : "3em"});
+    $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "125%", "top": "10%", "font-size" : "3em"});
 });
 
 
