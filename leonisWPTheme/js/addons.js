@@ -554,6 +554,7 @@ $('.wpcf7-submit').on('click', function(e) {
 // Team expand/collapse
 
 $('.button-team').click(function() {
+    $('.team-expand').css({"height": "500px"});
     $(this).css({"position": "absolute", "top": "0px"});
 });
 
