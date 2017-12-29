@@ -1518,8 +1518,16 @@ display: none;
 }
 
 .team.team-collapsed {
-position: relative;
-width: 25%;
+        position: relative;
+        width: 25%;
+        float: left;
+        padding: 25px;
+}
+
+.team-photo {
+        width: 250px;
+        height: 225px;
+        overflow: hidden;
 }
 
 .team-photo img {
