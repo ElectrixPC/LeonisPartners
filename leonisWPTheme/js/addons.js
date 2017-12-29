@@ -581,10 +581,11 @@ $('.button-team').click(function(e) {
     $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
     $(this.parentElement.parentElement.children[3]).css({"display" : "none"});
     $(this.parentElement.parentElement.children[4]).css({"position": "absolute", "display" : "block", "left": "380px", "top": "10%", "font-size" : "3em"});
-    $(this.parentElement.parentElement.children[4].children[0]).css({"display" : "block"}); // paragraph
+    $(this.parentElement.parentElement.children[4].children[1]).css({"display" : "block"}); // paragraph
     $(this.parentElement.parentElement.children[5]).css({"position": "absolute", "display" : "block", "left": "610px", "top": "10%", "font-size" : "3em"});
+    $(this.parentElement.parentElement.children[5].children[1]).css({"display" : "block"}); // paragraph
     $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "300px", "top": "10%", "font-size" : "3em"});
-    $(this.parentElement.parentElement.children[6].children[0]).css({"display" : "block"}); // paragraph
+    
 });
 
 

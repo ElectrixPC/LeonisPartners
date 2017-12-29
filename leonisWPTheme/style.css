@@ -1514,6 +1514,9 @@ color: white;
         font-size: 15px;
 }
 
+.team-email-address, .team-phone-number, .team-linkedin {
+        display: none;
+}
 
 
 .team-email-address p {
