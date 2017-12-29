@@ -561,6 +561,8 @@ $('.button-team').click(function(e) {
     $('.team-phone-number').removeAttr('style');
     $('i').removeAttr('style');
     $('p').removeAttr('style');
+    $('.team-descrition').removeAttr('style');
+    $('.team-experience').removeAttr('style');
     $('.team-expand').css({"height": "500px"});
     
 

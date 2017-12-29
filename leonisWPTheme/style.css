@@ -1561,18 +1561,28 @@ color: white;
 .team-description h3:after {
         display: block;
         content: '';
-        width: 75%;
+        width: 350px;
         height: 1px;
-        margin: 13px auto 0px auto;
+        margin: 13px 0px auto;
         background: #263318;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
 }
 
 .team-experience {
 display: none;
+}
+
+.team-experience h3:after {
+        display: block;
+        content: '';
+        width: 300px;
+        height: 1px;
+        margin: 13px 0px auto;
+        background: #263318;
+}
+    
+.team-experience h3 {
+        text-align: left;
+        margin-bottom: 10px;
 }
 
 .team.team-collapsed {
