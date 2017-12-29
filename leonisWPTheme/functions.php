@@ -300,7 +300,7 @@ function team_output($atts) {
           $desc       = '<div class="team-description"><h3>Description</h3><p>'   . get_post_meta(get_the_ID(), "wpcf-team-description",   true) . '</p></div>';
           $experience = '<div class="team-experience"><h3>Experience</h3><p>'    . get_post_meta(get_the_ID(), "wpcf-team-experience",    true) . '</p></div>';
           $readmore   = '<div class="team-readmore"><a type="button" class="button button-team" href="#team-expand">Read More</a></div>';
-          $close      = '<div class="team-close"></div>'
+          $close      = '<div class="team-close"></div>';
           $team      = '<div class="team team-collapsed">';
           $output     .= $team . $photo . $name . $title . $readmore . $email . $phone . $social . $desc . $experience . $close . '</div>';
           $count++;
