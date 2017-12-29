@@ -551,6 +551,12 @@ $('.wpcf7-submit').on('click', function(e) {
                                                                                                              "padding": "25px"});
     }
 });
+// Team expand/collapse
+
+$('.button-team').click(function() {
+    $(this).css({"position": "absolute", "top": "0px"});
+});
+
 // Services boxes - Show hide on click of each box
 $('.box-ma').click(function() {
     $('.services-cr').css({"opacity":"0", "position":"absolute", "max-height" : "0px"});
