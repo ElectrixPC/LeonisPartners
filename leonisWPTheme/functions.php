@@ -291,12 +291,12 @@ function team_output($atts) {
     while ( $query->have_posts() ) : $query->the_post();
           // pull all of the data out of the meta in each team
           // format it
+          $photo      = '<div class="team-photo"><img src='   . get_post_meta(get_the_ID(), "wpcf-team-photo", true) . '></div>';
           $name       = '<div class="team-name"><p>'          . get_post_meta(get_the_ID(), "wpcf-team-name",          true) . '</p></div>';
           $title      = '<div class="team-job-title"><p>'     . get_post_meta(get_the_ID(), "wpcf-team-job-title",     true) . '</p></div>';
           $email      = '<div class="team-email-address"><p>' . get_post_meta(get_the_ID(), "wpcf-team-email-address", true) . '</p></div>';
           $phone      = '<div class="team-phone-number"><p>'  . get_post_meta(get_the_ID(), "wpcf-team-phone-number",  true) . '</p></div>';
           $social     = '<div class="team-linkedin"><p>'      . get_post_meta(get_the_ID(), "wpcf-team-linkedin",      true) . '</p></div>'; 
-          $photo      = '<div class="team-photo"><img src='   . get_post_meta(get_the_ID(), "wpcf-team-photo", true) . '></div>';
           $desc       = '<div class="team-description"><p>'   . get_post_meta(get_the_ID(), "wpcf-team-description",   true) . '</p></div>';
           $experience = '<div class="team-experience"><p>'    . get_post_meta(get_the_ID(), "wpcf-team-experience",    true) . '</p></div>';
           
