@@ -554,18 +554,26 @@ $('.wpcf7-submit').on('click', function(e) {
 // Team expand/collapse
 
 $('.button-team').click(function(e) {
-    $('.team').removeAttr( 'style' );
+    ;$('.team').removeAttr( 'style' );
     $('.team-expand').css({"height": "500px"});
 
     var windowWidth = $('.team-container').width();
-    var boxWidth = $('.team').outerWidth() + 12.5;
+    var boxWidth = $('.team').outerWidth();
     var boxesPerRow = ~~(windowWidth / boxWidth);
-    var currentItem = $(e.currentTarget).index();
+    var currentItem = $(e.currentTarget.parentElement.parentElement).index();
 
-    var blockPosition = currentItem / boxesPerRow;
+    var hBlockPosition = currentItem % boxesPerRow -1;
+    if(hBlockPosition == -1) {
+        hBlockPosition = boxesPerRow;
+    }
+    var hPositionStr = '-' + hBlockPosition + '00%';
 
-    $(this.parentElement.parentElement).css({"transform": "translate(-200%, -120%)"});
+    var vBlockPosition = Math.floor(currentItem / boxesPerRow) + 1;
+    var vPositionStr = '-' + vBlockPosition + '20%';
+    $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
 });
+
+
 
 
 
