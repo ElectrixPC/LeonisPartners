@@ -1589,6 +1589,12 @@ top: 20%;
 left: 45%;
 font-size: 3em; 
 }
+
+a.button-team {
+        font-size: 1em;
+        padding: 7px;
+        border: 1px solid #263318;
+}
     
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
