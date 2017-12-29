@@ -561,7 +561,7 @@ $('.button-team').click(function(e) {
     $('.team-phone-number').removeAttr('style');
     $('i').removeAttr('style');
     $('p').removeAttr('style');
-    $('.team-descrition').removeAttr('style');
+    $('.team-description').removeAttr('style');
     $('.team-experience').removeAttr('style');
     $('.team-expand').css({"height": "500px"});
     
@@ -591,6 +591,7 @@ $('.button-team').click(function(e) {
     $(this.parentElement.parentElement.children[5].children[1]).css({"display" : "block"}); // paragraph
     $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "135px", "top": "unset", "font-size" : "2em"});
     $(this.parentElement.parentElement.children[7]).css({"display" : "block"}); // description
+    $(this.parentElement.parentElement.children[8]).css({"display" : "block"}); // experience
 });
 
 
