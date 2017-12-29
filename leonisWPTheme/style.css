@@ -1497,6 +1497,13 @@ color: white;
 
 /* ------------ OUR TEAM --------------------- */
 
+.team-container {
+        max-width: 1200px;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+}
+
 .team-expand {
         width: 100%;
         height: 0px;
@@ -1536,6 +1543,9 @@ display: none;
         width: 250px;
         height: 225px;
         overflow: hidden;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
 }
 
 .team-photo img {
