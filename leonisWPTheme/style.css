@@ -1494,6 +1494,54 @@ color: white;
         }
 }
 
+
+/* ------------ OUR TEAM --------------------- */
+
+.team-email-address {
+        display: none;
+}
+
+.team-phone-number {
+display: none;
+}
+
+.team-linkedin {
+display: none;
+}
+
+.team-description {
+display: none;
+}
+
+.team-experience {
+display: none;
+}
+
+.team.team-collapsed {
+position: relative;
+width: 25%;
+}
+
+.team-photo img {
+width: 100%;
+}
+
+.team-name p {
+font-weight: bold;
+margin-bottom: 0.5em;
+}
+
+.team-name:before {
+display: block;
+content: '';
+width: 50px;
+height: 1px;
+margin: 13px auto 8px auto;
+background: #263318;
+}
+    
+    
+
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
 
 .wpcf7 {
