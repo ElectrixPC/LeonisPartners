@@ -1547,7 +1547,48 @@ height: 1px;
 margin: 13px auto 8px auto;
 background: #263318;
 }
-    
+
+.team:hover img {
+        filter: blur(5px);
+        transition: 0.2s filter ease-in-out;
+}
+
+.team:hover .team-linkedin {
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        font-size: 3em;
+}
+
+.team:hover img {
+        filter: blur(5px);
+        transition: 0.2s filter ease-in-out;
+}
+
+.team:hover .team-linkedin {
+display: block;
+position: absolute;
+top: 20%;
+left: 45%;
+font-size: 3em;
+}
+
+.team:hover .team-email-address {
+display: block;
+position: absolute;
+top: 40%;
+left: 45%;
+font-size: 3em;
+}
+
+.team:hover .team-linkedin {
+display: block;
+position: absolute;
+top: 20%;
+left: 45%;
+font-size: 3em; 
+}
     
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
