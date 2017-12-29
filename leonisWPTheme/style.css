@@ -1510,6 +1510,16 @@ color: white;
         transition: 0.3s height ease-in-out;
 }
 
+.team-expand:after {
+        display: block;
+        content: '';
+        width: 500px;
+        height: 1px;
+        margin: 13px auto 8px auto;
+        background: #263318;
+    }
+
+
 .team p {
         font-size: 15px;
 }
