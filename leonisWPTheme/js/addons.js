@@ -561,6 +561,7 @@ $('.button-team').click(function(e) {
     $('.team-phone-number').removeAttr('style');
     $('i').removeAttr('style');
     $('p').removeAttr('style');
+    $('img').removeAttr('style');
     $('.team-description').removeAttr('style');
     $('.team-experience').removeAttr('style');
     $('.team-expand').css({"height": "500px"});
@@ -583,13 +584,13 @@ $('.button-team').click(function(e) {
     var hPositionStr = '-' + hBlockPosition + '00%';
     var vPositionStr = '-' + vBlockPosition + '20%';
     $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
-    $(this.parentElement.parentElement.children[3]).css({"display" : "none"});
-    $(this.parentElement.parentElement.children[4]).css({"position": "absolute", "display" : "block", "top" : "unset", "left": "300px", "bottom": "10%", "font-size" : "2em"});
-    
+    $(this.parentElement.parentElement.children[0].children[0]).css({"filter" : "none"}); // img
+    $(this.parentElement.parentElement.children[3]).css({"display" : "none"}); // readmore
+    $(this.parentElement.parentElement.children[4]).css({"position": "absolute", "display" : "block", "top" : "unset", "left": "300px", "bottom": "10%", "font-size" : "2em"}); // email address
     $(this.parentElement.parentElement.children[4].children[1]).css({"display" : "block"}); // paragraph
-    $(this.parentElement.parentElement.children[5]).css({"position": "absolute", "display" : "block", "left": "300px", "width" : "200px", "bottom": "5%", "font-size" : "2em"});
+    $(this.parentElement.parentElement.children[5]).css({"position": "absolute", "display" : "block", "left": "300px", "width" : "200px", "bottom": "5%", "font-size" : "2em"}); // phone number
     $(this.parentElement.parentElement.children[5].children[1]).css({"display" : "block"}); // paragraph
-    $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "135px", "top": "unset", "font-size" : "2em"});
+    $(this.parentElement.parentElement.children[6]).css({"position": "absolute", "display" : "block", "left": "135px", "top": "unset", "font-size" : "2em"}); // linkedin
     $(this.parentElement.parentElement.children[7]).css({"display" : "block"}); // description
     $(this.parentElement.parentElement.children[8]).css({"display" : "block"}); // experience
     $(this.parentElement.parentElement.children[9]).css({"display" : "inline-block", "position" : "absolute", "top" : "-20px", "left" : "1100px"}); // exit button
