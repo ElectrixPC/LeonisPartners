@@ -647,6 +647,9 @@ h4:after {
         margin-left: 0;
         margin-bottom: 20px;
         }
+        #page_title {
+                font-size: 0.8em;
+        }
 }
 
 
@@ -1109,7 +1112,8 @@ h4:after {
                 margin-bottom: 10px;
         }
         .services-child-box {
-                width: 100%;
+            width: 100%;
+            padding-top: 10px;
         }
         .services-child-box-title {
                 height: fit-content;
