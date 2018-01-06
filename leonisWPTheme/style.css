@@ -1807,9 +1807,16 @@ transform: rotateZ(-66.46310423517549deg)   ;
         display: none;
 }
 
+@media screen and (max-width: 768px) {
+        .team-collapsed {
+                width: 250px!important;
+        }
+}
+
+
 @media screen and (orientation: portrait) {
         .team-collapsed {
-                width: 100%;
+                width: 100%!important;
         }
 }
 
