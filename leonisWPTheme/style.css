@@ -1818,6 +1818,11 @@ transform: rotateZ(-66.46310423517549deg)   ;
         .team-collapsed {
                 width: 100%!important;
         }
+        .team .fa {
+                left: 50%;
+                position: relative;
+                transform: translateX(-50%);
+        }
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
