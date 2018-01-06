@@ -592,14 +592,8 @@ $('.button-team').click(function(e) {
     $('img').removeAttr('style');
     $('.team-description').removeAttr('style');
     $('.team-experience').removeAttr('style');
-    var mq = window.matchMedia( "(max-width: 750px)" );
-    if (mq.matches) 
-    {
-        $('.team-expand').css({"height": "1000px"});
-    }
-    else {
-        $('.team-expand').css({"height": "500px"}); 
-    }
+    
+    $('.team-expand').css({"height": "500px"}); 
     $('.team-close').removeAttr('style');
 
 
@@ -618,7 +612,14 @@ $('.button-team').click(function(e) {
     }
     var hPositionStr = '-' + hBlockPosition + '00%';
     var vPositionStr = '-' + vBlockPosition + '20%';
-    $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
+    var mq = window.matchMedia( "(max-width: 1500px)" );
+    if (mq.matches) 
+    {
+        $('.team-expand').css({"height": "0px"});
+    }
+    else {
+        $(this.parentElement.parentElement).css({"transform": "translate(" + hPositionStr + ", " + vPositionStr + ")"});
+    }
     $(this.parentElement.parentElement.children[0].children[0]).css({"filter" : "none"}); // img
     $(this.parentElement.parentElement.children[3]).css({"display" : "none"}); // readmore
     $(this.parentElement.parentElement.children[4]).css({"position": "absolute", "display" : "block", "top" : "unset", "left": "300px", "bottom": "10%", "font-size" : "2em"}); // email address
