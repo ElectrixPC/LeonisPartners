@@ -306,6 +306,7 @@ $(document).ready(function(){
             function() { $(this.parentElement.children[0]).css({"color": "#263318", "transition" : "0.3s all ease-in-out"}) }
     );
     var mq = window.matchMedia( "(max-width: 800px)" );
+    var mq1 = window.matchMedia( "(min-width: 500px)" );
     if (mq.matches) {
         zoomOutMobile();
     }
