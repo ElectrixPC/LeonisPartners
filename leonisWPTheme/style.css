@@ -1126,6 +1126,21 @@ h4:after {
         }
 }
 
+@media screen and (max-width: 768) {
+        .services-child-tagline p {
+                padding-left: unset;
+                padding-right: unset;
+        }
+        .services-child-box-big {
+                width: 300px;
+        }
+
+        #page_35, #page_47 {
+                padding-left: unset;
+                padding-right: unset;
+        }
+}
+
 /* ------------- TRANSACTIONS UI -------------- */
 
 .transaction {
@@ -1912,7 +1927,7 @@ margin-left: -4px; }
 .mini .hamburger .icon-bar, .nav-open .hamburger .icon-bar, .mini
 .cheeseburger .icon-bar, .nav-open
 .cheeseburger .icon-bar {
-background-color: #333E48; }
+background-color: white; }
 .hamburger:active,
 .cheeseburger:active {
 transform: scale(0.9); }
