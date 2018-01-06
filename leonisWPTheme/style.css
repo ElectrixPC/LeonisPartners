@@ -1832,13 +1832,20 @@ transform: rotateZ(-66.46310423517549deg)   ;
                 left: 0px!important;
                 top: 0px!important;
         }
-        .team-expand {
-                height: 1000px!important;
-        }
         .team-linkedin {
                 left: unset!important;
                 left: 50%!important;
                 transform: translateX(-50%)!important;
+        }
+        .team-phone-number {
+                position: relative!important;
+                left: unset!important;
+                width: 100%!important;
+                bottom: unset!important;
+                height: 70%;
+        }
+        .team-phone-number p {
+                padding-top: 40px;
         }
 }
 
