@@ -1854,6 +1854,18 @@ transform: rotateZ(-66.46310423517549deg)   ;
                 text-align: center!important;
                 padding-top: 20px!important;
         }
+        .team-description h3 {
+                text-align: center;
+        }
+        .team-experience {
+                position: absolute!important;
+                left: -10%!important;
+                width: 120%!important;
+                text-align: center!important;
+        }
+        .team-experience h3 {
+                text-align: center;
+        }
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
