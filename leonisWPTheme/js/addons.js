@@ -592,7 +592,14 @@ $('.button-team').click(function(e) {
     $('img').removeAttr('style');
     $('.team-description').removeAttr('style');
     $('.team-experience').removeAttr('style');
-    $('.team-expand').css({"height": "500px"});
+    var mq = window.matchMedia( "(max-width: 750px)" );
+    if (mq.matches) 
+    {
+        $('.team-expand').css({"height": "1000px"});
+    }
+    else {
+        $('.team-expand').css({"height": "500px"}); 
+    }
     $('.team-close').removeAttr('style');
 
 
