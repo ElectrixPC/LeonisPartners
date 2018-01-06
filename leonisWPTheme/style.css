@@ -1847,6 +1847,13 @@ transform: rotateZ(-66.46310423517549deg)   ;
         .team-phone-number p {
                 padding-top: 40px;
         }
+        .team-description {
+                position: relative!important;
+                left: -25%!important;
+                width: 150%!important;
+                text-align: center!important;
+                padding-top: 20px!important;
+        }
 }
 
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
