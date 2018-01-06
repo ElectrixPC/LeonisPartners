@@ -9,7 +9,6 @@
         <title>Leonis Partners</title>
         <!-- TODO fill that out -->
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
@@ -25,7 +24,28 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
+        <script type="text/javascript">
+        (function(doc) {
 
+            var addEvent = 'addEventListener',
+                type = 'gesturestart',
+                qsa = 'querySelectorAll',
+                scales = [1, 1],
+                meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+            function fix() {
+                meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+                doc.removeEventListener(type, fix, true);
+            }
+
+            if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+                fix();
+                scales = [.25, 1.6];
+                doc[addEvent](type, fix, true);
+            }
+
+        }(document));
+        </script>
         <?php wp_nav_menu( 
             array(
                 'theme_location' => 'top',
