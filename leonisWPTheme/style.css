@@ -1807,6 +1807,12 @@ transform: rotateZ(-66.46310423517549deg)   ;
         display: none;
 }
 
+@media screen and (max-width: 768) {
+        .team.team-collapsed {
+                width: 100%;
+        }
+
+
 /* ----------- EMAIL BEFORE DOWNLOAD --------------- */
 
 .wpcf7 {
