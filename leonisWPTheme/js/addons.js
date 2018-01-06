@@ -305,8 +305,20 @@ $(document).ready(function(){
             function() { $(this.parentElement.children[0]).css({"color": "white", "transition" : "0.3s all ease-in-out"}) },
             function() { $(this.parentElement.children[0]).css({"color": "#263318", "transition" : "0.3s all ease-in-out"}) }
     );
+    var mq = window.matchMedia( "(max-width: 800px)" );
+    if (mq.matches) {
+        zoomOutMobile();
+    }
 });
 
+function zoomOutMobile() {
+    var viewport = document.querySelector('meta[name="viewport"]');
+  
+    if ( viewport ) {
+      viewport.content = "initial-scale=0.1";
+      viewport.content = "width=800";
+    }
+  }
 // show all transactions on click
 $(".button-trans").click(function(){
     window.focus();
