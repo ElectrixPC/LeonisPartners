@@ -1858,9 +1858,9 @@ transform: rotateZ(-66.46310423517549deg)   ;
                 text-align: center;
         }
         .team-experience {
-                position: absolute!important;
-                left: -10%!important;
-                width: 120%!important;
+                position: relative!important;
+                left: -25%!important;
+                width: 150%!important;
                 text-align: center!important;
         }
         .team-experience h3 {
