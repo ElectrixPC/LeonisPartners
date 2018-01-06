@@ -307,12 +307,17 @@ $(document).ready(function(){
     );
     zoomOutMobile();
 });
-
 function zoomOutMobile() {
+    if (loopDone == false) {
+        loopDone = true
+        return
+    }
     var viewport = document.querySelector('meta[name="viewport"]');
-    var mq = window.matchMedia( "(max-width: 800px)" );
-    var mq1 = window.matchMedia( "(min-width: 500px)" );
-    if (mq.matches && mq1.matches) {
+    var mq = window.matchMedia( "(max-width: 780px)" );
+    var mq1 = window.outerWidth > 500;
+    var notequal = $('body').width() != 800;
+    var notcurrent = window.outerWidth != currentWidth;
+    if (mq.matches && mq1 && notequal && notcurrent ) {
         if ( viewport ) {
         viewport.content = "initial-scale=0.1";
         viewport.content = "width=800";
@@ -320,7 +325,9 @@ function zoomOutMobile() {
     }
     else {
         viewport.content = "initial-scale=1.0";
-        viewport.content = $('body').width();
+        viewport.content = "width=" + $('body').width();
+        currentWidth = $('body').width();
+
     }
   }
 // show all transactions on click
