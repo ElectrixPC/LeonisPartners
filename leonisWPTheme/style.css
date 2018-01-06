@@ -1127,7 +1127,7 @@ h4:after {
         }
 }
 
-@media screen and (max-width: 1000) {
+@media screen and (max-width: 1000px) {
         .services-child-tagline p {
                 padding-left: unset;
                 padding-right: unset;
