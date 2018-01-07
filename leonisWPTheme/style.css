@@ -426,6 +426,7 @@ body {
         text-transform: capitalize;
 }
 
+/* Underline
 #page_32 h1:after, #page_24 h1:after {
         content: '';
         width: 120%;
@@ -434,7 +435,7 @@ body {
         bottom: 1px;
         border-width: 0 0 1px;
         border-style: solid;
-}
+}*/
 
 
 /* Contact us */
