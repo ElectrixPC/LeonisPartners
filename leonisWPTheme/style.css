@@ -1400,11 +1400,14 @@ background-position: -100% 0;
 }
 
 .news .news-title {
-display: inline;
-transition: .5s ease-in-out;
-font-family: raleway, arial, sans-serif;
-text-transform: uppercase;
-font-size: 23px;
+        display: inline;
+        transition: .5s ease-in-out;
+        font-family: raleway, arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 23px;
+        width: 220px;
+        position: relative;
+        left: -15px;
 }
 .news .news-title a {
 color: white;
