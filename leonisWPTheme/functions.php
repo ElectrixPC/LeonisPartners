@@ -228,7 +228,7 @@ function get_news($atts) {
         $output .= $container . $title . $readmore . $close;
     endwhile;
 
-    $output .= '<br><a type="button" class="button news-button" href="/news-research">View All</a></div>';
+    $output .= '<br><a type="button" class="button news-button" href="/news-research">View More Recent News & Research</a></div>';
 
     return $output;
 }
