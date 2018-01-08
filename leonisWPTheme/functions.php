@@ -82,15 +82,14 @@ function revcon_change_post_object() {
 add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
 
-function news_init() {
-    $args = array(
-        'supports' => array(
-            'title',
-            'page-attributes',)
-        );
-    register_post_type( 'post', $args );
+
+
+function posts_order() 
+{
+    add_post_type_support( 'post', 'page-attributes' );
 }
-add_action( 'init', 'news_init' );
+add_action( 'admin_init', 'posts_order' );
+
 
 // Creates the team section in the wp editor
 function team_init() {
