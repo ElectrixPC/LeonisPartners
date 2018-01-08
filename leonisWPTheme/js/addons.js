@@ -260,6 +260,9 @@ $(document).ready(function(){
             //$('.news-container').css({"width": "100%", "padding" : "none", "padding-bottom" : "200px"});//make the news boxes full width
             //$('.news-social-container').css({"display": "none"}); //make the social buttons dissapear
             $('.news-button').css({"display" : "none"}); // make the show all button go away
+            $('#page_title')[0].innerHTML = '<h1>Recent News & Research</h1>';
+            $('.news-container').css({"max-width": "550px"});
+            $('h1').css({'color':'white'});
         }
         if ($('#page_title')[0].baseURI.includes('news/'))
         {

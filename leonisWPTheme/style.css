@@ -1372,8 +1372,11 @@ h4:after {
 /* -------- Press tiles ------------- */
 
 .news-container {
-width: 100%;
-float: left;
+        max-width: 850px;
+        position: relative;
+        float: left;
+        left: 50%;
+        transform: translateX(-50%);
 }
 
 .news {
