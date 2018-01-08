@@ -278,7 +278,7 @@ $(document).ready(function(){
     else {
         var totalNews = $('.news').length;
         for (var newsItem = 2; newsItem < totalNews; newsItem++) {
-            $($(".team")[newsItem]).css({"display": "none"});
+            $($($(".team")[newsItem])[0]).css({"display": "none"});
         }
     }
     // show the right amount of transactions on load
