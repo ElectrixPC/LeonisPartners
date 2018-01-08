@@ -6,7 +6,7 @@
     <div class="main-video">
     <div class="inline_page" id="page_268">
         <div id="page_content">
-        <h3>Leonis Partners specializes in M&A and Capital Raising advisory services for rapidly-growing, founder-led technology companies</h3>
+        <h3>Leonis Partners specializes in M&A and Capital Raising advisory services for rapidly-growing, founder-led technology companies.</h3>
         </div>
     </div>
         <video autoplay muted loop id="backvideo" poster="<?php echo get_bloginfo('template_url') ?>/images/nyc-poster.jpg">
