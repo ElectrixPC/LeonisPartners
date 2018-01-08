@@ -275,6 +275,12 @@ $(document).ready(function(){
             }
         }
     }
+    else {
+        var totalNews = $('.news').length;
+        for (var newsItem = 2; newsItem < totalTeam; newsItem++) {
+            $($(".team")[newsItem]).css({"display": "none"});
+        }
+    }
     // show the right amount of transactions on load
     var windowWidth = $('.trans_container').width();
     var boxWidth = $('.transaction').outerWidth() + 10;

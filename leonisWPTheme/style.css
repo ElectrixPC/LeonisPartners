@@ -1490,6 +1490,7 @@ color: white;
 .news-download-item {
         display: inline-block;
         padding: 25px;
+        max-width: 260px;
 }
 
 .news-download-item .fa-5x {
