@@ -160,7 +160,7 @@ function single_transaction($atts) {
     $firm2      = '<div class="trans-firm2"><h2>'     . get_post_meta($postid, "wpcf-company-2-name",            true) . '</h2></div>';
     $type       = '<div class="trans-type"><p>'       . get_post_meta($postid, "wpcf-transaction-type",          true) . '</p></div>';
     $size       = '<div class="trans-size"><p><b>Transaction Size:</b> ' . get_post_meta($postid, "wpcf-transaction-size",          true) . '</p></div>'; 
-    $press      = '<div class="trans-press"></div'; //<p><b>Press Release:</b> '   . get_post_meta($postid, "wpcf-transaction-press-release", true) . '</p></div>';
+    $press      = '<div class="trans-press"></div>'; //<p><b>Press Release:</b> '   . get_post_meta($postid, "wpcf-transaction-press-release", true) . '</p></div>';
     $date       = '<div class="trans-date"><p><b>Date:</b> ' . get_post_meta($postid, "wpcf-transaction-date",          true) . '</p></div>';
     if (get_post_meta($postid, "wpcf-company-1", true)) {
         $firm1_img  = '<div class="trans-img1"><img src=' . get_post_meta($postid, "wpcf-company-1", true) . '></div>';
@@ -184,7 +184,7 @@ function single_transaction($atts) {
     }
     $location   = '<div class="trans-location"><p><b>Company Location: </b></p><div class="trans-location-content"><p>' . get_post_meta($postid, "wpcf-transaction-location", true) . '</p></div></div>';
     $exit       = '<div class="trans-exit"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>';
-    $trans = '<div class="transaction">';
+    $trans = '<div class="transaction trans_hide">';
 
     $output .= $trans . '<div class="trans-expand">' . $firm1_img . $type . $firm2_img . $title . $firm1 . $firm2 . $size . $date . $location . $sector . $type_short . $press . $exit . '</div></div></div>';
     return $output; 
