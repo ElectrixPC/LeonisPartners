@@ -88,7 +88,7 @@ function news_init() {
             'title',
             'page-attributes',)
         );
-    register_post_type( 'news', $args );
+    register_post_type( 'post', $args );
 }
 add_action( 'init', 'news_init' );
 
