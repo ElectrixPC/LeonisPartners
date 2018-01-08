@@ -559,7 +559,7 @@ $('.button-file').click(function() {
         $(this.parentElement.parentElement.children[2]).css({"height":"70%", "width":"90%"});
     }
     else {
-        $(this.parentElement.parentElement.children[2]).css({"height":"30%", "width":"30%"});
+        $(this.parentElement.parentElement.children[2]).css({"height":"40%", "width":"30%"});
     }
 });
 
