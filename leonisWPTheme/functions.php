@@ -1,5 +1,11 @@
 <?php
 
+// Change default WordPress sender
+add_filter('wp_mail_from_name', 'new_mail_from_name');
+ 
+function new_mail_from_name($old) {
+return 'Leonis Partners';
+}
 
 function leonis_setup() {
     // This theme uses wp_nav_menu() in two locations.
