@@ -277,7 +277,7 @@ $(document).ready(function(){
     }
     else {
         var totalNews = $('.news').length;
-        for (var newsItem = 2; newsItem < totalTeam; newsItem++) {
+        for (var newsItem = 2; newsItem < totalNews; newsItem++) {
             $($(".team")[newsItem]).css({"display": "none"});
         }
     }
