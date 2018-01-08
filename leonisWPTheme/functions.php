@@ -225,11 +225,11 @@ function get_news($atts) {
     while ( $query->have_posts() ) : $query->the_post();
         $container = '<div class="news">';
         $title = '<div class="news-title">' . get_the_title() . '</div>';
-        $content = '<div class="news-content">' . get_the_excerpt() . '</div>';
+        //$content = '<div class="news-content">' . get_the_excerpt() . '</div>';
         $readmore = '<a target class="news-readmore" href=' . get_permalink() . '>Read More.<br><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>';
         $close = '</div>';
 
-        $output .= $container . $title . $content . $readmore . $close;
+        $output .= $container . $title . $readmore . $close;
     endwhile;
 
     $output .= '<br><a type="button" class="button news-button" href="/news-research">View All</a></div>';
@@ -252,7 +252,7 @@ function get_downloads($atts) {
     if (empty($atts['id1']) == false) {
         $output .= '<div class="news-download-item"><i class="fa fa-download fa-5x" aria-hidden="true"></i><i class="fa fa-check fa-5x" aria-hidden="true"></i><h2>' . get_the_title($atts['id1']) . '</h2>';
         $output .= '<div class="email-download"><div class="email-download-title"><a type="button" class="button button-file" href="javascript:void(0);">Download File</a></div>';
-        $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="358"]', $atts['id1']);
+        $shortcode = sprintf('[email-download download_id="%1$s" contact_form_id="295"]', $atts['id1']);
         $output .= do_shortcode( $shortcode );
         $output .= '</div></div>';
     }
