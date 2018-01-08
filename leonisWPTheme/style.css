@@ -487,6 +487,10 @@ body {
         margin-top: 10px;
 }
 
+.map_container a {
+        text-decoration: underline;
+}
+
 @media screen and (orientation: portrait) {
         .map_container {
                 width: 100%;
