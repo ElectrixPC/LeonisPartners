@@ -556,10 +556,10 @@ $('.button-file').click(function() {
     var mq = window.matchMedia( "(max-width: 1000px)" );
     $(this.parentElement.parentElement.children[2].children[1]).css({"display" : "block"});
     if (mq.matches) {
-        $(this.parentElement.parentElement.children[2]).css({"height":"70%", "width":"90%"});
+        $(this.parentElement.parentElement.children[2]).css({"height":"110%", "width":"90%"});
     }
     else {
-        $(this.parentElement.parentElement.children[2]).css({"height":"40%", "width":"30%"});
+        $(this.parentElement.parentElement.children[2]).css({"height":"500px", "width":"30%"});
     }
 });
 
