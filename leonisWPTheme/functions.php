@@ -82,6 +82,16 @@ function revcon_change_post_object() {
 add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
 
+function news_init() {
+    $args = array(
+        'supports' => array(
+            'title',
+            'page-attributes',)
+        );
+    register_post_type( 'news', $args );
+}
+add_action( 'init', 'news_init' );
+
 // Creates the team section in the wp editor
 function team_init() {
     $args = array(
