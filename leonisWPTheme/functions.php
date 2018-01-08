@@ -217,6 +217,7 @@ add_shortcode('email', 'download_by_email');
 
 function get_news($atts) {
     $args = array('post_type' => 'post',
+    'orderby'=>'menu_order',
     'posts_per_page' => 1000); // these arguments are telling WP_Query to only look for the post types called transactions
     $query = new WP_Query( $args );
     $output = '<div class="news-container">';
