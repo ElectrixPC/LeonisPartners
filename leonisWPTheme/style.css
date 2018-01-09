@@ -627,6 +627,11 @@ p {
         color: inherit;
         margin-bottom: 10px;
         padding-bottom: 10px;
+        text-transform: uppercase;
+}
+
+.iconcontent p {
+        line-height: 20px;
 }
 
 .icon-left .iconcontent {
@@ -651,6 +656,16 @@ h4:after {
         margin-top: -30px;
 }
 
+#page_188 h1:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        margin: 15px auto 0px auto;
+        border-bottom: 1px solid;
+        border-color: inherit;
+}
+    
 
 @media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation: portrait) {
         .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12 {
