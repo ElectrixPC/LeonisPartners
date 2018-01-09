@@ -559,7 +559,7 @@ margin: 0 auto;
         font-size: 24px;
 }
 h2, h3, h4, h5, h6, .pricing-table .cost, .day, .counter-details, .pageheading p {
-        font-family: montserratregular, sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: normal;
 }
 .pageheading p {
@@ -1402,7 +1402,7 @@ background-position: -100% 0;
 .news .news-title {
         display: inline;
         transition: .5s ease-in-out;
-        font-family: raleway, arial, sans-serif;
+        font-family: 'Lato', sans-serif;
         text-transform: uppercase;
         font-size: 23px;
         width: 220px;
@@ -1417,7 +1417,7 @@ text-decoration: none;
 .news .news-content {
 margin-top: 20px;
 display: block;
-font-family: raleway, arial, sans-serif;
+font-family: 'Lato', sans-serif;
 color: black;
 }
 .news .news-content a {
@@ -1429,7 +1429,7 @@ text-decoration: none;
 .news span {
 display: block;
 margin-top: 10px;
-font-family: raleway, arial, sans-serif;
+font-family: 'Lato', sans-serif;
 font-weight: 700;
 color: #16a085;
 }
