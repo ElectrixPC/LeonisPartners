@@ -265,7 +265,7 @@ $(document).ready(function(){
         }
         if ($('#page_title')[0].baseURI.includes('news/'))
         {
-            $('#page_content').css({"width" : "50%", "left" : "50%", "transform" : "translateX(-50%)", "padding-top": "50px", "text-align" : "left"});
+            $('#page_content').css({"width" : "60%", "left" : "50%", "transform" : "translateX(-50%)", "padding-top": "50px", "padding-left" : "150px", "text-align" : "left"});
             $('#page_content img').css({"width": "100%", "height" : "auto", "position" : "relative"});
             var mq = window.matchMedia( "(max-width: 750px)" );
             if (mq.matches) 
