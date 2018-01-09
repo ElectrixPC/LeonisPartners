@@ -1431,6 +1431,14 @@ color: white;
 text-decoration: none;
 }
 
+.news-logo {
+        height: auto;
+        display: none;
+        width: 100px;
+        position: absolute;
+        left: 0px;
+}
+
 .news .news-content {
 margin-top: 20px;
 display: block;
