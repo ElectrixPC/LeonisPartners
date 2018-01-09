@@ -265,7 +265,7 @@ $(document).ready(function(){
         }
         if ($('#page_title')[0].baseURI.includes('news/'))
         {
-            $('.logonews').css({"display" : "block"});
+            $('.logonews').css({"display" : "block!important"});
             $('#page_content').css({"width" : "60%", "left" : "50%", "transform" : "translateX(-50%)", "padding-top": "50px", "padding-left" : "150px", "text-align" : "left"});
             $('#page_content img').css({"width": "100%", "height" : "auto", "position" : "relative"});
             var mq = window.matchMedia( "(max-width: 750px)" );
