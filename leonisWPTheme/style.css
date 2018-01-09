@@ -15,7 +15,7 @@ This theme is private, and if you have a copy, you shouldn't!
 /* ------------ FONTS ---------------- */
 
 h1 {
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: 700;
         font-size: 2em;
         text-align: center;
@@ -23,19 +23,19 @@ h1 {
         color: #0c1711;
 }
 h2 {
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: 300;
         font-size: 1.5em;
         text-align: center;
 }
 h3 {
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: 300;
         font-size: 1.17em;
         text-align: center;
 }
 p {
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
 }
 
 /* ------------ LINKS --------------- */
@@ -67,7 +67,7 @@ a img {
 a.button, a.button:visited {
         
         display: inline-block;
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
         font-weight: 300;
         font-size: 1.17em;
         color: #263318;
@@ -409,7 +409,7 @@ body {
 }
 #page_185 {
         background: url(images/nyc-blurred.jpg) no-repeat center center fixed;
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: white;
         overflow: hidden;
         background-size: 100% auto;
@@ -1931,7 +1931,7 @@ input[type="email"]:focus {
 }
 
 input[type="submit"] {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1.17em;
     color: white;
@@ -2053,7 +2053,7 @@ header {
         height: 70px;
         z-index: 10;
         min-width: 320px;
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
         transition: all 150ms ease 0ms; 
         background: rgba(38, 51, 24, 0.8)  !important;
 }
