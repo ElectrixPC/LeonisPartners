@@ -1467,6 +1467,11 @@ color: white;
         background-color: rgba(38, 51, 24, 0.8);
 }
 
+.news-readmore .fa {
+        position: relative;
+        top: -30px;
+}
+
 .news-social-container {
         float: right;
         width: 60%;
