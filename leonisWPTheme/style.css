@@ -1399,7 +1399,9 @@ h4:after {
         display: inline-grid;
         height: 250px;
         padding: 30px;
-        background-image: url("images/reverse_web.png");
+        background-color: white;
+        background-image: url(images/reverse_web.png);
+        background-size: contain;
         margin: 10px;
         transition: .3s ease;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
