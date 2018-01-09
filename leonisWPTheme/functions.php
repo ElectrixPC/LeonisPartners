@@ -222,7 +222,7 @@ function get_news($atts) {
         $container = '<div class="news">';
         $title = '<div class="news-title">' . get_the_title() . '</div>';
         //$content = '<div class="news-content">' . get_the_excerpt() . '</div>';
-        $readmore = '<a target class="news-readmore" href=' . get_permalink() . '>Read More.<br><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>';
+        $readmore = '<a target class="news-readmore" href=' . get_permalink() . '><p>Read More.</p><br><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>';
         $close = '</div>';
 
         $output .= $container . $title . $readmore . $close;
