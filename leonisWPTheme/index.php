@@ -8,6 +8,7 @@
                     <h1 style="color: white;"><?php the_title(); ?><h1>
                 </div>
                 <div id="page_content" style="width: 75%; left: 12.5%; position: relative;">
+                <img class="news-logo" style="height: 50px; display:none;" src='images/logo_web.png'></img>
                         <?php the_content(); ?>
                 </div>
             </div>
