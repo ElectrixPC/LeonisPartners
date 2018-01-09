@@ -1432,11 +1432,11 @@ text-decoration: none;
 }
 
 .news-logo {
-        height: auto;
-        display: none;
-        width: 100px;
-        position: absolute;
-        left: 0px;
+        height: auto!important;
+        display: none!important;
+        width: 100px!important;
+        position: absolute!important;
+        left: 0px!important;
 }
 
 .news .news-content {
