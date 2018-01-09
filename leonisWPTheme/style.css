@@ -1431,12 +1431,12 @@ color: white;
 text-decoration: none;
 }
 
-.news-logo {
-        height: auto!important;
-        display: none!important;
-        width: 100px!important;
-        position: absolute!important;
-        left: 0px!important;
+.logonews {
+        height: auto;
+        display: none;
+        width: 100px;
+        position: absolute;
+        left: 0px;
 }
 
 .news .news-content {
