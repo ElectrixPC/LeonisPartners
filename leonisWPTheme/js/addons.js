@@ -357,11 +357,11 @@ $(".button-trans").click(function(){
         // Work out the total transactions
         var totalTransactions = $('.transaction').length;
         // Display the first two lines of transactions
-        for (var item = 0; item < smallTransactions + 1; item++) {
+        for (var item = 0; item < smallTransactions; item++) {
             $($(".trans_hide")[item]).css({"display": "inline-block"});
         }
         // Hide the rest of the transactions 
-        for (var item = smallTransactions; item < totalTransactions -1; item++) {
+        for (var item = smallTransactions; item < totalTransactions; item++) {
             $($(".trans_hide")[item]).css({"display": "none"});
         }
         // Reset the styling for the bottom and right items (otherwise it'll fuck up)
@@ -370,18 +370,20 @@ $(".button-trans").click(function(){
                 $thisGuy[0].children[0].style.bottom = "auto";
                 $thisGuy[0].children[0].style.right = "auto";
         }
-        $('.button-trans')[0].innerHTML = "View More Transactions";    
+        $('.button-trans')[0].innerHTML = "View More Transactions";
+        $('#transactions')[0].scrollIntoView( true );    
     }
-    // display the hidden tombstones
-    $(".trans_hide").css({"display":"inline-block"});
-    // reset the existing css for the hover stuff
-    for(var i=0; i<$('.transaction').length; i++) {
-        var $thisGuy = $('.transaction').eq(i);
-        $thisGuy[0].children[0].style.bottom = "auto";
+    else 
+    {
+        // display the hidden tombstones
+        $(".trans_hide").css({"display":"inline-block"});
+        // reset the existing css for the hover stuff
+        for(var i=0; i<$('.transaction').length; i++) {
+            var $thisGuy = $('.transaction').eq(i);
+            $thisGuy[0].children[0].style.bottom = "auto";
+        }
+        $('.button-trans')[0].innerHTML = "View Less Transactions";
     }
-    $('.button-trans')[0].innerHTML = "View Less Transactions";
-
-    $()
 });
 
 // On exit button of transaction, delete the styling from everything on transactions
