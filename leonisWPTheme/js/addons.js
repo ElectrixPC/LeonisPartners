@@ -346,6 +346,32 @@ function zoomOutMobile() {
 // show all transactions on click
 $(".button-trans").click(function(){
     window.focus();
+    if ($('.button-trans')[0].innerHTML == "View Less Transactions") 
+    {
+        // show the right amount of transactions on load
+        var windowWidth = $('.trans_container').width();
+        var boxWidth = $('.transaction').outerWidth() + 10;
+        var boxesPerRow = ~~(windowWidth / boxWidth);
+        // Work out how many transactions would fit on two rows
+        var smallTransactions = boxesPerRow * 2;
+        // Work out the total transactions
+        var totalTransactions = $('.transaction').length;
+        // Display the first two lines of transactions
+        for (var item = 0; item < smallTransactions + 1; item++) {
+            $($(".trans_hide")[item]).css({"display": "inline-block"});
+        }
+        // Hide the rest of the transactions 
+        for (var item = smallTransactions; item < totalTransactions -1; item++) {
+            $($(".trans_hide")[item]).css({"display": "none"});
+        }
+        // Reset the styling for the bottom and right items (otherwise it'll fuck up)
+        for(var i=0; i<$('.transaction').length; i++) {
+                var $thisGuy = $('.transaction').eq(i);
+                $thisGuy[0].children[0].style.bottom = "auto";
+                $thisGuy[0].children[0].style.right = "auto";
+        }
+        $('.button-trans')[0].innerHTML = "View More Transactions";    
+    }
     // display the hidden tombstones
     $(".trans_hide").css({"display":"inline-block"});
     // reset the existing css for the hover stuff
@@ -353,6 +379,9 @@ $(".button-trans").click(function(){
         var $thisGuy = $('.transaction').eq(i);
         $thisGuy[0].children[0].style.bottom = "auto";
     }
+    $('.button-trans')[0].innerHTML = "View Less Transactions";
+
+    $()
 });
 
 // On exit button of transaction, delete the styling from everything on transactions
