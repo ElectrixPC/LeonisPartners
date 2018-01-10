@@ -1,31 +1,18 @@
-<?php
-/**
- * The template for displaying 404 pages (Not Found)
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+			<div class="inline_page" style="min-height: 95vh; overflow:hidden">
+				<div id="page_title" style="background-color: #263318; color: white; padding: 50px;">
+					<h1 style="color: white;">Page Not Found<h1>
+				</div>
+				<div id="page_content" style="width: 75%; left: 12.5%; position: relative;">
+					<h2>We couldn't find the page you are looking for, sorry.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
-			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'twentythirteen' ); ?></h1>
-			</header>
-
-			<div class="page-wrapper">
-				<div class="page-content">
-					<h2><?php _e( 'This is somewhat embarrassing, isn’t it?', 'twentythirteen' ); ?></h2>
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen' ); ?></p>
-
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</div><!-- .page-wrapper -->
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
