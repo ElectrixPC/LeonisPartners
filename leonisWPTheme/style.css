@@ -984,6 +984,15 @@ h4:after {
         margin-top: 20px;
         height: 90px;
 }
+
+.services-title h2 {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+}
+
 .services-icon {
         color: white;
 }
